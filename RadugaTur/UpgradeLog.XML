@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="RadugaTur">
+</Property><Property Name="Solution File" Value="D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\RadugaTur.sln">
+</Property><Property Name="User Options File" Value="D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\RadugaTur.suo">
+</Property><Property Name="Date" Value="27 августа 2012 г.">
+</Property><Property Name="Time" Value="14:30">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="RadugaTur.sln" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur.sln">
+</Event><Event ErrorLevel="0" Project="" Source="RadugaTur.suo" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur.suo">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\RadugaTur.csproj" Description="Project file successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\RadugaTur.csproj">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\ApplicationForm.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\ApplicationForm.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\ApplicationForm.Designer.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\ApplicationForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\ApplicationTable.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\ApplicationTable.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\ApplicationTable.Designer.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\ApplicationTable.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\DocumentsForm.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\DocumentsForm.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\DocumentsForm.Designer.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\DocumentsForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\FisicalFaceForm.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\FisicalFaceForm.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\FisicalFaceForm.Designer.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\FisicalFaceForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\JuridicalFaceForm.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\JuridicalFaceForm.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\JuridicalFaceForm.Designer.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\JuridicalFaceForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\MainForm.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\MainForm.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\MainForm.Designer.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\MainForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\InputForm.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\InputForm.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\InputForm.Designer.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\InputForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\ManagerForm.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\ManagerForm.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\ManagerForm.Designer.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\ManagerForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\Program.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\Program.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\Properties\Resources.Designer.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\Properties\Settings.Designer.cs" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\Properties\Settings.settings" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\Resources\Главная картинка.jpg" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\Resources\Главная картинка.jpg">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\ApplicationForm.resx" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\ApplicationForm.resx">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\ApplicationTable.resx" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\ApplicationTable.resx">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\DocumentsForm.resx" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\DocumentsForm.resx">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\FisicalFaceForm.resx" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\FisicalFaceForm.resx">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\JuridicalFaceForm.resx" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\JuridicalFaceForm.resx">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\MainForm.resx" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\MainForm.resx">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\InputForm.resx" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\InputForm.resx">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\ManagerForm.resx" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\ManagerForm.resx">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\Properties\Resources.resx" Description="File successfully backed up as D:\Users\Documents\Visual Studio 2008\Projects\RadugaTur\Backup\RadugaTur\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\RadugaTur.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RadugaTur" Source="RadugaTur\RadugaTur.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="RadugaTur.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="RadugaTur.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RadugaTur" Source="RadugaTur\RadugaTur.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
