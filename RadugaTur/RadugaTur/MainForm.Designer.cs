@@ -47,6 +47,7 @@
             this.radugaTourDatabaseDataSet1 = new RadugaTur.RadugaTourDatabaseDataSet1();
             this.managerTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.managerTable1TableAdapter = new RadugaTur.RadugaTourDatabaseDataSet1TableAdapters.ManagerTable1TableAdapter();
+            this.LookAtManagersbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.managerTable1BindingSource)).BeginInit();
@@ -117,6 +118,7 @@
             this.ShowJuriFace.TabIndex = 9;
             this.ShowJuriFace.Text = "Показать юридические лица";
             this.ShowJuriFace.UseVisualStyleBackColor = true;
+            this.ShowJuriFace.Click += new System.EventHandler(this.ShowJuriFace_Click);
             // 
             // AddPhisFace
             // 
@@ -209,11 +211,22 @@
             // 
             this.managerTable1TableAdapter.ClearBeforeFill = true;
             // 
+            // LookAtManagersbutton
+            // 
+            this.LookAtManagersbutton.Location = new System.Drawing.Point(24, 397);
+            this.LookAtManagersbutton.Name = "LookAtManagersbutton";
+            this.LookAtManagersbutton.Size = new System.Drawing.Size(172, 23);
+            this.LookAtManagersbutton.TabIndex = 18;
+            this.LookAtManagersbutton.Text = "Показать менеджеров";
+            this.LookAtManagersbutton.UseVisualStyleBackColor = true;
+            this.LookAtManagersbutton.Click += new System.EventHandler(this.LookAtManagersbutton_Click);
+            // 
             // ApplicationJunkClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(746, 420);
+            this.ClientSize = new System.Drawing.Size(746, 443);
+            this.Controls.Add(this.LookAtManagersbutton);
             this.Controls.Add(this.AddManagerButton);
             this.Controls.Add(this.outputDateTime);
             this.Controls.Add(this.outputLogin);
@@ -260,6 +273,7 @@
         private RadugaTourDatabaseDataSet1 radugaTourDatabaseDataSet1;
         private System.Windows.Forms.BindingSource managerTable1BindingSource;
         private RadugaTourDatabaseDataSet1TableAdapters.ManagerTable1TableAdapter managerTable1TableAdapter;
+        private System.Windows.Forms.Button LookAtManagersbutton;
 
     }
 }

@@ -88,5 +88,19 @@ namespace RadugaTur
             this.managerTable1TableAdapter.Fill(this.radugaTourDatabaseDataSet1.ManagerTable1);
 
         }
+
+        private void ShowJuriFace_Click(object sender, EventArgs e)
+        {
+            JFTableForm jfTableForm = new JFTableForm();
+            jfTableForm.Show();
+        }
+
+        private void LookAtManagersbutton_Click(object sender, EventArgs e)
+        {
+            ManagerFormTable managerFormTable = new ManagerFormTable();
+            managerFormTable.Show();
+        }
+
+        
     }
 }
