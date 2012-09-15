@@ -36,26 +36,79 @@ namespace RadugaTur
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            //SqlQuery query = new SqlQuery("update hfjfjh");
-            //    query.exec();
-            /* using (SqlConnection connection = new SqlConnection("server=localhost;Database=RadugaTourDatabase;Integrated Security=true")
-             {
-              
-                 SqlCommand command = new SqlCommand("insert ApplicationTable set inputDateApp= ", connection);
-                 command.Connection.Open();
-                 command.ExecuteNonQuery();
-             }*/
+            string query = "insert into Application(AppDate, AppNumContract, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppEndTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppCategory, AppPhone, AppNotes ) values (\'" +
+                dateTimePickerApplicationDate.Text + "\', \'" +
+                inputAppNumberContract.Text + "\', \'" +
+                inputAppFullName.Text + "\',\'" +
+                inputAppNameOrgOrPF.Text + "\',\'"
+                + inputAppCountry.Text + "\',\'" +
+                inputAppWay.Text + "\',\'" +
+                inputAppStartTour.Text + "\',\'" +
+                inputAppEndTour.Text + "\',\'" +
+                inputNumDays.Text + "\',\'" +
+                inputNumNights.Text + "\',\'" +
+                inputAppNumPeople.Text + "\',\'" +
+                inputAppOldPeople.Text + "\', \'"+
+                inputAppNumChildren.Text + "\',\'" +
+                inputAppNumberAndCategory.Text + "\',\'" +
+                inputAppPhone.Text + "\',\'" +
+                inputAppNotes.Text + "\')";
+            Database.executeQuery(query);
+            ApplicationTableForm appTableForm = new ApplicationTableForm();
+            appTableForm.Show();
+            this.Close();
         }
 
-        private void inputApplicationBeginTour_TextChanged(object sender, EventArgs e)
+        private void AppStartTourButton_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.DateTimePicker dateTimePickerAppBeginTour = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerApplicationDateContract.Location = new System.Drawing.Point(369, 92);
-            this.dateTimePickerApplicationDateContract.Name = "dateTimePickerApplicationStartTour";
-            this.dateTimePickerApplicationDateContract.Size = new System.Drawing.Size(148, 20);
-            this.dateTimePickerApplicationDateContract.TabIndex = 105;
-            dateTimePickerAppBeginTour.Show();
+            MonthCalendar1 monthCal = new MonthCalendar1(inputAppStartTour);
+            monthCal.Show();
         }
 
+        private void AppEndButton_Click(object sender, EventArgs e)
+        {
+            MonthCalendar1 monthCal = new MonthCalendar1(inputAppEndTour);
+            monthCal.Show();
+        }
+
+        private void AppDateContractButton_Click(object sender, EventArgs e)
+        {
+            MonthCalendar1 monthCal = new MonthCalendar1(inputAppDateContract);
+            monthCal.Show();
+        }
+
+        private void AppSumDatePay_Click(object sender, EventArgs e)
+        {
+            MonthCalendar1 monthCal = new MonthCalendar1(inputAppDateSumPay);
+            monthCal.Show();
+        }
+
+        private void AppDateAccountNumberButton_Click(object sender, EventArgs e)
+        {
+            MonthCalendar1 monthCal = new MonthCalendar1(inputAppDateAccountNumber);
+            monthCal.Show();
+        }
+
+        private void AppDateAccountNumRadButton_Click(object sender, EventArgs e)
+        {
+            MonthCalendar1 monthCal = new MonthCalendar1(inputAppDateAcountNumRad);
+            monthCal.Show();
+        }
+
+        private void AppMoneyOrgButton_Click(object sender, EventArgs e)
+        {
+            MonthCalendar1 monthCal = new MonthCalendar1(inputAppDateMoneyOrg);
+            monthCal.Show();
+        }
+
+        private void AppPaySanRadButton_Click(object sender, EventArgs e)
+        {
+            MonthCalendar1 monthCal = new MonthCalendar1(inputAppDatePaySanRad);
+            monthCal.Show();
+        }
+
+        
+
+       
     } 
    }

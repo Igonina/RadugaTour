@@ -39,7 +39,6 @@
             this.AddPhisFace = new System.Windows.Forms.Button();
             this.AddJuriFace = new System.Windows.Forms.Button();
             this.LookAtApplications = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.outputProfile = new System.Windows.Forms.Label();
             this.outputLogin = new System.Windows.Forms.Label();
             this.outputDateTime = new System.Windows.Forms.Label();
@@ -48,9 +47,10 @@
             this.managerTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.managerTable1TableAdapter = new RadugaTur.RadugaTourDatabaseDataSet1TableAdapters.ManagerTable1TableAdapter();
             this.LookAtManagersbutton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.managerTable1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Lable1
@@ -109,6 +109,7 @@
             this.ShowPhisFace.TabIndex = 8;
             this.ShowPhisFace.Text = "Показать физические лица";
             this.ShowPhisFace.UseVisualStyleBackColor = true;
+            this.ShowPhisFace.Click += new System.EventHandler(this.ShowPhisFace_Click);
             // 
             // ShowJuriFace
             // 
@@ -149,16 +150,6 @@
             this.LookAtApplications.Text = "Просмотреть заявки";
             this.LookAtApplications.UseVisualStyleBackColor = true;
             this.LookAtApplications.Click += new System.EventHandler(this.LookAtApplications_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::RadugaTur.Properties.Resources.Главная_картинка;
-            this.pictureBox1.Location = new System.Drawing.Point(440, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(294, 101);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
             // 
             // outputProfile
             // 
@@ -221,6 +212,16 @@
             this.LookAtManagersbutton.UseVisualStyleBackColor = true;
             this.LookAtManagersbutton.Click += new System.EventHandler(this.LookAtManagersbutton_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::RadugaTur.Properties.Resources.Главная_картинка;
+            this.pictureBox1.Location = new System.Drawing.Point(440, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(294, 101);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
             // ApplicationJunkClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,9 +246,9 @@
             this.Name = "ApplicationJunkClass";
             this.Text = "Домашняя страница";
             this.Load += new System.EventHandler(this.ApplicationJunkClass_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.managerTable1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

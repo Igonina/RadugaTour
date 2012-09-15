@@ -70,11 +70,7 @@ namespace RadugaTur
             fisicFaceForm.Show();
         }
 
-        private void LookAtApplications_Click(object sender, EventArgs e)
-        {
-            ApplicationTable1 appTable = new ApplicationTable1();
-            appTable.Show();
-        }
+        
 
         private void AddManagerButton_Click(object sender, EventArgs e)
         {
@@ -99,6 +95,18 @@ namespace RadugaTur
         {
             ManagerFormTable managerFormTable = new ManagerFormTable();
             managerFormTable.Show();
+        }
+
+        private void ShowPhisFace_Click(object sender, EventArgs e)
+        {
+            PFTableForm pfTableForm = new PFTableForm();
+            pfTableForm.Show();
+        }
+
+        private void LookAtApplications_Click(object sender, EventArgs e)
+        {
+            ApplicationTableForm appTableForm = new ApplicationTableForm();
+            appTableForm.Show();
         }
 
         
