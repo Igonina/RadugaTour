@@ -37,7 +37,7 @@ namespace RadugaTur
         private void SaveButton_Click(object sender, EventArgs e)
         {
             string query = "insert into Application(AppDate, AppNumContract, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppEndTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppCategory, AppPhone, AppNotes ) values (\'" +
-                dateTimePickerApplicationDate.Text + "\', \'" +
+                inputAppDate.Text + "\', \'" +
                 inputAppNumberContract.Text + "\', \'" +
                 inputAppFullName.Text + "\',\'" +
                 inputAppNameOrgOrPF.Text + "\',\'"
@@ -54,8 +54,29 @@ namespace RadugaTur
                 inputAppPhone.Text + "\',\'" +
                 inputAppNotes.Text + "\')";
             Database.executeQuery(query);
+            string query2 = "insert into Archive(ArDateContract, ArDateArrive, ArNumDaysHealth, ArCost, ArCostWithoutProcent, ArAccountNumberSan, ArDateAccNumSan, ArAccountNumberRad, ArDateAccNumRad, ArMoneyOrg, ArDateMoneyOrg, ArPaySanRad, ArDatePaySanRad, arDebt, ArOtherMoney, ArSumPay, ArDateSumPay) values (\'" +
+              inputAppDateContract.Text + "\', \'" +
+              inputAppDateArrive.Text + "\', \'" +
+              inputNumDaysHealth.Text + "\',\'" +
+              inputAppCost.Text + "\',\'"
+              + inputAppCostWithoutProcent.Text + "\',\'" +
+              inputAppAcountNumber.Text + "\',\'" +
+              inputAppDateAccountNumber.Text + "\',\'" +
+              inputAppAccNumRaduga.Text + "\',\'" +
+              inputAppDateAcountNumRad.Text+ "\',\'" +
+              inputAppMoneyOrg.Text + "\',\'" +
+              inputAppDateMoneyOrg.Text + "\',\'" +
+              inputAppPaySanRad.Text + "\', \'" +
+              inputAppDatePaySanRad.Text + "\',\'" +
+              inputAppDebt.Text + "\',\'" +
+              inputAppOtherMoney.Text + "\',\'" +
+              inputAppSumPay.Text + "\', \'" +
+              inputAppDateSumPay.Text + "\')";
+            Database.executeQuery(query2);
             ApplicationTableForm appTableForm = new ApplicationTableForm();
             appTableForm.Show();
+            ArchiveTableForm arTableForm = new ArchiveTableForm();
+            arTableForm.Show();
             this.Close();
         }
 
@@ -104,6 +125,18 @@ namespace RadugaTur
         private void AppPaySanRadButton_Click(object sender, EventArgs e)
         {
             MonthCalendar1 monthCal = new MonthCalendar1(inputAppDatePaySanRad);
+            monthCal.Show();
+        }
+
+        private void AppDateButton_Click(object sender, EventArgs e)
+        {
+            MonthCalendar1 monthCal = new MonthCalendar1(inputAppDate);
+            monthCal.Show();
+        }
+
+        private void AppDateArriveButton_Click(object sender, EventArgs e)
+        {
+            MonthCalendar1 monthCal = new MonthCalendar1(inputAppDateArrive);
             monthCal.Show();
         }
 

@@ -59,8 +59,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.dateTimePickerApplicationDate = new System.Windows.Forms.DateTimePicker();
             this.inputAppNameOrgOrPF = new System.Windows.Forms.TextBox();
             this.inputAppFullName = new System.Windows.Forms.TextBox();
             this.inputAppCountry = new System.Windows.Forms.TextBox();
@@ -100,7 +98,13 @@
             this.inputAppDebt = new System.Windows.Forms.TextBox();
             this.inputAppOtherMoney = new System.Windows.Forms.TextBox();
             this.AppPaySanRadButton = new System.Windows.Forms.Button();
-            this.inputAppNotes2 = new System.Windows.Forms.TextBox();
+            this.inputAppDate = new System.Windows.Forms.TextBox();
+            this.AppDateButton = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
+            this.inputAppDateArrive = new System.Windows.Forms.TextBox();
+            this.AppDateArriveButton = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
+            this.inputNumDaysHealth = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // SaveButton
@@ -383,22 +387,6 @@
             this.label16.Size = new System.Drawing.Size(40, 13);
             this.label16.TabIndex = 98;
             this.label16.Text = "Чужие";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(10, 635);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(70, 13);
-            this.label18.TabIndex = 102;
-            this.label18.Text = "Примечания";
-            // 
-            // dateTimePickerApplicationDate
-            // 
-            this.dateTimePickerApplicationDate.Location = new System.Drawing.Point(142, 15);
-            this.dateTimePickerApplicationDate.Name = "dateTimePickerApplicationDate";
-            this.dateTimePickerApplicationDate.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerApplicationDate.TabIndex = 104;
             // 
             // inputAppNameOrgOrPF
             // 
@@ -691,19 +679,75 @@
             this.AppPaySanRadButton.UseVisualStyleBackColor = true;
             this.AppPaySanRadButton.Click += new System.EventHandler(this.AppPaySanRadButton_Click);
             // 
-            // inputAppNotes2
+            // inputAppDate
             // 
-            this.inputAppNotes2.Location = new System.Drawing.Point(158, 632);
-            this.inputAppNotes2.Name = "inputAppNotes2";
-            this.inputAppNotes2.Size = new System.Drawing.Size(440, 20);
-            this.inputAppNotes2.TabIndex = 151;
+            this.inputAppDate.Location = new System.Drawing.Point(142, 13);
+            this.inputAppDate.Name = "inputAppDate";
+            this.inputAppDate.Size = new System.Drawing.Size(137, 20);
+            this.inputAppDate.TabIndex = 152;
+            // 
+            // AppDateButton
+            // 
+            this.AppDateButton.Location = new System.Drawing.Point(285, 12);
+            this.AppDateButton.Name = "AppDateButton";
+            this.AppDateButton.Size = new System.Drawing.Size(17, 23);
+            this.AppDateButton.TabIndex = 153;
+            this.AppDateButton.UseVisualStyleBackColor = true;
+            this.AppDateButton.Click += new System.EventHandler(this.AppDateButton_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(13, 337);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(72, 13);
+            this.label17.TabIndex = 154;
+            this.label17.Text = "Дата заезда";
+            // 
+            // inputAppDateArrive
+            // 
+            this.inputAppDateArrive.Location = new System.Drawing.Point(158, 334);
+            this.inputAppDateArrive.Name = "inputAppDateArrive";
+            this.inputAppDateArrive.Size = new System.Drawing.Size(121, 20);
+            this.inputAppDateArrive.TabIndex = 155;
+            // 
+            // AppDateArriveButton
+            // 
+            this.AppDateArriveButton.Location = new System.Drawing.Point(285, 334);
+            this.AppDateArriveButton.Name = "AppDateArriveButton";
+            this.AppDateArriveButton.Size = new System.Drawing.Size(17, 23);
+            this.AppDateArriveButton.TabIndex = 156;
+            this.AppDateArriveButton.UseVisualStyleBackColor = true;
+            this.AppDateArriveButton.Click += new System.EventHandler(this.AppDateArriveButton_Click);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(452, 334);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(114, 26);
+            this.label18.TabIndex = 157;
+            this.label18.Text = "Продолжительность \r\nлечения";
+            // 
+            // inputNumDaysHealth
+            // 
+            this.inputNumDaysHealth.Location = new System.Drawing.Point(582, 331);
+            this.inputNumDaysHealth.Name = "inputNumDaysHealth";
+            this.inputNumDaysHealth.Size = new System.Drawing.Size(121, 20);
+            this.inputNumDaysHealth.TabIndex = 158;
             // 
             // ApplicationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(742, 713);
-            this.Controls.Add(this.inputAppNotes2);
+            this.Controls.Add(this.inputNumDaysHealth);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.AppDateArriveButton);
+            this.Controls.Add(this.inputAppDateArrive);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.AppDateButton);
+            this.Controls.Add(this.inputAppDate);
             this.Controls.Add(this.AppPaySanRadButton);
             this.Controls.Add(this.inputAppOtherMoney);
             this.Controls.Add(this.inputAppDebt);
@@ -743,8 +787,6 @@
             this.Controls.Add(this.inputAppCountry);
             this.Controls.Add(this.inputAppFullName);
             this.Controls.Add(this.inputAppNameOrgOrPF);
-            this.Controls.Add(this.dateTimePickerApplicationDate);
-            this.Controls.Add(this.label18);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -816,8 +858,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.DateTimePicker dateTimePickerApplicationDate;
         private System.Windows.Forms.TextBox inputAppNameOrgOrPF;
         private System.Windows.Forms.TextBox inputAppFullName;
         private System.Windows.Forms.TextBox inputAppCountry;
@@ -857,7 +897,13 @@
         private System.Windows.Forms.TextBox inputAppDebt;
         private System.Windows.Forms.TextBox inputAppOtherMoney;
         private System.Windows.Forms.Button AppPaySanRadButton;
-        private System.Windows.Forms.TextBox inputAppNotes2;
+        private System.Windows.Forms.TextBox inputAppDate;
+        private System.Windows.Forms.Button AppDateButton;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox inputAppDateArrive;
+        private System.Windows.Forms.Button AppDateArriveButton;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox inputNumDaysHealth;
 
     }
 }
