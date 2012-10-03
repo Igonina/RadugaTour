@@ -44,7 +44,7 @@
             this.MonthCalButton.Name = "MonthCalButton";
             this.MonthCalButton.Size = new System.Drawing.Size(75, 23);
             this.MonthCalButton.TabIndex = 1;
-            this.MonthCalButton.Text = "Добавить";
+            this.MonthCalButton.Text = "Ок";
             this.MonthCalButton.UseVisualStyleBackColor = true;
             this.MonthCalButton.Click += new System.EventHandler(this.MonthCalButton_Click);
             // 

@@ -86,12 +86,6 @@
     <Compile Include="ApplicationTableForm.Designer.cs">
       <DependentUpon>ApplicationTableForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ArchiveTableForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ArchiveTableForm.Designer.cs">
-      <DependentUpon>ArchiveTableForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="DocumentsForm.cs">
       <SubType>Form</SubType>
@@ -175,6 +169,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RadugaDBDataSet11.xsd</DependentUpon>
     </Compile>
+    <Compile Include="RadugaDBDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadugaDBDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RadugaDBDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadugaDBDataSet13.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RadugaDBDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -246,9 +250,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ApplicationTableForm.resx">
       <DependentUpon>ApplicationTableForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ArchiveTableForm.resx">
-      <DependentUpon>ArchiveTableForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DocumentsForm.resx">
       <DependentUpon>DocumentsForm.cs</DependentUpon>
@@ -351,6 +352,28 @@
     </None>
     <None Include="RadugaDBDataSet11.xss">
       <DependentUpon>RadugaDBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet12.xsc">
+      <DependentUpon>RadugaDBDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RadugaDBDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RadugaDBDataSet12.xss">
+      <DependentUpon>RadugaDBDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet13.xsc">
+      <DependentUpon>RadugaDBDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RadugaDBDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RadugaDBDataSet13.xss">
+      <DependentUpon>RadugaDBDataSet13.xsd</DependentUpon>
     </None>
     <None Include="RadugaDBDataSet2.xsc">
       <DependentUpon>RadugaDBDataSet2.xsd</DependentUpon>

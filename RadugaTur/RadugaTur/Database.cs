@@ -9,11 +9,11 @@ namespace RadugaTur
     static class Database
     {
         private static SqlConnection connection = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=RadugaDB;Integrated Security=True");
-        internal static void executeQuery(string query)
+        internal static SqlDataReader executeQuery(string query)
         {
             SqlCommand command = new SqlCommand(query, Database.connection);
             if (command.Connection.State != System.Data.ConnectionState.Open) command.Connection.Open();
-            command.ExecuteNonQuery();
+            return command.ExecuteReader();// NonQuery();
         }
     }
 }

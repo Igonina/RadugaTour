@@ -29,165 +29,82 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.radugaDBDataSet5 = new RadugaTur.RadugaDBDataSet5();
-            this.radugaDBDataSet7 = new RadugaTur.RadugaDBDataSet7();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.appNotesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.appPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.appCategoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.appNumChildrenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.appNumOldPeopleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.appNumPeopleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.appNumNightsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.appNumDaysDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.appEndTourDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.appStartTourDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.appWayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.appCountryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.appNameOrgOrPFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.appFullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ApplicationTabledataGridView = new System.Windows.Forms.DataGridView();
+            this.fullApplicationBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.radugaDBDataSet13 = new RadugaTur.RadugaDBDataSet13();
+            this.fullApplicationTableAdapter = new RadugaTur.RadugaDBDataSet12TableAdapters.FullApplicationTableAdapter();
+            this.fullApplicationTableAdapter1 = new RadugaTur.RadugaDBDataSet13TableAdapters.FullApplicationTableAdapter();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.appNumContractDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.appDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.applicationBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.applicationTableAdapter1 = new RadugaTur.RadugaDBDataSet7TableAdapters.ApplicationTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.applicationBindingSource1)).BeginInit();
+            this.appFullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.appNameOrgOrPFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.appCountryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.appWayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.appStartTourDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.appNumDaysDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.appNumNightsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.appNumPeopleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.appCategoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.ApplicationTabledataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet13)).BeginInit();
             this.SuspendLayout();
             // 
-            // radugaDBDataSet5
+            // ApplicationTabledataGridView
             // 
-            this.radugaDBDataSet5.DataSetName = "RadugaDBDataSet5";
-            this.radugaDBDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // radugaDBDataSet7
-            // 
-            this.radugaDBDataSet7.DataSetName = "RadugaDBDataSet7";
-            this.radugaDBDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.appDateDataGridViewTextBoxColumn,
+            this.ApplicationTabledataGridView.AutoGenerateColumns = false;
+            this.ApplicationTabledataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ApplicationTabledataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
             this.appNumContractDataGridViewTextBoxColumn,
             this.appFullNameDataGridViewTextBoxColumn,
             this.appNameOrgOrPFDataGridViewTextBoxColumn,
             this.appCountryDataGridViewTextBoxColumn,
             this.appWayDataGridViewTextBoxColumn,
             this.appStartTourDataGridViewTextBoxColumn,
-            this.appEndTourDataGridViewTextBoxColumn,
             this.appNumDaysDataGridViewTextBoxColumn,
             this.appNumNightsDataGridViewTextBoxColumn,
             this.appNumPeopleDataGridViewTextBoxColumn,
-            this.appNumOldPeopleDataGridViewTextBoxColumn,
-            this.appNumChildrenDataGridViewTextBoxColumn,
-            this.appCategoryDataGridViewTextBoxColumn,
-            this.appPhoneDataGridViewTextBoxColumn,
-            this.appNotesDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.applicationBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 13);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1353, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.appCategoryDataGridViewTextBoxColumn});
+            this.ApplicationTabledataGridView.DataSource = this.fullApplicationBindingSource1;
+            this.ApplicationTabledataGridView.Location = new System.Drawing.Point(13, 13);
+            this.ApplicationTabledataGridView.Name = "ApplicationTabledataGridView";
+            this.ApplicationTabledataGridView.Size = new System.Drawing.Size(1286, 185);
+            this.ApplicationTabledataGridView.TabIndex = 0;
+            this.ApplicationTabledataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
-            // appNotesDataGridViewTextBoxColumn
+            // fullApplicationBindingSource1
             // 
-            this.appNotesDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.appNotesDataGridViewTextBoxColumn.DataPropertyName = "AppNotes";
-            this.appNotesDataGridViewTextBoxColumn.HeaderText = "Примечание";
-            this.appNotesDataGridViewTextBoxColumn.Name = "appNotesDataGridViewTextBoxColumn";
-            this.appNotesDataGridViewTextBoxColumn.Width = 95;
+            this.fullApplicationBindingSource1.DataMember = "FullApplication";
+            this.fullApplicationBindingSource1.DataSource = this.radugaDBDataSet13;
             // 
-            // appPhoneDataGridViewTextBoxColumn
+            // radugaDBDataSet13
             // 
-            this.appPhoneDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.appPhoneDataGridViewTextBoxColumn.DataPropertyName = "AppPhone";
-            this.appPhoneDataGridViewTextBoxColumn.HeaderText = "Телефон";
-            this.appPhoneDataGridViewTextBoxColumn.Name = "appPhoneDataGridViewTextBoxColumn";
-            this.appPhoneDataGridViewTextBoxColumn.Width = 77;
+            this.radugaDBDataSet13.DataSetName = "RadugaDBDataSet13";
+            this.radugaDBDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // appCategoryDataGridViewTextBoxColumn
+            // fullApplicationTableAdapter
             // 
-            this.appCategoryDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.appCategoryDataGridViewTextBoxColumn.DataPropertyName = "AppCategory";
-            this.appCategoryDataGridViewTextBoxColumn.HeaderText = "Номер/Категория";
-            this.appCategoryDataGridViewTextBoxColumn.Name = "appCategoryDataGridViewTextBoxColumn";
-            this.appCategoryDataGridViewTextBoxColumn.Width = 124;
+            this.fullApplicationTableAdapter.ClearBeforeFill = true;
             // 
-            // appNumChildrenDataGridViewTextBoxColumn
+            // fullApplicationTableAdapter1
             // 
-            this.appNumChildrenDataGridViewTextBoxColumn.DataPropertyName = "AppNumChildren";
-            this.appNumChildrenDataGridViewTextBoxColumn.HeaderText = "Дети";
-            this.appNumChildrenDataGridViewTextBoxColumn.Name = "appNumChildrenDataGridViewTextBoxColumn";
-            this.appNumChildrenDataGridViewTextBoxColumn.Width = 50;
+            this.fullApplicationTableAdapter1.ClearBeforeFill = true;
             // 
-            // appNumOldPeopleDataGridViewTextBoxColumn
+            // Column1
             // 
-            this.appNumOldPeopleDataGridViewTextBoxColumn.DataPropertyName = "AppNumOldPeople";
-            this.appNumOldPeopleDataGridViewTextBoxColumn.HeaderText = "Взрослые";
-            this.appNumOldPeopleDataGridViewTextBoxColumn.Name = "appNumOldPeopleDataGridViewTextBoxColumn";
-            this.appNumOldPeopleDataGridViewTextBoxColumn.Width = 50;
+            this.Column1.DataPropertyName = "AppId";
+            this.Column1.HeaderText = "Номер";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
-            // appNumPeopleDataGridViewTextBoxColumn
+            // appNumContractDataGridViewTextBoxColumn
             // 
-            this.appNumPeopleDataGridViewTextBoxColumn.DataPropertyName = "AppNumPeople";
-            this.appNumPeopleDataGridViewTextBoxColumn.HeaderText = "Количество человек";
-            this.appNumPeopleDataGridViewTextBoxColumn.Name = "appNumPeopleDataGridViewTextBoxColumn";
-            this.appNumPeopleDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // appNumNightsDataGridViewTextBoxColumn
-            // 
-            this.appNumNightsDataGridViewTextBoxColumn.DataPropertyName = "AppNumNights";
-            this.appNumNightsDataGridViewTextBoxColumn.HeaderText = "Количество ночей";
-            this.appNumNightsDataGridViewTextBoxColumn.Name = "appNumNightsDataGridViewTextBoxColumn";
-            this.appNumNightsDataGridViewTextBoxColumn.Width = 80;
-            // 
-            // appNumDaysDataGridViewTextBoxColumn
-            // 
-            this.appNumDaysDataGridViewTextBoxColumn.DataPropertyName = "AppNumDays";
-            this.appNumDaysDataGridViewTextBoxColumn.HeaderText = "Количество дней";
-            this.appNumDaysDataGridViewTextBoxColumn.Name = "appNumDaysDataGridViewTextBoxColumn";
-            this.appNumDaysDataGridViewTextBoxColumn.Width = 80;
-            // 
-            // appEndTourDataGridViewTextBoxColumn
-            // 
-            this.appEndTourDataGridViewTextBoxColumn.DataPropertyName = "AppEndTour";
-            this.appEndTourDataGridViewTextBoxColumn.HeaderText = "Окончание тура";
-            this.appEndTourDataGridViewTextBoxColumn.Name = "appEndTourDataGridViewTextBoxColumn";
-            this.appEndTourDataGridViewTextBoxColumn.Width = 80;
-            // 
-            // appStartTourDataGridViewTextBoxColumn
-            // 
-            this.appStartTourDataGridViewTextBoxColumn.DataPropertyName = "AppStartTour";
-            this.appStartTourDataGridViewTextBoxColumn.HeaderText = "Начало тура";
-            this.appStartTourDataGridViewTextBoxColumn.Name = "appStartTourDataGridViewTextBoxColumn";
-            this.appStartTourDataGridViewTextBoxColumn.Width = 80;
-            // 
-            // appWayDataGridViewTextBoxColumn
-            // 
-            this.appWayDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.appWayDataGridViewTextBoxColumn.DataPropertyName = "AppWay";
-            this.appWayDataGridViewTextBoxColumn.HeaderText = "Направление";
-            this.appWayDataGridViewTextBoxColumn.Name = "appWayDataGridViewTextBoxColumn";
-            // 
-            // appCountryDataGridViewTextBoxColumn
-            // 
-            this.appCountryDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.appCountryDataGridViewTextBoxColumn.DataPropertyName = "AppCountry";
-            this.appCountryDataGridViewTextBoxColumn.HeaderText = "Страна";
-            this.appCountryDataGridViewTextBoxColumn.Name = "appCountryDataGridViewTextBoxColumn";
-            this.appCountryDataGridViewTextBoxColumn.Width = 68;
-            // 
-            // appNameOrgOrPFDataGridViewTextBoxColumn
-            // 
-            this.appNameOrgOrPFDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.appNameOrgOrPFDataGridViewTextBoxColumn.DataPropertyName = "AppNameOrgOrPF";
-            this.appNameOrgOrPFDataGridViewTextBoxColumn.HeaderText = "Организ/Частн.лицо";
-            this.appNameOrgOrPFDataGridViewTextBoxColumn.Name = "appNameOrgOrPFDataGridViewTextBoxColumn";
-            this.appNameOrgOrPFDataGridViewTextBoxColumn.Width = 138;
+            this.appNumContractDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.appNumContractDataGridViewTextBoxColumn.DataPropertyName = "AppNumContract";
+            this.appNumContractDataGridViewTextBoxColumn.HeaderText = "Номер договора";
+            this.appNumContractDataGridViewTextBoxColumn.Name = "appNumContractDataGridViewTextBoxColumn";
+            this.appNumContractDataGridViewTextBoxColumn.Width = 106;
             // 
             // appFullNameDataGridViewTextBoxColumn
             // 
@@ -197,68 +114,103 @@
             this.appFullNameDataGridViewTextBoxColumn.Name = "appFullNameDataGridViewTextBoxColumn";
             this.appFullNameDataGridViewTextBoxColumn.Width = 59;
             // 
-            // appNumContractDataGridViewTextBoxColumn
+            // appNameOrgOrPFDataGridViewTextBoxColumn
             // 
-            this.appNumContractDataGridViewTextBoxColumn.DataPropertyName = "AppNumContract";
-            this.appNumContractDataGridViewTextBoxColumn.HeaderText = "Номер договора";
-            this.appNumContractDataGridViewTextBoxColumn.Name = "appNumContractDataGridViewTextBoxColumn";
-            this.appNumContractDataGridViewTextBoxColumn.Width = 80;
+            this.appNameOrgOrPFDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.appNameOrgOrPFDataGridViewTextBoxColumn.DataPropertyName = "AppNameOrgOrPF";
+            this.appNameOrgOrPFDataGridViewTextBoxColumn.HeaderText = "Организация/Частное лицо";
+            this.appNameOrgOrPFDataGridViewTextBoxColumn.Name = "appNameOrgOrPFDataGridViewTextBoxColumn";
+            this.appNameOrgOrPFDataGridViewTextBoxColumn.Width = 159;
             // 
-            // appDateDataGridViewTextBoxColumn
+            // appCountryDataGridViewTextBoxColumn
             // 
-            this.appDateDataGridViewTextBoxColumn.DataPropertyName = "AppDate";
-            this.appDateDataGridViewTextBoxColumn.HeaderText = "Дата";
-            this.appDateDataGridViewTextBoxColumn.Name = "appDateDataGridViewTextBoxColumn";
-            this.appDateDataGridViewTextBoxColumn.Width = 80;
+            this.appCountryDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.appCountryDataGridViewTextBoxColumn.DataPropertyName = "AppCountry";
+            this.appCountryDataGridViewTextBoxColumn.HeaderText = "Страна";
+            this.appCountryDataGridViewTextBoxColumn.Name = "appCountryDataGridViewTextBoxColumn";
+            this.appCountryDataGridViewTextBoxColumn.Width = 68;
             // 
-            // applicationBindingSource1
+            // appWayDataGridViewTextBoxColumn
             // 
-            this.applicationBindingSource1.DataMember = "Application";
-            this.applicationBindingSource1.DataSource = this.radugaDBDataSet7;
+            this.appWayDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.appWayDataGridViewTextBoxColumn.DataPropertyName = "AppWay";
+            this.appWayDataGridViewTextBoxColumn.HeaderText = "Направление";
+            this.appWayDataGridViewTextBoxColumn.Name = "appWayDataGridViewTextBoxColumn";
             // 
-            // applicationTableAdapter1
+            // appStartTourDataGridViewTextBoxColumn
             // 
-            this.applicationTableAdapter1.ClearBeforeFill = true;
+            this.appStartTourDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.appStartTourDataGridViewTextBoxColumn.DataPropertyName = "AppStartTour";
+            this.appStartTourDataGridViewTextBoxColumn.HeaderText = "Начало тура";
+            this.appStartTourDataGridViewTextBoxColumn.Name = "appStartTourDataGridViewTextBoxColumn";
+            this.appStartTourDataGridViewTextBoxColumn.Width = 87;
+            // 
+            // appNumDaysDataGridViewTextBoxColumn
+            // 
+            this.appNumDaysDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.appNumDaysDataGridViewTextBoxColumn.DataPropertyName = "AppNumDays";
+            this.appNumDaysDataGridViewTextBoxColumn.HeaderText = "Количество дней";
+            this.appNumDaysDataGridViewTextBoxColumn.Name = "appNumDaysDataGridViewTextBoxColumn";
+            this.appNumDaysDataGridViewTextBoxColumn.Width = 108;
+            // 
+            // appNumNightsDataGridViewTextBoxColumn
+            // 
+            this.appNumNightsDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.appNumNightsDataGridViewTextBoxColumn.DataPropertyName = "AppNumNights";
+            this.appNumNightsDataGridViewTextBoxColumn.HeaderText = "Количество ночей";
+            this.appNumNightsDataGridViewTextBoxColumn.Name = "appNumNightsDataGridViewTextBoxColumn";
+            this.appNumNightsDataGridViewTextBoxColumn.Width = 113;
+            // 
+            // appNumPeopleDataGridViewTextBoxColumn
+            // 
+            this.appNumPeopleDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.appNumPeopleDataGridViewTextBoxColumn.DataPropertyName = "AppNumPeople";
+            this.appNumPeopleDataGridViewTextBoxColumn.HeaderText = "Количество человек";
+            this.appNumPeopleDataGridViewTextBoxColumn.Name = "appNumPeopleDataGridViewTextBoxColumn";
+            this.appNumPeopleDataGridViewTextBoxColumn.Width = 124;
+            // 
+            // appCategoryDataGridViewTextBoxColumn
+            // 
+            this.appCategoryDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.appCategoryDataGridViewTextBoxColumn.DataPropertyName = "AppCategory";
+            this.appCategoryDataGridViewTextBoxColumn.HeaderText = "Категория";
+            this.appCategoryDataGridViewTextBoxColumn.Name = "appCategoryDataGridViewTextBoxColumn";
+            this.appCategoryDataGridViewTextBoxColumn.Width = 85;
             // 
             // ApplicationTableForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 195);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1331, 195);
+            this.Controls.Add(this.ApplicationTabledataGridView);
             this.Name = "ApplicationTableForm";
             this.Text = "ApplicationTableForm";
             this.Load += new System.EventHandler(this.ApplicationTableForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.applicationBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ApplicationTabledataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet13)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private RadugaDBDataSet5 radugaDBDataSet5;
-        private RadugaDBDataSet7 radugaDBDataSet7;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn appDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridView ApplicationTabledataGridView;
+        private RadugaDBDataSet12TableAdapters.FullApplicationTableAdapter fullApplicationTableAdapter;
+        private RadugaDBDataSet13 radugaDBDataSet13;
+        private System.Windows.Forms.BindingSource fullApplicationBindingSource1;
+        private RadugaDBDataSet13TableAdapters.FullApplicationTableAdapter fullApplicationTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn appNumContractDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn appFullNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn appNameOrgOrPFDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn appCountryDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn appWayDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn appStartTourDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn appEndTourDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn appNumDaysDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn appNumNightsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn appNumPeopleDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn appNumOldPeopleDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn appNumChildrenDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn appCategoryDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn appPhoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn appNotesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource applicationBindingSource1;
-        private RadugaDBDataSet7TableAdapters.ApplicationTableAdapter applicationTableAdapter1;
+
     }
 }
