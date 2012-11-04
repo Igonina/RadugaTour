@@ -53,12 +53,22 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="MySql.Data, Version=5.2.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Office, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq">
@@ -74,6 +84,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountRadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountRadForm.Designer.cs">
+      <DependentUpon>AccountRadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountRadTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountRadTable.Designer.cs">
+      <DependentUpon>AccountRadTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSanForm.Designer.cs">
+      <DependentUpon>AccountSanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSanTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSanTable.Designer.cs">
+      <DependentUpon>AccountSanTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="ApplicationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,12 +120,42 @@
     <Compile Include="ApplicationTableForm.Designer.cs">
       <DependentUpon>ApplicationTableForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Assigning Access Rights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assigning Access Rights.Designer.cs">
+      <DependentUpon>Assigning Access Rights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cashExpTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cashExpTable.Designer.cs">
+      <DependentUpon>cashExpTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashReceiptes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashReceiptes.Designer.cs">
+      <DependentUpon>CashReceiptes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cashRecTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cashRecTable.Designer.cs">
+      <DependentUpon>cashRecTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="DocumentsForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DocumentsForm.Designer.cs">
       <DependentUpon>DocumentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpendableCashOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpendableCashOrder.Designer.cs">
+      <DependentUpon>ExpendableCashOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="FisicalFaceForm.cs">
       <SubType>Form</SubType>
@@ -179,6 +243,36 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RadugaDBDataSet13.xsd</DependentUpon>
     </Compile>
+    <Compile Include="RadugaDBDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadugaDBDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RadugaDBDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadugaDBDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RadugaDBDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadugaDBDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RadugaDBDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadugaDBDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RadugaDBDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadugaDBDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RadugaDBDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadugaDBDataSet19.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RadugaDBDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -244,6 +338,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RadugaTourDatabaseDataSet4.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AccountRadForm.resx">
+      <DependentUpon>AccountRadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountRadTable.resx">
+      <DependentUpon>AccountRadTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSanForm.resx">
+      <DependentUpon>AccountSanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSanTable.resx">
+      <DependentUpon>AccountSanTable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ApplicationForm.resx">
       <DependentUpon>ApplicationForm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -251,9 +357,24 @@
     <EmbeddedResource Include="ApplicationTableForm.resx">
       <DependentUpon>ApplicationTableForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Assigning Access Rights.resx">
+      <DependentUpon>Assigning Access Rights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cashExpTable.resx">
+      <DependentUpon>cashExpTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashReceiptes.resx">
+      <DependentUpon>CashReceiptes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cashRecTable.resx">
+      <DependentUpon>cashRecTable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DocumentsForm.resx">
       <DependentUpon>DocumentsForm.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpendableCashOrder.resx">
+      <DependentUpon>ExpendableCashOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FisicalFaceForm.resx">
       <DependentUpon>FisicalFaceForm.cs</DependentUpon>
@@ -374,6 +495,72 @@
     </None>
     <None Include="RadugaDBDataSet13.xss">
       <DependentUpon>RadugaDBDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet14.xsc">
+      <DependentUpon>RadugaDBDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RadugaDBDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RadugaDBDataSet14.xss">
+      <DependentUpon>RadugaDBDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet15.xsc">
+      <DependentUpon>RadugaDBDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RadugaDBDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RadugaDBDataSet15.xss">
+      <DependentUpon>RadugaDBDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet16.xsc">
+      <DependentUpon>RadugaDBDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RadugaDBDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RadugaDBDataSet16.xss">
+      <DependentUpon>RadugaDBDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet17.xsc">
+      <DependentUpon>RadugaDBDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RadugaDBDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RadugaDBDataSet17.xss">
+      <DependentUpon>RadugaDBDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet18.xsc">
+      <DependentUpon>RadugaDBDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RadugaDBDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RadugaDBDataSet18.xss">
+      <DependentUpon>RadugaDBDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet19.xsc">
+      <DependentUpon>RadugaDBDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RadugaDBDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RadugaDBDataSet19.xss">
+      <DependentUpon>RadugaDBDataSet19.xsd</DependentUpon>
     </None>
     <None Include="RadugaDBDataSet2.xsc">
       <DependentUpon>RadugaDBDataSet2.xsd</DependentUpon>
@@ -549,6 +736,17 @@
     <Content Include="RadugaTourDatabase.sdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Aec32BitAppServer">
+      <Guid>{E8540E22-D20E-483F-9FD5-A5A3553A7556}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

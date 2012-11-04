@@ -18,6 +18,8 @@ namespace RadugaTur
 
         private void ManagerTable_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'radugaDBDataSet16.Hashing' table. You can move, or remove it, as needed.
+            this.hashingTableAdapter.Fill(this.radugaDBDataSet16.Hashing);
             // TODO: This line of code loads data into the 'radugaDBDataSet.ManagerTable' table. You can move, or remove it, as needed.
             this.managerTableTableAdapter.Fill(this.radugaDBDataSet.ManagerTable);
             // TODO: This line of code loads data into the 'radugaTourDatabaseDataSet3.ManagerTable1' table. You can move, or remove it, as needed.

@@ -23,7 +23,8 @@ namespace RadugaTur
             
             DateTime dateTime   = this.monthCalendar2.SelectionStart;
             string date         = dateTime.Day.ToString() +"."+ dateTime.Month.ToString()+"." + dateTime.Year.ToString();
-            input.Text          = date;           
+            input.Text          = date;
+            this.Close();
         }
         TextBox input;
         

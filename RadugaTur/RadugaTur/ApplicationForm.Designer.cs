@@ -47,19 +47,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.inputAppNameOrgOrPF = new System.Windows.Forms.TextBox();
             this.inputAppFullName = new System.Windows.Forms.TextBox();
-            this.inputAppCountry = new System.Windows.Forms.TextBox();
             this.inputAppWay = new System.Windows.Forms.TextBox();
             this.inputAppPhone = new System.Windows.Forms.TextBox();
             this.inputAppStartTour = new System.Windows.Forms.TextBox();
@@ -77,20 +68,8 @@
             this.inputAppSumPay = new System.Windows.Forms.TextBox();
             this.inputAppDateSumPay = new System.Windows.Forms.TextBox();
             this.AppSumDatePay = new System.Windows.Forms.Button();
-            this.inputAppAcountNumber = new System.Windows.Forms.TextBox();
-            this.inputAppDateAccountNumber = new System.Windows.Forms.TextBox();
-            this.AppDateAccountNumberButton = new System.Windows.Forms.Button();
-            this.inputAppAccNumRaduga = new System.Windows.Forms.TextBox();
-            this.inputAppDateAcountNumRad = new System.Windows.Forms.TextBox();
-            this.AppDateAccountNumRadButton = new System.Windows.Forms.Button();
-            this.inputAppMoneyOrg = new System.Windows.Forms.TextBox();
-            this.inputAppDateMoneyOrg = new System.Windows.Forms.TextBox();
-            this.AppMoneyOrgButton = new System.Windows.Forms.Button();
-            this.inputAppPaySanRad = new System.Windows.Forms.TextBox();
-            this.inputAppDatePaySanRad = new System.Windows.Forms.TextBox();
             this.inputAppDebt = new System.Windows.Forms.TextBox();
             this.inputAppOtherMoney = new System.Windows.Forms.TextBox();
-            this.AppPaySanRadButton = new System.Windows.Forms.Button();
             this.inputAppDate = new System.Windows.Forms.TextBox();
             this.AppDateButton = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
@@ -105,11 +84,25 @@
             this.label22 = new System.Windows.Forms.Label();
             this.inputArBase = new System.Windows.Forms.TextBox();
             this.inputNumContract = new System.Windows.Forms.TextBox();
+            this.PrintButton = new System.Windows.Forms.Button();
+            this.AccountSanButton = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.AccountRadbutton = new System.Windows.Forms.Button();
+            this.ViewAccountSanButton = new System.Windows.Forms.Button();
+            this.ViewAccountRadButton = new System.Windows.Forms.Button();
+            this.inputAppCountry = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.addPettyCashReceiptes = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.addExpendableCash = new System.Windows.Forms.Button();
+            this.viewCashReceiptesButton = new System.Windows.Forms.Button();
+            this.viewCashButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SaveButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(316, 665);
+            this.SaveButton.Location = new System.Drawing.Point(195, 664);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(75, 23);
             this.SaveButton.TabIndex = 33;
@@ -279,79 +272,6 @@
             this.label6.TabIndex = 78;
             this.label6.Text = "Дата оплаты";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 457);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 26);
-            this.label7.TabIndex = 80;
-            this.label7.Text = "Номер счёта \r\nсанатория";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(502, 457);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 13);
-            this.label8.TabIndex = 82;
-            this.label8.Text = "Дата счёта";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(10, 486);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(85, 26);
-            this.label9.TabIndex = 84;
-            this.label9.Text = "Акт, счёт, \r\nпутёвка Радуги";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(473, 486);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(93, 13);
-            this.label10.TabIndex = 86;
-            this.label10.Text = "Дата акта, счёта";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(10, 556);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(118, 26);
-            this.label11.TabIndex = 88;
-            this.label11.Text = "Оплата за санаторий \r\nот Радуги";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(10, 520);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(130, 26);
-            this.label12.TabIndex = 90;
-            this.label12.Text = "Поступление денежных \r\nсредств от организации";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(466, 520);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(100, 13);
-            this.label13.TabIndex = 92;
-            this.label13.Text = "Дата поступления";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(493, 556);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(73, 13);
-            this.label14.TabIndex = 94;
-            this.label14.Text = "Дата оплаты";
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -383,13 +303,6 @@
             this.inputAppFullName.Name = "inputAppFullName";
             this.inputAppFullName.Size = new System.Drawing.Size(440, 20);
             this.inputAppFullName.TabIndex = 112;
-            // 
-            // inputAppCountry
-            // 
-            this.inputAppCountry.Location = new System.Drawing.Point(142, 163);
-            this.inputAppCountry.Name = "inputAppCountry";
-            this.inputAppCountry.Size = new System.Drawing.Size(179, 20);
-            this.inputAppCountry.TabIndex = 113;
             // 
             // inputAppWay
             // 
@@ -516,89 +429,6 @@
             this.AppSumDatePay.UseVisualStyleBackColor = true;
             this.AppSumDatePay.Click += new System.EventHandler(this.AppSumDatePay_Click);
             // 
-            // inputAppAcountNumber
-            // 
-            this.inputAppAcountNumber.Location = new System.Drawing.Point(142, 454);
-            this.inputAppAcountNumber.Name = "inputAppAcountNumber";
-            this.inputAppAcountNumber.Size = new System.Drawing.Size(105, 20);
-            this.inputAppAcountNumber.TabIndex = 136;
-            // 
-            // inputAppDateAccountNumber
-            // 
-            this.inputAppDateAccountNumber.Location = new System.Drawing.Point(584, 454);
-            this.inputAppDateAccountNumber.Name = "inputAppDateAccountNumber";
-            this.inputAppDateAccountNumber.Size = new System.Drawing.Size(121, 20);
-            this.inputAppDateAccountNumber.TabIndex = 137;
-            // 
-            // AppDateAccountNumberButton
-            // 
-            this.AppDateAccountNumberButton.Location = new System.Drawing.Point(711, 454);
-            this.AppDateAccountNumberButton.Name = "AppDateAccountNumberButton";
-            this.AppDateAccountNumberButton.Size = new System.Drawing.Size(17, 23);
-            this.AppDateAccountNumberButton.TabIndex = 138;
-            this.AppDateAccountNumberButton.UseVisualStyleBackColor = true;
-            this.AppDateAccountNumberButton.Click += new System.EventHandler(this.AppDateAccountNumberButton_Click);
-            // 
-            // inputAppAccNumRaduga
-            // 
-            this.inputAppAccNumRaduga.Location = new System.Drawing.Point(142, 486);
-            this.inputAppAccNumRaduga.Name = "inputAppAccNumRaduga";
-            this.inputAppAccNumRaduga.Size = new System.Drawing.Size(105, 20);
-            this.inputAppAccNumRaduga.TabIndex = 139;
-            // 
-            // inputAppDateAcountNumRad
-            // 
-            this.inputAppDateAcountNumRad.Location = new System.Drawing.Point(584, 483);
-            this.inputAppDateAcountNumRad.Name = "inputAppDateAcountNumRad";
-            this.inputAppDateAcountNumRad.Size = new System.Drawing.Size(121, 20);
-            this.inputAppDateAcountNumRad.TabIndex = 140;
-            // 
-            // AppDateAccountNumRadButton
-            // 
-            this.AppDateAccountNumRadButton.Location = new System.Drawing.Point(711, 481);
-            this.AppDateAccountNumRadButton.Name = "AppDateAccountNumRadButton";
-            this.AppDateAccountNumRadButton.Size = new System.Drawing.Size(17, 23);
-            this.AppDateAccountNumRadButton.TabIndex = 141;
-            this.AppDateAccountNumRadButton.UseVisualStyleBackColor = true;
-            this.AppDateAccountNumRadButton.Click += new System.EventHandler(this.AppDateAccountNumRadButton_Click);
-            // 
-            // inputAppMoneyOrg
-            // 
-            this.inputAppMoneyOrg.Location = new System.Drawing.Point(142, 517);
-            this.inputAppMoneyOrg.Name = "inputAppMoneyOrg";
-            this.inputAppMoneyOrg.Size = new System.Drawing.Size(105, 20);
-            this.inputAppMoneyOrg.TabIndex = 142;
-            // 
-            // inputAppDateMoneyOrg
-            // 
-            this.inputAppDateMoneyOrg.Location = new System.Drawing.Point(584, 517);
-            this.inputAppDateMoneyOrg.Name = "inputAppDateMoneyOrg";
-            this.inputAppDateMoneyOrg.Size = new System.Drawing.Size(121, 20);
-            this.inputAppDateMoneyOrg.TabIndex = 143;
-            // 
-            // AppMoneyOrgButton
-            // 
-            this.AppMoneyOrgButton.Location = new System.Drawing.Point(711, 517);
-            this.AppMoneyOrgButton.Name = "AppMoneyOrgButton";
-            this.AppMoneyOrgButton.Size = new System.Drawing.Size(17, 23);
-            this.AppMoneyOrgButton.TabIndex = 144;
-            this.AppMoneyOrgButton.UseVisualStyleBackColor = true;
-            this.AppMoneyOrgButton.Click += new System.EventHandler(this.AppMoneyOrgButton_Click);
-            // 
-            // inputAppPaySanRad
-            // 
-            this.inputAppPaySanRad.Location = new System.Drawing.Point(142, 551);
-            this.inputAppPaySanRad.Name = "inputAppPaySanRad";
-            this.inputAppPaySanRad.Size = new System.Drawing.Size(105, 20);
-            this.inputAppPaySanRad.TabIndex = 145;
-            // 
-            // inputAppDatePaySanRad
-            // 
-            this.inputAppDatePaySanRad.Location = new System.Drawing.Point(584, 553);
-            this.inputAppDatePaySanRad.Name = "inputAppDatePaySanRad";
-            this.inputAppDatePaySanRad.Size = new System.Drawing.Size(121, 20);
-            this.inputAppDatePaySanRad.TabIndex = 146;
-            // 
             // inputAppDebt
             // 
             this.inputAppDebt.Location = new System.Drawing.Point(142, 587);
@@ -612,15 +442,6 @@
             this.inputAppOtherMoney.Name = "inputAppOtherMoney";
             this.inputAppOtherMoney.Size = new System.Drawing.Size(121, 20);
             this.inputAppOtherMoney.TabIndex = 148;
-            // 
-            // AppPaySanRadButton
-            // 
-            this.AppPaySanRadButton.Location = new System.Drawing.Point(713, 551);
-            this.AppPaySanRadButton.Name = "AppPaySanRadButton";
-            this.AppPaySanRadButton.Size = new System.Drawing.Size(17, 23);
-            this.AppPaySanRadButton.TabIndex = 150;
-            this.AppPaySanRadButton.UseVisualStyleBackColor = true;
-            this.AppPaySanRadButton.Click += new System.EventHandler(this.AppPaySanRadButton_Click);
             // 
             // inputAppDate
             // 
@@ -735,11 +556,157 @@
             this.inputNumContract.Size = new System.Drawing.Size(137, 20);
             this.inputNumContract.TabIndex = 169;
             // 
+            // PrintButton
+            // 
+            this.PrintButton.Location = new System.Drawing.Point(343, 664);
+            this.PrintButton.Name = "PrintButton";
+            this.PrintButton.Size = new System.Drawing.Size(102, 23);
+            this.PrintButton.TabIndex = 170;
+            this.PrintButton.Text = "Сформировать";
+            this.PrintButton.UseVisualStyleBackColor = true;
+            this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
+            // 
+            // AccountSanButton
+            // 
+            this.AccountSanButton.Location = new System.Drawing.Point(142, 450);
+            this.AccountSanButton.Name = "AccountSanButton";
+            this.AccountSanButton.Size = new System.Drawing.Size(105, 23);
+            this.AccountSanButton.TabIndex = 171;
+            this.AccountSanButton.Text = "Добавить";
+            this.AccountSanButton.UseVisualStyleBackColor = true;
+            this.AccountSanButton.Click += new System.EventHandler(this.AccountSanButton_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 455);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 13);
+            this.label3.TabIndex = 172;
+            this.label3.Text = "Счёт санатория";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(10, 483);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(119, 13);
+            this.label7.TabIndex = 173;
+            this.label7.Text = "Платёжное поручение";
+            // 
+            // AccountRadbutton
+            // 
+            this.AccountRadbutton.Location = new System.Drawing.Point(142, 478);
+            this.AccountRadbutton.Name = "AccountRadbutton";
+            this.AccountRadbutton.Size = new System.Drawing.Size(105, 23);
+            this.AccountRadbutton.TabIndex = 174;
+            this.AccountRadbutton.Text = "Добавить";
+            this.AccountRadbutton.UseVisualStyleBackColor = true;
+            this.AccountRadbutton.Click += new System.EventHandler(this.AccountRadbutton_Click);
+            // 
+            // ViewAccountSanButton
+            // 
+            this.ViewAccountSanButton.Location = new System.Drawing.Point(269, 450);
+            this.ViewAccountSanButton.Name = "ViewAccountSanButton";
+            this.ViewAccountSanButton.Size = new System.Drawing.Size(105, 23);
+            this.ViewAccountSanButton.TabIndex = 175;
+            this.ViewAccountSanButton.Text = "Просмотреть";
+            this.ViewAccountSanButton.UseVisualStyleBackColor = true;
+            this.ViewAccountSanButton.Click += new System.EventHandler(this.ViewAccountSanButton_Click);
+            // 
+            // ViewAccountRadButton
+            // 
+            this.ViewAccountRadButton.Location = new System.Drawing.Point(269, 479);
+            this.ViewAccountRadButton.Name = "ViewAccountRadButton";
+            this.ViewAccountRadButton.Size = new System.Drawing.Size(105, 23);
+            this.ViewAccountRadButton.TabIndex = 176;
+            this.ViewAccountRadButton.Text = "Просмотреть";
+            this.ViewAccountRadButton.UseVisualStyleBackColor = true;
+            this.ViewAccountRadButton.Click += new System.EventHandler(this.ViewAccountRadButton_Click);
+            // 
+            // inputAppCountry
+            // 
+            this.inputAppCountry.Location = new System.Drawing.Point(142, 163);
+            this.inputAppCountry.Name = "inputAppCountry";
+            this.inputAppCountry.Size = new System.Drawing.Size(179, 20);
+            this.inputAppCountry.TabIndex = 113;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(12, 511);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(117, 26);
+            this.label8.TabIndex = 177;
+            this.label8.Text = "Приходный кассовый\r\nордер";
+            // 
+            // addPettyCashReceiptes
+            // 
+            this.addPettyCashReceiptes.Location = new System.Drawing.Point(142, 511);
+            this.addPettyCashReceiptes.Name = "addPettyCashReceiptes";
+            this.addPettyCashReceiptes.Size = new System.Drawing.Size(105, 23);
+            this.addPettyCashReceiptes.TabIndex = 178;
+            this.addPettyCashReceiptes.Text = "Добавить";
+            this.addPettyCashReceiptes.UseVisualStyleBackColor = true;
+            this.addPettyCashReceiptes.Click += new System.EventHandler(this.addPettyCashReceiptes_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 548);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(116, 26);
+            this.label9.TabIndex = 179;
+            this.label9.Text = "Расходный кассовый\r\nордер";
+            // 
+            // addExpendableCash
+            // 
+            this.addExpendableCash.Location = new System.Drawing.Point(142, 548);
+            this.addExpendableCash.Name = "addExpendableCash";
+            this.addExpendableCash.Size = new System.Drawing.Size(105, 23);
+            this.addExpendableCash.TabIndex = 180;
+            this.addExpendableCash.Text = "Добавить";
+            this.addExpendableCash.UseVisualStyleBackColor = true;
+            this.addExpendableCash.Click += new System.EventHandler(this.addExpendableCash_Click);
+            // 
+            // viewCashReceiptesButton
+            // 
+            this.viewCashReceiptesButton.Location = new System.Drawing.Point(269, 511);
+            this.viewCashReceiptesButton.Name = "viewCashReceiptesButton";
+            this.viewCashReceiptesButton.Size = new System.Drawing.Size(105, 23);
+            this.viewCashReceiptesButton.TabIndex = 181;
+            this.viewCashReceiptesButton.Text = "Просмотреть";
+            this.viewCashReceiptesButton.UseVisualStyleBackColor = true;
+            this.viewCashReceiptesButton.Click += new System.EventHandler(this.viewCashReceiptesButton_Click);
+            // 
+            // viewCashButton
+            // 
+            this.viewCashButton.Location = new System.Drawing.Point(269, 548);
+            this.viewCashButton.Name = "viewCashButton";
+            this.viewCashButton.Size = new System.Drawing.Size(105, 23);
+            this.viewCashButton.TabIndex = 182;
+            this.viewCashButton.Text = "Просмотреть";
+            this.viewCashButton.UseVisualStyleBackColor = true;
+            this.viewCashButton.Click += new System.EventHandler(this.viewCashButton_Click);
+            // 
             // ApplicationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(742, 713);
+            this.Controls.Add(this.viewCashButton);
+            this.Controls.Add(this.viewCashReceiptesButton);
+            this.Controls.Add(this.addExpendableCash);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.addPettyCashReceiptes);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.ViewAccountRadButton);
+            this.Controls.Add(this.ViewAccountSanButton);
+            this.Controls.Add(this.AccountRadbutton);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.AccountSanButton);
+            this.Controls.Add(this.PrintButton);
             this.Controls.Add(this.inputNumContract);
             this.Controls.Add(this.inputArBase);
             this.Controls.Add(this.label22);
@@ -754,20 +721,8 @@
             this.Controls.Add(this.label18);
             this.Controls.Add(this.AppDateButton);
             this.Controls.Add(this.inputAppDate);
-            this.Controls.Add(this.AppPaySanRadButton);
             this.Controls.Add(this.inputAppOtherMoney);
             this.Controls.Add(this.inputAppDebt);
-            this.Controls.Add(this.inputAppDatePaySanRad);
-            this.Controls.Add(this.inputAppPaySanRad);
-            this.Controls.Add(this.AppMoneyOrgButton);
-            this.Controls.Add(this.inputAppDateMoneyOrg);
-            this.Controls.Add(this.inputAppMoneyOrg);
-            this.Controls.Add(this.AppDateAccountNumRadButton);
-            this.Controls.Add(this.inputAppDateAcountNumRad);
-            this.Controls.Add(this.inputAppAccNumRaduga);
-            this.Controls.Add(this.AppDateAccountNumberButton);
-            this.Controls.Add(this.inputAppDateAccountNumber);
-            this.Controls.Add(this.inputAppAcountNumber);
             this.Controls.Add(this.AppSumDatePay);
             this.Controls.Add(this.inputAppDateSumPay);
             this.Controls.Add(this.inputAppSumPay);
@@ -790,14 +745,6 @@
             this.Controls.Add(this.inputAppNameOrgOrPF);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -845,19 +792,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox inputAppNameOrgOrPF;
         private System.Windows.Forms.TextBox inputAppFullName;
-        private System.Windows.Forms.TextBox inputAppCountry;
         private System.Windows.Forms.TextBox inputAppWay;
         private System.Windows.Forms.TextBox inputAppPhone;
         private System.Windows.Forms.TextBox inputAppStartTour;
@@ -875,20 +813,8 @@
         private System.Windows.Forms.TextBox inputAppSumPay;
         private System.Windows.Forms.TextBox inputAppDateSumPay;
         private System.Windows.Forms.Button AppSumDatePay;
-        private System.Windows.Forms.TextBox inputAppAcountNumber;
-        private System.Windows.Forms.TextBox inputAppDateAccountNumber;
-        private System.Windows.Forms.Button AppDateAccountNumberButton;
-        private System.Windows.Forms.TextBox inputAppAccNumRaduga;
-        private System.Windows.Forms.TextBox inputAppDateAcountNumRad;
-        private System.Windows.Forms.Button AppDateAccountNumRadButton;
-        private System.Windows.Forms.TextBox inputAppMoneyOrg;
-        private System.Windows.Forms.TextBox inputAppDateMoneyOrg;
-        private System.Windows.Forms.Button AppMoneyOrgButton;
-        private System.Windows.Forms.TextBox inputAppPaySanRad;
-        private System.Windows.Forms.TextBox inputAppDatePaySanRad;
         private System.Windows.Forms.TextBox inputAppDebt;
         private System.Windows.Forms.TextBox inputAppOtherMoney;
-        private System.Windows.Forms.Button AppPaySanRadButton;
         private System.Windows.Forms.TextBox inputAppDate;
         private System.Windows.Forms.Button AppDateButton;
         private System.Windows.Forms.Label label18;
@@ -903,6 +829,20 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox inputArBase;
         private System.Windows.Forms.TextBox inputNumContract;
+        private System.Windows.Forms.Button PrintButton;
+        private System.Windows.Forms.Button AccountSanButton;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button AccountRadbutton;
+        private System.Windows.Forms.Button ViewAccountSanButton;
+        private System.Windows.Forms.Button ViewAccountRadButton;
+        private System.Windows.Forms.TextBox inputAppCountry;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button addPettyCashReceiptes;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button addExpendableCash;
+        private System.Windows.Forms.Button viewCashReceiptesButton;
+        private System.Windows.Forms.Button viewCashButton;
 
     }
 }

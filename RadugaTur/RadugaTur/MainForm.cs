@@ -109,6 +109,38 @@ namespace RadugaTur
             appTableForm.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AssigningAccessRights assAccessRights = new AssigningAccessRights();
+            assAccessRights.Show();
+        }
+
+        private void outputDateTime_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void outputLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void outputProfile_Click(object sender, EventArgs e)
+        {
+
+        }
+        internal void fillData(string hashName, string hashLogin)
+        {
+            this.outputProfile.Text = hashName;
+            this.outputLogin.Text = hashLogin;
+        }
+            
+          
         
     }
 }

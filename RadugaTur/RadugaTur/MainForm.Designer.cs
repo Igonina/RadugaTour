@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApplicationJunkClass));
             this.Lable1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.CreateApplication = new System.Windows.Forms.Button();
             this.ShowPhisFace = new System.Windows.Forms.Button();
             this.ShowJuriFace = new System.Windows.Forms.Button();
@@ -41,24 +40,23 @@
             this.LookAtApplications = new System.Windows.Forms.Button();
             this.outputProfile = new System.Windows.Forms.Label();
             this.outputLogin = new System.Windows.Forms.Label();
-            this.outputDateTime = new System.Windows.Forms.Label();
-            this.AddManagerButton = new System.Windows.Forms.Button();
             this.radugaTourDatabaseDataSet1 = new RadugaTur.RadugaTourDatabaseDataSet1();
             this.managerTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.managerTable1TableAdapter = new RadugaTur.RadugaTourDatabaseDataSet1TableAdapters.ManagerTable1TableAdapter();
             this.LookAtManagersbutton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.managerTable1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Lable1
             // 
             this.Lable1.AutoSize = true;
-            this.Lable1.Location = new System.Drawing.Point(21, 9);
+            this.Lable1.BackColor = System.Drawing.Color.LightSalmon;
+            this.Lable1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Lable1.Location = new System.Drawing.Point(615, 167);
             this.Lable1.Name = "Lable1";
-            this.Lable1.Size = new System.Drawing.Size(53, 13);
+            this.Lable1.Size = new System.Drawing.Size(89, 20);
             this.Lable1.TabIndex = 0;
             this.Lable1.Text = "Профиль";
             this.Lable1.Click += new System.EventHandler(this.label1_Click_3);
@@ -66,127 +64,125 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 70);
+            this.label1.BackColor = System.Drawing.Color.LightSalmon;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(1060, 167);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.Size = new System.Drawing.Size(60, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Логин";
             this.label1.Click += new System.EventHandler(this.label1_Click_4);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 97);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Вход выполнен";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 164);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Действия";
-            // 
             // CreateApplication
             // 
-            this.CreateApplication.Location = new System.Drawing.Point(24, 197);
+            this.CreateApplication.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.CreateApplication.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CreateApplication.BackgroundImage")));
+            this.CreateApplication.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CreateApplication.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CreateApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CreateApplication.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.CreateApplication.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CreateApplication.Location = new System.Drawing.Point(83, 210);
             this.CreateApplication.Name = "CreateApplication";
-            this.CreateApplication.Size = new System.Drawing.Size(172, 23);
+            this.CreateApplication.Size = new System.Drawing.Size(139, 36);
             this.CreateApplication.TabIndex = 7;
             this.CreateApplication.Text = "Создать заявку";
-            this.CreateApplication.UseVisualStyleBackColor = true;
+            this.CreateApplication.UseVisualStyleBackColor = false;
             this.CreateApplication.Click += new System.EventHandler(this.CreateApplication_Click);
             // 
             // ShowPhisFace
             // 
-            this.ShowPhisFace.Location = new System.Drawing.Point(24, 339);
+            this.ShowPhisFace.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ShowPhisFace.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ShowPhisFace.BackgroundImage")));
+            this.ShowPhisFace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ShowPhisFace.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ShowPhisFace.Location = new System.Drawing.Point(518, 210);
             this.ShowPhisFace.Name = "ShowPhisFace";
-            this.ShowPhisFace.Size = new System.Drawing.Size(172, 23);
+            this.ShowPhisFace.Size = new System.Drawing.Size(139, 36);
             this.ShowPhisFace.TabIndex = 8;
             this.ShowPhisFace.Text = "Показать физические лица";
-            this.ShowPhisFace.UseVisualStyleBackColor = true;
+            this.ShowPhisFace.UseVisualStyleBackColor = false;
             this.ShowPhisFace.Click += new System.EventHandler(this.ShowPhisFace_Click);
             // 
             // ShowJuriFace
             // 
-            this.ShowJuriFace.Location = new System.Drawing.Point(24, 310);
+            this.ShowJuriFace.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ShowJuriFace.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ShowJuriFace.BackgroundImage")));
+            this.ShowJuriFace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ShowJuriFace.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ShowJuriFace.Location = new System.Drawing.Point(808, 210);
             this.ShowJuriFace.Name = "ShowJuriFace";
-            this.ShowJuriFace.Size = new System.Drawing.Size(172, 23);
+            this.ShowJuriFace.Size = new System.Drawing.Size(139, 36);
             this.ShowJuriFace.TabIndex = 9;
             this.ShowJuriFace.Text = "Показать юридические лица";
-            this.ShowJuriFace.UseVisualStyleBackColor = true;
+            this.ShowJuriFace.UseVisualStyleBackColor = false;
             this.ShowJuriFace.Click += new System.EventHandler(this.ShowJuriFace_Click);
             // 
             // AddPhisFace
             // 
-            this.AddPhisFace.Location = new System.Drawing.Point(24, 281);
+            this.AddPhisFace.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AddPhisFace.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddPhisFace.BackgroundImage")));
+            this.AddPhisFace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AddPhisFace.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AddPhisFace.Location = new System.Drawing.Point(373, 210);
             this.AddPhisFace.Name = "AddPhisFace";
-            this.AddPhisFace.Size = new System.Drawing.Size(172, 23);
+            this.AddPhisFace.Size = new System.Drawing.Size(139, 36);
             this.AddPhisFace.TabIndex = 10;
             this.AddPhisFace.Text = "Добавить физическое лицо";
-            this.AddPhisFace.UseVisualStyleBackColor = true;
+            this.AddPhisFace.UseVisualStyleBackColor = false;
             this.AddPhisFace.Click += new System.EventHandler(this.AddPhisFace_Click);
             // 
             // AddJuriFace
             // 
-            this.AddJuriFace.Location = new System.Drawing.Point(24, 252);
+            this.AddJuriFace.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AddJuriFace.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddJuriFace.BackgroundImage")));
+            this.AddJuriFace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AddJuriFace.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AddJuriFace.Location = new System.Drawing.Point(663, 210);
             this.AddJuriFace.Name = "AddJuriFace";
-            this.AddJuriFace.Size = new System.Drawing.Size(172, 23);
+            this.AddJuriFace.Size = new System.Drawing.Size(139, 36);
             this.AddJuriFace.TabIndex = 11;
             this.AddJuriFace.Text = "Добавить юридическое лицо";
-            this.AddJuriFace.UseVisualStyleBackColor = true;
+            this.AddJuriFace.UseVisualStyleBackColor = false;
             this.AddJuriFace.Click += new System.EventHandler(this.AddJuriFace_Click);
             // 
             // LookAtApplications
             // 
-            this.LookAtApplications.Location = new System.Drawing.Point(24, 223);
+            this.LookAtApplications.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LookAtApplications.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LookAtApplications.BackgroundImage")));
+            this.LookAtApplications.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LookAtApplications.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LookAtApplications.Location = new System.Drawing.Point(228, 210);
             this.LookAtApplications.Name = "LookAtApplications";
-            this.LookAtApplications.Size = new System.Drawing.Size(172, 23);
+            this.LookAtApplications.Size = new System.Drawing.Size(139, 36);
             this.LookAtApplications.TabIndex = 12;
             this.LookAtApplications.Text = "Просмотреть заявки";
-            this.LookAtApplications.UseVisualStyleBackColor = true;
+            this.LookAtApplications.UseVisualStyleBackColor = false;
             this.LookAtApplications.Click += new System.EventHandler(this.LookAtApplications_Click);
             // 
             // outputProfile
             // 
             this.outputProfile.AutoSize = true;
-            this.outputProfile.Location = new System.Drawing.Point(24, 37);
+            this.outputProfile.BackColor = System.Drawing.Color.LightSalmon;
+            this.outputProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.outputProfile.Location = new System.Drawing.Point(710, 167);
             this.outputProfile.Name = "outputProfile";
-            this.outputProfile.Size = new System.Drawing.Size(35, 13);
+            this.outputProfile.Size = new System.Drawing.Size(306, 20);
             this.outputProfile.TabIndex = 14;
-            this.outputProfile.Text = "label4";
+            this.outputProfile.Text = "Светлякова Анастачия Владимировна";
+            this.outputProfile.Click += new System.EventHandler(this.outputProfile_Click);
             // 
             // outputLogin
             // 
             this.outputLogin.AutoSize = true;
-            this.outputLogin.Location = new System.Drawing.Point(89, 70);
+            this.outputLogin.BackColor = System.Drawing.Color.LightSalmon;
+            this.outputLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.outputLogin.Location = new System.Drawing.Point(1126, 167);
             this.outputLogin.Name = "outputLogin";
-            this.outputLogin.Size = new System.Drawing.Size(35, 13);
+            this.outputLogin.Size = new System.Drawing.Size(94, 20);
             this.outputLogin.TabIndex = 15;
-            this.outputLogin.Text = "label5";
-            // 
-            // outputDateTime
-            // 
-            this.outputDateTime.AutoSize = true;
-            this.outputDateTime.Location = new System.Drawing.Point(127, 97);
-            this.outputDateTime.Name = "outputDateTime";
-            this.outputDateTime.Size = new System.Drawing.Size(35, 13);
-            this.outputDateTime.TabIndex = 16;
-            this.outputDateTime.Text = "label6";
-            // 
-            // AddManagerButton
-            // 
-            this.AddManagerButton.Location = new System.Drawing.Point(24, 368);
-            this.AddManagerButton.Name = "AddManagerButton";
-            this.AddManagerButton.Size = new System.Drawing.Size(172, 23);
-            this.AddManagerButton.TabIndex = 17;
-            this.AddManagerButton.Text = "Добавить менеджера";
-            this.AddManagerButton.UseVisualStyleBackColor = true;
-            this.AddManagerButton.Click += new System.EventHandler(this.AddManagerButton_Click);
+            this.outputLogin.Text = "Svetlyachok";
+            this.outputLogin.Click += new System.EventHandler(this.outputLogin_Click);
             // 
             // radugaTourDatabaseDataSet1
             // 
@@ -204,51 +200,59 @@
             // 
             // LookAtManagersbutton
             // 
-            this.LookAtManagersbutton.Location = new System.Drawing.Point(24, 397);
+            this.LookAtManagersbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LookAtManagersbutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LookAtManagersbutton.BackgroundImage")));
+            this.LookAtManagersbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LookAtManagersbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LookAtManagersbutton.Location = new System.Drawing.Point(1098, 208);
             this.LookAtManagersbutton.Name = "LookAtManagersbutton";
-            this.LookAtManagersbutton.Size = new System.Drawing.Size(172, 23);
+            this.LookAtManagersbutton.Size = new System.Drawing.Size(139, 37);
             this.LookAtManagersbutton.TabIndex = 18;
             this.LookAtManagersbutton.Text = "Показать менеджеров";
-            this.LookAtManagersbutton.UseVisualStyleBackColor = true;
+            this.LookAtManagersbutton.UseVisualStyleBackColor = false;
             this.LookAtManagersbutton.Click += new System.EventHandler(this.LookAtManagersbutton_Click);
             // 
-            // pictureBox1
+            // button1
             // 
-            this.pictureBox1.Image = global::RadugaTur.Properties.Resources.Главная_картинка;
-            this.pictureBox1.Location = new System.Drawing.Point(440, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(294, 101);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(953, 210);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(139, 35);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Назначить права доступа";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ApplicationJunkClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(746, 443);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1362, 657);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.LookAtManagersbutton);
-            this.Controls.Add(this.AddManagerButton);
-            this.Controls.Add(this.outputDateTime);
             this.Controls.Add(this.outputLogin);
             this.Controls.Add(this.outputProfile);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LookAtApplications);
             this.Controls.Add(this.AddJuriFace);
             this.Controls.Add(this.AddPhisFace);
             this.Controls.Add(this.ShowJuriFace);
             this.Controls.Add(this.ShowPhisFace);
             this.Controls.Add(this.CreateApplication);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Lable1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "ApplicationJunkClass";
             this.Text = "Домашняя страница";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ApplicationJunkClass_Load);
             ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.managerTable1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,23 +262,19 @@
 
         private System.Windows.Forms.Label Lable1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button CreateApplication;
         private System.Windows.Forms.Button ShowPhisFace;
         private System.Windows.Forms.Button ShowJuriFace;
         private System.Windows.Forms.Button AddPhisFace;
         private System.Windows.Forms.Button AddJuriFace;
         private System.Windows.Forms.Button LookAtApplications;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label outputProfile;
         private System.Windows.Forms.Label outputLogin;
-        private System.Windows.Forms.Label outputDateTime;
-        private System.Windows.Forms.Button AddManagerButton;
         private RadugaTourDatabaseDataSet1 radugaTourDatabaseDataSet1;
         private System.Windows.Forms.BindingSource managerTable1BindingSource;
         private RadugaTourDatabaseDataSet1TableAdapters.ManagerTable1TableAdapter managerTable1TableAdapter;
         private System.Windows.Forms.Button LookAtManagersbutton;
+        private System.Windows.Forms.Button button1;
 
     }
 }

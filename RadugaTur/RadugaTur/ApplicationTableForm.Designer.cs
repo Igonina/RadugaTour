@@ -52,7 +52,13 @@
             // 
             // ApplicationTabledataGridView
             // 
+            this.ApplicationTabledataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.ApplicationTabledataGridView.AutoGenerateColumns = false;
+            this.ApplicationTabledataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.ApplicationTabledataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.ApplicationTabledataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.ApplicationTabledataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ApplicationTabledataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -67,9 +73,11 @@
             this.appNumPeopleDataGridViewTextBoxColumn,
             this.appCategoryDataGridViewTextBoxColumn});
             this.ApplicationTabledataGridView.DataSource = this.fullApplicationBindingSource1;
+            this.ApplicationTabledataGridView.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ApplicationTabledataGridView.Location = new System.Drawing.Point(13, 13);
             this.ApplicationTabledataGridView.Name = "ApplicationTabledataGridView";
-            this.ApplicationTabledataGridView.Size = new System.Drawing.Size(1286, 185);
+            this.ApplicationTabledataGridView.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ApplicationTabledataGridView.Size = new System.Drawing.Size(1286, 352);
             this.ApplicationTabledataGridView.TabIndex = 0;
             this.ApplicationTabledataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
@@ -97,6 +105,7 @@
             this.Column1.HeaderText = "Номер";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
+            this.Column1.Width = 66;
             // 
             // appNumContractDataGridViewTextBoxColumn
             // 
@@ -181,10 +190,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1331, 195);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1331, 360);
             this.Controls.Add(this.ApplicationTabledataGridView);
             this.Name = "ApplicationTableForm";
-            this.Text = "ApplicationTableForm";
+            this.Text = "Заявки";
             this.Load += new System.EventHandler(this.ApplicationTableForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ApplicationTabledataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource1)).EndInit();
