@@ -35,28 +35,28 @@
             this.radugaTourDatabaseDataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.managerTable1TableAdapter = new RadugaTur.RadugaTourDatabaseDataSet1TableAdapters.ManagerTable1TableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.hashNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hashPositionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hashingBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.radugaDBDataSet16 = new RadugaTur.RadugaDBDataSet16();
             this.managerTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.radugaDBDataSet = new RadugaTur.RadugaDBDataSet();
             this.managerTable1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.radugaTourDatabaseDataSet3 = new RadugaTur.RadugaTourDatabaseDataSet3();
             this.managerTable1TableAdapter1 = new RadugaTur.RadugaTourDatabaseDataSet3TableAdapters.ManagerTable1TableAdapter();
             this.managerTableTableAdapter = new RadugaTur.RadugaDBDataSetTableAdapters.ManagerTableTableAdapter();
-            this.radugaDBDataSet16 = new RadugaTur.RadugaDBDataSet16();
-            this.hashingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hashingTableAdapter = new RadugaTur.RadugaDBDataSet16TableAdapters.HashingTableAdapter();
-            this.hashNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hashPositionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.managerTable1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hashingBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.managerTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.managerTable1BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hashingBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // managerTable1BindingSource
@@ -85,7 +85,11 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.hashNameDataGridViewTextBoxColumn,
@@ -93,8 +97,35 @@
             this.dataGridView1.DataSource = this.hashingBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(556, 150);
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(556, 182);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // hashNameDataGridViewTextBoxColumn
+            // 
+            this.hashNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.hashNameDataGridViewTextBoxColumn.DataPropertyName = "hashName";
+            this.hashNameDataGridViewTextBoxColumn.HeaderText = "ФИО";
+            this.hashNameDataGridViewTextBoxColumn.Name = "hashNameDataGridViewTextBoxColumn";
+            this.hashNameDataGridViewTextBoxColumn.Width = 59;
+            // 
+            // hashPositionDataGridViewTextBoxColumn
+            // 
+            this.hashPositionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.hashPositionDataGridViewTextBoxColumn.DataPropertyName = "hashPosition";
+            this.hashPositionDataGridViewTextBoxColumn.HeaderText = "Должность";
+            this.hashPositionDataGridViewTextBoxColumn.Name = "hashPositionDataGridViewTextBoxColumn";
+            this.hashPositionDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // hashingBindingSource
+            // 
+            this.hashingBindingSource.DataMember = "Hashing";
+            this.hashingBindingSource.DataSource = this.radugaDBDataSet16;
+            // 
+            // radugaDBDataSet16
+            // 
+            this.radugaDBDataSet16.DataSetName = "RadugaDBDataSet16";
+            this.radugaDBDataSet16.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // managerTableBindingSource
             // 
@@ -124,35 +155,9 @@
             // 
             this.managerTableTableAdapter.ClearBeforeFill = true;
             // 
-            // radugaDBDataSet16
-            // 
-            this.radugaDBDataSet16.DataSetName = "RadugaDBDataSet16";
-            this.radugaDBDataSet16.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // hashingBindingSource
-            // 
-            this.hashingBindingSource.DataMember = "Hashing";
-            this.hashingBindingSource.DataSource = this.radugaDBDataSet16;
-            // 
             // hashingTableAdapter
             // 
             this.hashingTableAdapter.ClearBeforeFill = true;
-            // 
-            // hashNameDataGridViewTextBoxColumn
-            // 
-            this.hashNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.hashNameDataGridViewTextBoxColumn.DataPropertyName = "hashName";
-            this.hashNameDataGridViewTextBoxColumn.HeaderText = "ФИО";
-            this.hashNameDataGridViewTextBoxColumn.Name = "hashNameDataGridViewTextBoxColumn";
-            this.hashNameDataGridViewTextBoxColumn.Width = 59;
-            // 
-            // hashPositionDataGridViewTextBoxColumn
-            // 
-            this.hashPositionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.hashPositionDataGridViewTextBoxColumn.DataPropertyName = "hashPosition";
-            this.hashPositionDataGridViewTextBoxColumn.HeaderText = "Должность";
-            this.hashPositionDataGridViewTextBoxColumn.Name = "hashPositionDataGridViewTextBoxColumn";
-            this.hashPositionDataGridViewTextBoxColumn.Width = 90;
             // 
             // ManagerFormTable
             // 
@@ -160,6 +165,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(580, 199);
             this.Controls.Add(this.dataGridView1);
+            this.MinimumSize = new System.Drawing.Size(500, 200);
             this.Name = "ManagerFormTable";
             this.Text = "Менеджеры";
             this.Load += new System.EventHandler(this.ManagerTable_Load);
@@ -168,12 +174,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hashingBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.managerTableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.managerTable1BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hashingBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -59,6 +59,8 @@
     <Reference Include="Microsoft.Office.Interop.Word, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data, Version=5.2.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="Office, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -84,30 +86,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountRadForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AccountRadForm.Designer.cs">
-      <DependentUpon>AccountRadForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AccountRadTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AccountRadTable.Designer.cs">
-      <DependentUpon>AccountRadTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AccountSanForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AccountSanForm.Designer.cs">
-      <DependentUpon>AccountSanForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AccountSanTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AccountSanTable.Designer.cs">
-      <DependentUpon>AccountSanTable.cs</DependentUpon>
-    </Compile>
     <Compile Include="ApplicationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,36 +104,12 @@
     <Compile Include="Assigning Access Rights.Designer.cs">
       <DependentUpon>Assigning Access Rights.cs</DependentUpon>
     </Compile>
-    <Compile Include="cashExpTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="cashExpTable.Designer.cs">
-      <DependentUpon>cashExpTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CashReceiptes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CashReceiptes.Designer.cs">
-      <DependentUpon>CashReceiptes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="cashRecTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="cashRecTable.Designer.cs">
-      <DependentUpon>cashRecTable.cs</DependentUpon>
-    </Compile>
     <Compile Include="Database.cs" />
-    <Compile Include="DocumentsForm.cs">
+    <Compile Include="Documents.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DocumentsForm.Designer.cs">
-      <DependentUpon>DocumentsForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ExpendableCashOrder.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ExpendableCashOrder.Designer.cs">
-      <DependentUpon>ExpendableCashOrder.cs</DependentUpon>
+    <Compile Include="Documents.Designer.cs">
+      <DependentUpon>Documents.cs</DependentUpon>
     </Compile>
     <Compile Include="FisicalFaceForm.cs">
       <SubType>Form</SubType>
@@ -278,6 +232,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RadugaDBDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="RadugaDBDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadugaDBDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RadugaDBDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadugaDBDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RadugaDBDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadugaDBDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RadugaDBDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadugaDBDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RadugaDBDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadugaDBDataSet24.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RadugaDBDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -338,18 +317,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RadugaTourDatabaseDataSet4.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AccountRadForm.resx">
-      <DependentUpon>AccountRadForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AccountRadTable.resx">
-      <DependentUpon>AccountRadTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AccountSanForm.resx">
-      <DependentUpon>AccountSanForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AccountSanTable.resx">
-      <DependentUpon>AccountSanTable.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ApplicationForm.resx">
       <DependentUpon>ApplicationForm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -360,21 +327,8 @@
     <EmbeddedResource Include="Assigning Access Rights.resx">
       <DependentUpon>Assigning Access Rights.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="cashExpTable.resx">
-      <DependentUpon>cashExpTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CashReceiptes.resx">
-      <DependentUpon>CashReceiptes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="cashRecTable.resx">
-      <DependentUpon>cashRecTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DocumentsForm.resx">
-      <DependentUpon>DocumentsForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ExpendableCashOrder.resx">
-      <DependentUpon>ExpendableCashOrder.cs</DependentUpon>
+    <EmbeddedResource Include="Documents.resx">
+      <DependentUpon>Documents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FisicalFaceForm.resx">
       <DependentUpon>FisicalFaceForm.cs</DependentUpon>
@@ -572,6 +526,61 @@
     </None>
     <None Include="RadugaDBDataSet2.xss">
       <DependentUpon>RadugaDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet20.xsc">
+      <DependentUpon>RadugaDBDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RadugaDBDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RadugaDBDataSet20.xss">
+      <DependentUpon>RadugaDBDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet21.xsc">
+      <DependentUpon>RadugaDBDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RadugaDBDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RadugaDBDataSet21.xss">
+      <DependentUpon>RadugaDBDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet22.xsc">
+      <DependentUpon>RadugaDBDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RadugaDBDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RadugaDBDataSet22.xss">
+      <DependentUpon>RadugaDBDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet23.xsc">
+      <DependentUpon>RadugaDBDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RadugaDBDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RadugaDBDataSet23.xss">
+      <DependentUpon>RadugaDBDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet24.xsc">
+      <DependentUpon>RadugaDBDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RadugaDBDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RadugaDBDataSet24.xss">
+      <DependentUpon>RadugaDBDataSet24.xsd</DependentUpon>
     </None>
     <None Include="RadugaDBDataSet3.xsc">
       <DependentUpon>RadugaDBDataSet3.xsd</DependentUpon>

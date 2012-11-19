@@ -30,10 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.ApplicationTabledataGridView = new System.Windows.Forms.DataGridView();
-            this.fullApplicationBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.radugaDBDataSet13 = new RadugaTur.RadugaDBDataSet13();
-            this.fullApplicationTableAdapter = new RadugaTur.RadugaDBDataSet12TableAdapters.FullApplicationTableAdapter();
-            this.fullApplicationTableAdapter1 = new RadugaTur.RadugaDBDataSet13TableAdapters.FullApplicationTableAdapter();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.appNumContractDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.appFullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,7 +41,24 @@
             this.appNumNightsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.appNumPeopleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.appCategoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fullApplicationBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.radugaDBDataSet24 = new RadugaTur.RadugaDBDataSet24();
+            this.fullApplicationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.radugaDBDataSet23 = new RadugaTur.RadugaDBDataSet23();
+            this.fullApplicationBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.radugaDBDataSet13 = new RadugaTur.RadugaDBDataSet13();
+            this.fullApplicationTableAdapter = new RadugaTur.RadugaDBDataSet12TableAdapters.FullApplicationTableAdapter();
+            this.fullApplicationTableAdapter1 = new RadugaTur.RadugaDBDataSet13TableAdapters.FullApplicationTableAdapter();
+            this.fullApplicationTableAdapter2 = new RadugaTur.RadugaDBDataSet23TableAdapters.FullApplicationTableAdapter();
+            this.addApplicationButton = new System.Windows.Forms.Button();
+            this.changeApplicationButton = new System.Windows.Forms.Button();
+            this.cancelApplicationButton = new System.Windows.Forms.Button();
+            this.fullApplicationTableAdapter3 = new RadugaTur.RadugaDBDataSet24TableAdapters.FullApplicationTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.ApplicationTabledataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet13)).BeginInit();
             this.SuspendLayout();
@@ -72,32 +85,16 @@
             this.appNumNightsDataGridViewTextBoxColumn,
             this.appNumPeopleDataGridViewTextBoxColumn,
             this.appCategoryDataGridViewTextBoxColumn});
-            this.ApplicationTabledataGridView.DataSource = this.fullApplicationBindingSource1;
+            this.ApplicationTabledataGridView.DataSource = this.fullApplicationBindingSource2;
             this.ApplicationTabledataGridView.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ApplicationTabledataGridView.Location = new System.Drawing.Point(13, 13);
             this.ApplicationTabledataGridView.Name = "ApplicationTabledataGridView";
             this.ApplicationTabledataGridView.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ApplicationTabledataGridView.Size = new System.Drawing.Size(1286, 352);
+            this.ApplicationTabledataGridView.RowHeadersVisible = false;
+            this.ApplicationTabledataGridView.Size = new System.Drawing.Size(1286, 311);
             this.ApplicationTabledataGridView.TabIndex = 0;
+            
             this.ApplicationTabledataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
-            // 
-            // fullApplicationBindingSource1
-            // 
-            this.fullApplicationBindingSource1.DataMember = "FullApplication";
-            this.fullApplicationBindingSource1.DataSource = this.radugaDBDataSet13;
-            // 
-            // radugaDBDataSet13
-            // 
-            this.radugaDBDataSet13.DataSetName = "RadugaDBDataSet13";
-            this.radugaDBDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // fullApplicationTableAdapter
-            // 
-            this.fullApplicationTableAdapter.ClearBeforeFill = true;
-            // 
-            // fullApplicationTableAdapter1
-            // 
-            this.fullApplicationTableAdapter1.ClearBeforeFill = true;
             // 
             // Column1
             // 
@@ -186,17 +183,104 @@
             this.appCategoryDataGridViewTextBoxColumn.Name = "appCategoryDataGridViewTextBoxColumn";
             this.appCategoryDataGridViewTextBoxColumn.Width = 85;
             // 
+            // fullApplicationBindingSource2
+            // 
+            this.fullApplicationBindingSource2.DataMember = "FullApplication";
+            this.fullApplicationBindingSource2.DataSource = this.radugaDBDataSet24;
+            // 
+            // radugaDBDataSet24
+            // 
+            this.radugaDBDataSet24.DataSetName = "RadugaDBDataSet24";
+            this.radugaDBDataSet24.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // fullApplicationBindingSource
+            // 
+            this.fullApplicationBindingSource.DataMember = "FullApplication";
+            this.fullApplicationBindingSource.DataSource = this.radugaDBDataSet23;
+            // 
+            // radugaDBDataSet23
+            // 
+            this.radugaDBDataSet23.DataSetName = "RadugaDBDataSet23";
+            this.radugaDBDataSet23.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // fullApplicationBindingSource1
+            // 
+            this.fullApplicationBindingSource1.DataMember = "FullApplication";
+            this.fullApplicationBindingSource1.DataSource = this.radugaDBDataSet13;
+            // 
+            // radugaDBDataSet13
+            // 
+            this.radugaDBDataSet13.DataSetName = "RadugaDBDataSet13";
+            this.radugaDBDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // fullApplicationTableAdapter
+            // 
+            this.fullApplicationTableAdapter.ClearBeforeFill = true;
+            // 
+            // fullApplicationTableAdapter1
+            // 
+            this.fullApplicationTableAdapter1.ClearBeforeFill = true;
+            // 
+            // fullApplicationTableAdapter2
+            // 
+            this.fullApplicationTableAdapter2.ClearBeforeFill = true;
+            // 
+            // addApplicationButton
+            // 
+            this.addApplicationButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.addApplicationButton.Location = new System.Drawing.Point(371, 330);
+            this.addApplicationButton.Name = "addApplicationButton";
+            this.addApplicationButton.Size = new System.Drawing.Size(116, 23);
+            this.addApplicationButton.TabIndex = 1;
+            this.addApplicationButton.Text = "Добавить";
+            this.addApplicationButton.UseVisualStyleBackColor = true;
+            this.addApplicationButton.Click += new System.EventHandler(this.addApplicationButton_Click);
+            // 
+            // changeApplicationButton
+            // 
+            this.changeApplicationButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.changeApplicationButton.Location = new System.Drawing.Point(538, 330);
+            this.changeApplicationButton.Name = "changeApplicationButton";
+            this.changeApplicationButton.Size = new System.Drawing.Size(116, 23);
+            this.changeApplicationButton.TabIndex = 2;
+            this.changeApplicationButton.Text = "Изменить";
+            this.changeApplicationButton.UseVisualStyleBackColor = true;
+            this.changeApplicationButton.Click += new System.EventHandler(this.changeApplicationButton_Click);
+            // 
+            // cancelApplicationButton
+            // 
+            this.cancelApplicationButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.cancelApplicationButton.Location = new System.Drawing.Point(710, 330);
+            this.cancelApplicationButton.Name = "cancelApplicationButton";
+            this.cancelApplicationButton.Size = new System.Drawing.Size(116, 23);
+            this.cancelApplicationButton.TabIndex = 3;
+            this.cancelApplicationButton.Text = "Отменить";
+            this.cancelApplicationButton.UseVisualStyleBackColor = true;
+            this.cancelApplicationButton.Click += new System.EventHandler(this.cancelApplicationButton_Click);
+            // 
+            // fullApplicationTableAdapter3
+            // 
+            this.fullApplicationTableAdapter3.ClearBeforeFill = true;
+            // 
             // ApplicationTableForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1331, 360);
+            this.Controls.Add(this.cancelApplicationButton);
+            this.Controls.Add(this.changeApplicationButton);
+            this.Controls.Add(this.addApplicationButton);
             this.Controls.Add(this.ApplicationTabledataGridView);
+            this.MinimumSize = new System.Drawing.Size(1200, 300);
             this.Name = "ApplicationTableForm";
             this.Text = "Заявки";
             this.Load += new System.EventHandler(this.ApplicationTableForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ApplicationTabledataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet13)).EndInit();
             this.ResumeLayout(false);
@@ -221,6 +305,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn appNumNightsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn appNumPeopleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn appCategoryDataGridViewTextBoxColumn;
+        private RadugaDBDataSet23 radugaDBDataSet23;
+        private System.Windows.Forms.BindingSource fullApplicationBindingSource;
+        private RadugaDBDataSet23TableAdapters.FullApplicationTableAdapter fullApplicationTableAdapter2;
+        private System.Windows.Forms.Button addApplicationButton;
+        private System.Windows.Forms.Button changeApplicationButton;
+        private System.Windows.Forms.Button cancelApplicationButton;
+        private RadugaDBDataSet24 radugaDBDataSet24;
+        private System.Windows.Forms.BindingSource fullApplicationBindingSource2;
+        private RadugaDBDataSet24TableAdapters.FullApplicationTableAdapter fullApplicationTableAdapter3;
 
     }
 }

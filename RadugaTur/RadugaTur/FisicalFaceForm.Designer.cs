@@ -175,9 +175,9 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(13, 369);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(92, 13);
+            this.label15.Size = new System.Drawing.Size(105, 13);
             this.label15.TabIndex = 27;
-            this.label15.Text = "Место рождения";
+            this.label15.Text = "Адрес регистрации";
             // 
             // SaveFisicalFaceFormButton
             // 
@@ -354,6 +354,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.MinimumSize = new System.Drawing.Size(804, 477);
             this.Name = "FisicalFaceForm";
             this.Text = "Добавить туриста";
             this.ResumeLayout(false);

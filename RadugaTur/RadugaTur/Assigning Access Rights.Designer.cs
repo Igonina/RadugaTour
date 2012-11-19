@@ -147,6 +147,7 @@
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.inputHashLogin);
             this.Controls.Add(this.label1);
+            this.MinimumSize = new System.Drawing.Size(300, 213);
             this.Name = "AssigningAccessRights";
             this.Text = "Назначение прав доступа";
             this.ResumeLayout(false);

@@ -70,9 +70,9 @@
             // 
             // SaveJuridicalFaceFormButton
             // 
-            this.SaveJuridicalFaceFormButton.Location = new System.Drawing.Point(270, 170);
+            this.SaveJuridicalFaceFormButton.Location = new System.Drawing.Point(330, 169);
             this.SaveJuridicalFaceFormButton.Name = "SaveJuridicalFaceFormButton";
-            this.SaveJuridicalFaceFormButton.Size = new System.Drawing.Size(75, 23);
+            this.SaveJuridicalFaceFormButton.Size = new System.Drawing.Size(104, 23);
             this.SaveJuridicalFaceFormButton.TabIndex = 6;
             this.SaveJuridicalFaceFormButton.Text = "Сохранить";
             this.SaveJuridicalFaceFormButton.UseVisualStyleBackColor = true;
@@ -147,6 +147,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MinimumSize = new System.Drawing.Size(662, 253);
             this.Name = "JuridicalFaceForm";
             this.Text = "Добавить юридическое лицо";
             this.ResumeLayout(false);

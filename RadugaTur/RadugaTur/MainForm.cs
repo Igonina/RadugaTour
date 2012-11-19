@@ -53,6 +53,7 @@ namespace RadugaTur
 
         private void CreateApplication_Click(object sender, EventArgs e)
         {
+           
             ApplicationForm appForm = new ApplicationForm();
             appForm.Show();
 
@@ -61,13 +62,13 @@ namespace RadugaTur
         private void AddJuriFace_Click(object sender, EventArgs e)
         {
             JuridicalFaceForm juridicFaceForm = new JuridicalFaceForm();
-            juridicFaceForm.Show();
+            juridicFaceForm.ShowDialog();
         }
 
         private void AddPhisFace_Click(object sender, EventArgs e)
         {
             FisicalFaceForm fisicFaceForm = new FisicalFaceForm();
-            fisicFaceForm.Show();
+            fisicFaceForm.ShowDialog();
         }
 
         
@@ -75,7 +76,7 @@ namespace RadugaTur
         private void AddManagerButton_Click(object sender, EventArgs e)
         {
             ManagerForm manForm = new ManagerForm();
-            manForm.Show();
+            manForm.ShowDialog();
         }
 
         private void ApplicationJunkClass_Load(object sender, EventArgs e)
@@ -87,32 +88,32 @@ namespace RadugaTur
 
         private void ShowJuriFace_Click(object sender, EventArgs e)
         {
-            JFTableForm jfTableForm = new JFTableForm();
-            jfTableForm.Show();
+            JFTableForm jfTableForm = new JFTableForm(this);
+            jfTableForm.ShowDialog();
         }
 
         private void LookAtManagersbutton_Click(object sender, EventArgs e)
         {
             ManagerFormTable managerFormTable = new ManagerFormTable();
-            managerFormTable.Show();
+            managerFormTable.ShowDialog();
         }
 
         private void ShowPhisFace_Click(object sender, EventArgs e)
         {
-            PFTableForm pfTableForm = new PFTableForm();
-            pfTableForm.Show();
+            PFTableForm pfTableForm = new PFTableForm(this);
+            pfTableForm.ShowDialog();
         }
 
         private void LookAtApplications_Click(object sender, EventArgs e)
         {
             ApplicationTableForm appTableForm = new ApplicationTableForm();
-            appTableForm.Show();
+            appTableForm.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             AssigningAccessRights assAccessRights = new AssigningAccessRights();
-            assAccessRights.Show();
+            assAccessRights.ShowDialog();
         }
 
         private void outputDateTime_Click(object sender, EventArgs e)
