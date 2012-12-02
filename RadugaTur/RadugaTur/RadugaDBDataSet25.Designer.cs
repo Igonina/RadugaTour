@@ -20,9 +20,9 @@ namespace RadugaTur {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("RadugaDBDataSet19")]
+    [global::System.Xml.Serialization.XmlRootAttribute("RadugaDBDataSet25")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class RadugaDBDataSet19 : global::System.Data.DataSet {
+    public partial class RadugaDBDataSet25 : global::System.Data.DataSet {
         
         private FullApplicationDataTable tableFullApplication;
         
@@ -30,7 +30,7 @@ namespace RadugaTur {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public RadugaDBDataSet19() {
+        public RadugaDBDataSet25() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace RadugaTur {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected RadugaDBDataSet19(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected RadugaDBDataSet25(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace RadugaTur {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            RadugaDBDataSet19 cln = ((RadugaDBDataSet19)(base.Clone()));
+            RadugaDBDataSet25 cln = ((RadugaDBDataSet25)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace RadugaTur {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "RadugaDBDataSet19";
+            this.DataSetName = "RadugaDBDataSet25";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/RadugaDBDataSet19.xsd";
+            this.Namespace = "http://tempuri.org/RadugaDBDataSet25.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableFullApplication = new FullApplicationDataTable();
@@ -225,7 +225,7 @@ namespace RadugaTur {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            RadugaDBDataSet19 ds = new RadugaDBDataSet19();
+            RadugaDBDataSet25 ds = new RadugaDBDataSet25();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -311,7 +311,7 @@ namespace RadugaTur {
             
             private global::System.Data.DataColumn columnAppNotes;
             
-            private global::System.Data.DataColumn columnArNumDaysHealth;
+            private global::System.Data.DataColumn columnAppNumDaysHealth;
             
             private global::System.Data.DataColumn columnArFood;
             
@@ -321,31 +321,31 @@ namespace RadugaTur {
             
             private global::System.Data.DataColumn columnArCostWithoutProcent;
             
-            private global::System.Data.DataColumn columnArAccountNumberSan;
+            private global::System.Data.DataColumn columnArSumPay;
             
-            private global::System.Data.DataColumn columnArDateAccNumSan;
-            
-            private global::System.Data.DataColumn columnArAccountNumberRad;
-            
-            private global::System.Data.DataColumn columnArDateAccNumRad;
-            
-            private global::System.Data.DataColumn columnArMoneyOrg;
-            
-            private global::System.Data.DataColumn columnArDateMoneyOrg;
-            
-            private global::System.Data.DataColumn columnArPaySanRad;
-            
-            private global::System.Data.DataColumn columnArDatePaySanRad;
+            private global::System.Data.DataColumn columnArDateSumPay;
             
             private global::System.Data.DataColumn columnArDebt;
             
             private global::System.Data.DataColumn columnArOtherMoney;
             
-            private global::System.Data.DataColumn columnArSumPay;
-            
-            private global::System.Data.DataColumn columnArDateSunPay;
-            
             private global::System.Data.DataColumn columnArPhone;
+            
+            private global::System.Data.DataColumn columnArRoute;
+            
+            private global::System.Data.DataColumn columnArTransfer;
+            
+            private global::System.Data.DataColumn columnArTourProgram;
+            
+            private global::System.Data.DataColumn columnArVise;
+            
+            private global::System.Data.DataColumn columnArTicket;
+            
+            private global::System.Data.DataColumn columnArInsurance;
+            
+            private global::System.Data.DataColumn columnAppTipe;
+            
+            private global::System.Data.DataColumn columnAppAgentProcent;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -510,9 +510,9 @@ namespace RadugaTur {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ArNumDaysHealthColumn {
+            public global::System.Data.DataColumn AppNumDaysHealthColumn {
                 get {
-                    return this.columnArNumDaysHealth;
+                    return this.columnAppNumDaysHealth;
                 }
             }
             
@@ -550,65 +550,17 @@ namespace RadugaTur {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ArAccountNumberSanColumn {
+            public global::System.Data.DataColumn ArSumPayColumn {
                 get {
-                    return this.columnArAccountNumberSan;
+                    return this.columnArSumPay;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ArDateAccNumSanColumn {
+            public global::System.Data.DataColumn ArDateSumPayColumn {
                 get {
-                    return this.columnArDateAccNumSan;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ArAccountNumberRadColumn {
-                get {
-                    return this.columnArAccountNumberRad;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ArDateAccNumRadColumn {
-                get {
-                    return this.columnArDateAccNumRad;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ArMoneyOrgColumn {
-                get {
-                    return this.columnArMoneyOrg;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ArDateMoneyOrgColumn {
-                get {
-                    return this.columnArDateMoneyOrg;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ArPaySanRadColumn {
-                get {
-                    return this.columnArPaySanRad;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ArDatePaySanRadColumn {
-                get {
-                    return this.columnArDatePaySanRad;
+                    return this.columnArDateSumPay;
                 }
             }
             
@@ -630,25 +582,73 @@ namespace RadugaTur {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ArSumPayColumn {
-                get {
-                    return this.columnArSumPay;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ArDateSunPayColumn {
-                get {
-                    return this.columnArDateSunPay;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn ArPhoneColumn {
                 get {
                     return this.columnArPhone;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ArRouteColumn {
+                get {
+                    return this.columnArRoute;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ArTransferColumn {
+                get {
+                    return this.columnArTransfer;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ArTourProgramColumn {
+                get {
+                    return this.columnArTourProgram;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ArViseColumn {
+                get {
+                    return this.columnArVise;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ArTicketColumn {
+                get {
+                    return this.columnArTicket;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ArInsuranceColumn {
+                get {
+                    return this.columnArInsurance;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AppTipeColumn {
+                get {
+                    return this.columnAppTipe;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AppAgentProcentColumn {
+                get {
+                    return this.columnAppAgentProcent;
                 }
             }
             
@@ -697,32 +697,32 @@ namespace RadugaTur {
                         string AppCountry, 
                         string AppWay, 
                         string AppStartTour, 
-                        string AppNumDays, 
-                        string AppNumNights, 
+                        int AppNumDays, 
+                        int AppNumNights, 
                         int AppNumPeople, 
                         int AppNumOldPeople, 
                         int AppNumChildren, 
                         string AppChildrensAge, 
                         string AppCategory, 
                         string AppNotes, 
-                        int ArNumDaysHealth, 
+                        string AppNumDaysHealth, 
                         string ArFood, 
                         string ArBase, 
-                        decimal ArCost, 
-                        decimal ArCostWithoutProcent, 
-                        string ArAccountNumberSan, 
-                        string ArDateAccNumSan, 
-                        string ArAccountNumberRad, 
-                        string ArDateAccNumRad, 
-                        string ArMoneyOrg, 
-                        string ArDateMoneyOrg, 
-                        string ArPaySanRad, 
-                        string ArDatePaySanRad, 
+                        string ArCost, 
+                        string ArCostWithoutProcent, 
+                        string ArSumPay, 
+                        string ArDateSumPay, 
                         string ArDebt, 
                         string ArOtherMoney, 
-                        string ArSumPay, 
-                        string ArDateSunPay, 
-                        string ArPhone) {
+                        string ArPhone, 
+                        string ArRoute, 
+                        string ArTransfer, 
+                        string ArTourProgram, 
+                        string ArVise, 
+                        string ArTicket, 
+                        string ArInsurance, 
+                        string AppTipe, 
+                        double AppAgentProcent) {
                 FullApplicationRow rowFullApplicationRow = ((FullApplicationRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -741,34 +741,27 @@ namespace RadugaTur {
                         AppChildrensAge,
                         AppCategory,
                         AppNotes,
-                        ArNumDaysHealth,
+                        AppNumDaysHealth,
                         ArFood,
                         ArBase,
                         ArCost,
                         ArCostWithoutProcent,
-                        ArAccountNumberSan,
-                        ArDateAccNumSan,
-                        ArAccountNumberRad,
-                        ArDateAccNumRad,
-                        ArMoneyOrg,
-                        ArDateMoneyOrg,
-                        ArPaySanRad,
-                        ArDatePaySanRad,
+                        ArSumPay,
+                        ArDateSumPay,
                         ArDebt,
                         ArOtherMoney,
-                        ArSumPay,
-                        ArDateSunPay,
-                        ArPhone};
+                        ArPhone,
+                        ArRoute,
+                        ArTransfer,
+                        ArTourProgram,
+                        ArVise,
+                        ArTicket,
+                        ArInsurance,
+                        AppTipe,
+                        AppAgentProcent};
                 rowFullApplicationRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowFullApplicationRow);
                 return rowFullApplicationRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public FullApplicationRow FindByAppId(int AppId) {
-                return ((FullApplicationRow)(this.Rows.Find(new object[] {
-                            AppId})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -804,24 +797,24 @@ namespace RadugaTur {
                 this.columnAppChildrensAge = base.Columns["AppChildrensAge"];
                 this.columnAppCategory = base.Columns["AppCategory"];
                 this.columnAppNotes = base.Columns["AppNotes"];
-                this.columnArNumDaysHealth = base.Columns["ArNumDaysHealth"];
+                this.columnAppNumDaysHealth = base.Columns["AppNumDaysHealth"];
                 this.columnArFood = base.Columns["ArFood"];
                 this.columnArBase = base.Columns["ArBase"];
                 this.columnArCost = base.Columns["ArCost"];
                 this.columnArCostWithoutProcent = base.Columns["ArCostWithoutProcent"];
-                this.columnArAccountNumberSan = base.Columns["ArAccountNumberSan"];
-                this.columnArDateAccNumSan = base.Columns["ArDateAccNumSan"];
-                this.columnArAccountNumberRad = base.Columns["ArAccountNumberRad"];
-                this.columnArDateAccNumRad = base.Columns["ArDateAccNumRad"];
-                this.columnArMoneyOrg = base.Columns["ArMoneyOrg"];
-                this.columnArDateMoneyOrg = base.Columns["ArDateMoneyOrg"];
-                this.columnArPaySanRad = base.Columns["ArPaySanRad"];
-                this.columnArDatePaySanRad = base.Columns["ArDatePaySanRad"];
+                this.columnArSumPay = base.Columns["ArSumPay"];
+                this.columnArDateSumPay = base.Columns["ArDateSumPay"];
                 this.columnArDebt = base.Columns["ArDebt"];
                 this.columnArOtherMoney = base.Columns["ArOtherMoney"];
-                this.columnArSumPay = base.Columns["ArSumPay"];
-                this.columnArDateSunPay = base.Columns["ArDateSunPay"];
                 this.columnArPhone = base.Columns["ArPhone"];
+                this.columnArRoute = base.Columns["ArRoute"];
+                this.columnArTransfer = base.Columns["ArTransfer"];
+                this.columnArTourProgram = base.Columns["ArTourProgram"];
+                this.columnArVise = base.Columns["ArVise"];
+                this.columnArTicket = base.Columns["ArTicket"];
+                this.columnArInsurance = base.Columns["ArInsurance"];
+                this.columnAppTipe = base.Columns["AppTipe"];
+                this.columnAppAgentProcent = base.Columns["AppAgentProcent"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -843,9 +836,9 @@ namespace RadugaTur {
                 base.Columns.Add(this.columnAppWay);
                 this.columnAppStartTour = new global::System.Data.DataColumn("AppStartTour", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAppStartTour);
-                this.columnAppNumDays = new global::System.Data.DataColumn("AppNumDays", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnAppNumDays = new global::System.Data.DataColumn("AppNumDays", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAppNumDays);
-                this.columnAppNumNights = new global::System.Data.DataColumn("AppNumNights", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnAppNumNights = new global::System.Data.DataColumn("AppNumNights", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAppNumNights);
                 this.columnAppNumPeople = new global::System.Data.DataColumn("AppNumPeople", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAppNumPeople);
@@ -859,77 +852,73 @@ namespace RadugaTur {
                 base.Columns.Add(this.columnAppCategory);
                 this.columnAppNotes = new global::System.Data.DataColumn("AppNotes", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAppNotes);
-                this.columnArNumDaysHealth = new global::System.Data.DataColumn("ArNumDaysHealth", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnArNumDaysHealth);
+                this.columnAppNumDaysHealth = new global::System.Data.DataColumn("AppNumDaysHealth", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAppNumDaysHealth);
                 this.columnArFood = new global::System.Data.DataColumn("ArFood", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnArFood);
                 this.columnArBase = new global::System.Data.DataColumn("ArBase", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnArBase);
-                this.columnArCost = new global::System.Data.DataColumn("ArCost", typeof(decimal), null, global::System.Data.MappingType.Element);
+                this.columnArCost = new global::System.Data.DataColumn("ArCost", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnArCost);
-                this.columnArCostWithoutProcent = new global::System.Data.DataColumn("ArCostWithoutProcent", typeof(decimal), null, global::System.Data.MappingType.Element);
+                this.columnArCostWithoutProcent = new global::System.Data.DataColumn("ArCostWithoutProcent", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnArCostWithoutProcent);
-                this.columnArAccountNumberSan = new global::System.Data.DataColumn("ArAccountNumberSan", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnArAccountNumberSan);
-                this.columnArDateAccNumSan = new global::System.Data.DataColumn("ArDateAccNumSan", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnArDateAccNumSan);
-                this.columnArAccountNumberRad = new global::System.Data.DataColumn("ArAccountNumberRad", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnArAccountNumberRad);
-                this.columnArDateAccNumRad = new global::System.Data.DataColumn("ArDateAccNumRad", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnArDateAccNumRad);
-                this.columnArMoneyOrg = new global::System.Data.DataColumn("ArMoneyOrg", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnArMoneyOrg);
-                this.columnArDateMoneyOrg = new global::System.Data.DataColumn("ArDateMoneyOrg", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnArDateMoneyOrg);
-                this.columnArPaySanRad = new global::System.Data.DataColumn("ArPaySanRad", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnArPaySanRad);
-                this.columnArDatePaySanRad = new global::System.Data.DataColumn("ArDatePaySanRad", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnArDatePaySanRad);
+                this.columnArSumPay = new global::System.Data.DataColumn("ArSumPay", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArSumPay);
+                this.columnArDateSumPay = new global::System.Data.DataColumn("ArDateSumPay", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArDateSumPay);
                 this.columnArDebt = new global::System.Data.DataColumn("ArDebt", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnArDebt);
                 this.columnArOtherMoney = new global::System.Data.DataColumn("ArOtherMoney", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnArOtherMoney);
-                this.columnArSumPay = new global::System.Data.DataColumn("ArSumPay", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnArSumPay);
-                this.columnArDateSunPay = new global::System.Data.DataColumn("ArDateSunPay", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnArDateSunPay);
                 this.columnArPhone = new global::System.Data.DataColumn("ArPhone", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnArPhone);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnAppId}, true));
+                this.columnArRoute = new global::System.Data.DataColumn("ArRoute", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArRoute);
+                this.columnArTransfer = new global::System.Data.DataColumn("ArTransfer", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArTransfer);
+                this.columnArTourProgram = new global::System.Data.DataColumn("ArTourProgram", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArTourProgram);
+                this.columnArVise = new global::System.Data.DataColumn("ArVise", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArVise);
+                this.columnArTicket = new global::System.Data.DataColumn("ArTicket", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArTicket);
+                this.columnArInsurance = new global::System.Data.DataColumn("ArInsurance", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArInsurance);
+                this.columnAppTipe = new global::System.Data.DataColumn("AppTipe", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAppTipe);
+                this.columnAppAgentProcent = new global::System.Data.DataColumn("AppAgentProcent", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAppAgentProcent);
                 this.columnAppId.AutoIncrement = true;
                 this.columnAppId.AutoIncrementSeed = -1;
                 this.columnAppId.AutoIncrementStep = -1;
                 this.columnAppId.AllowDBNull = false;
                 this.columnAppId.ReadOnly = true;
-                this.columnAppId.Unique = true;
-                this.columnAppDate.MaxLength = 50;
-                this.columnAppNumContract.AllowDBNull = false;
+                this.columnAppDate.MaxLength = 2147483647;
                 this.columnAppFullName.MaxLength = 2147483647;
                 this.columnAppNameOrgOrPF.MaxLength = 2147483647;
                 this.columnAppCountry.MaxLength = 2147483647;
                 this.columnAppWay.MaxLength = 2147483647;
-                this.columnAppStartTour.MaxLength = 50;
-                this.columnAppNumDays.MaxLength = 10;
-                this.columnAppNumNights.MaxLength = 10;
+                this.columnAppStartTour.MaxLength = 2147483647;
                 this.columnAppChildrensAge.MaxLength = 2147483647;
                 this.columnAppCategory.MaxLength = 2147483647;
                 this.columnAppNotes.MaxLength = 2147483647;
+                this.columnAppNumDaysHealth.MaxLength = 2147483647;
                 this.columnArFood.MaxLength = 2147483647;
                 this.columnArBase.MaxLength = 2147483647;
-                this.columnArAccountNumberSan.MaxLength = 2147483647;
-                this.columnArDateAccNumSan.MaxLength = 50;
-                this.columnArAccountNumberRad.MaxLength = 2147483647;
-                this.columnArDateAccNumRad.MaxLength = 50;
-                this.columnArMoneyOrg.MaxLength = 2147483647;
-                this.columnArDateMoneyOrg.MaxLength = 50;
-                this.columnArPaySanRad.MaxLength = 2147483647;
-                this.columnArDatePaySanRad.MaxLength = 50;
+                this.columnArCost.MaxLength = 2147483647;
+                this.columnArCostWithoutProcent.MaxLength = 2147483647;
+                this.columnArSumPay.MaxLength = 2147483647;
+                this.columnArDateSumPay.MaxLength = 2147483647;
                 this.columnArDebt.MaxLength = 2147483647;
                 this.columnArOtherMoney.MaxLength = 2147483647;
-                this.columnArSumPay.MaxLength = 2147483647;
-                this.columnArDateSunPay.MaxLength = 2147483647;
                 this.columnArPhone.MaxLength = 2147483647;
+                this.columnArRoute.MaxLength = 2147483647;
+                this.columnArTransfer.MaxLength = 2147483647;
+                this.columnArTourProgram.MaxLength = 2147483647;
+                this.columnArVise.MaxLength = 2147483647;
+                this.columnArTicket.MaxLength = 2147483647;
+                this.columnArInsurance.MaxLength = 2147483647;
+                this.columnAppTipe.MaxLength = 2147483647;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -997,7 +986,7 @@ namespace RadugaTur {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                RadugaDBDataSet19 ds = new RadugaDBDataSet19();
+                RadugaDBDataSet25 ds = new RadugaDBDataSet25();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1101,7 +1090,12 @@ namespace RadugaTur {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int AppNumContract {
                 get {
-                    return ((int)(this[this.tableFullApplication.AppNumContractColumn]));
+                    try {
+                        return ((int)(this[this.tableFullApplication.AppNumContractColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'AppNumContract\' in table \'FullApplication\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableFullApplication.AppNumContractColumn] = value;
@@ -1190,10 +1184,10 @@ namespace RadugaTur {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string AppNumDays {
+            public int AppNumDays {
                 get {
                     try {
-                        return ((string)(this[this.tableFullApplication.AppNumDaysColumn]));
+                        return ((int)(this[this.tableFullApplication.AppNumDaysColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'AppNumDays\' in table \'FullApplication\' is DBNull.", e);
@@ -1206,10 +1200,10 @@ namespace RadugaTur {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string AppNumNights {
+            public int AppNumNights {
                 get {
                     try {
-                        return ((string)(this[this.tableFullApplication.AppNumNightsColumn]));
+                        return ((int)(this[this.tableFullApplication.AppNumNightsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'AppNumNights\' in table \'FullApplication\' is DBNull.", e);
@@ -1318,17 +1312,17 @@ namespace RadugaTur {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int ArNumDaysHealth {
+            public string AppNumDaysHealth {
                 get {
                     try {
-                        return ((int)(this[this.tableFullApplication.ArNumDaysHealthColumn]));
+                        return ((string)(this[this.tableFullApplication.AppNumDaysHealthColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ArNumDaysHealth\' in table \'FullApplication\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'AppNumDaysHealth\' in table \'FullApplication\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFullApplication.ArNumDaysHealthColumn] = value;
+                    this[this.tableFullApplication.AppNumDaysHealthColumn] = value;
                 }
             }
             
@@ -1366,10 +1360,10 @@ namespace RadugaTur {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal ArCost {
+            public string ArCost {
                 get {
                     try {
-                        return ((decimal)(this[this.tableFullApplication.ArCostColumn]));
+                        return ((string)(this[this.tableFullApplication.ArCostColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'ArCost\' in table \'FullApplication\' is DBNull.", e);
@@ -1382,10 +1376,10 @@ namespace RadugaTur {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal ArCostWithoutProcent {
+            public string ArCostWithoutProcent {
                 get {
                     try {
-                        return ((decimal)(this[this.tableFullApplication.ArCostWithoutProcentColumn]));
+                        return ((string)(this[this.tableFullApplication.ArCostWithoutProcentColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'ArCostWithoutProcent\' in table \'FullApplication\' is DBNull." +
@@ -1399,129 +1393,33 @@ namespace RadugaTur {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ArAccountNumberSan {
+            public string ArSumPay {
                 get {
                     try {
-                        return ((string)(this[this.tableFullApplication.ArAccountNumberSanColumn]));
+                        return ((string)(this[this.tableFullApplication.ArSumPayColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ArAccountNumberSan\' in table \'FullApplication\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ArSumPay\' in table \'FullApplication\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFullApplication.ArAccountNumberSanColumn] = value;
+                    this[this.tableFullApplication.ArSumPayColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ArDateAccNumSan {
+            public string ArDateSumPay {
                 get {
                     try {
-                        return ((string)(this[this.tableFullApplication.ArDateAccNumSanColumn]));
+                        return ((string)(this[this.tableFullApplication.ArDateSumPayColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ArDateAccNumSan\' in table \'FullApplication\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ArDateSumPay\' in table \'FullApplication\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFullApplication.ArDateAccNumSanColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ArAccountNumberRad {
-                get {
-                    try {
-                        return ((string)(this[this.tableFullApplication.ArAccountNumberRadColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ArAccountNumberRad\' in table \'FullApplication\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFullApplication.ArAccountNumberRadColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ArDateAccNumRad {
-                get {
-                    try {
-                        return ((string)(this[this.tableFullApplication.ArDateAccNumRadColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ArDateAccNumRad\' in table \'FullApplication\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFullApplication.ArDateAccNumRadColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ArMoneyOrg {
-                get {
-                    try {
-                        return ((string)(this[this.tableFullApplication.ArMoneyOrgColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ArMoneyOrg\' in table \'FullApplication\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFullApplication.ArMoneyOrgColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ArDateMoneyOrg {
-                get {
-                    try {
-                        return ((string)(this[this.tableFullApplication.ArDateMoneyOrgColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ArDateMoneyOrg\' in table \'FullApplication\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFullApplication.ArDateMoneyOrgColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ArPaySanRad {
-                get {
-                    try {
-                        return ((string)(this[this.tableFullApplication.ArPaySanRadColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ArPaySanRad\' in table \'FullApplication\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFullApplication.ArPaySanRadColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ArDatePaySanRad {
-                get {
-                    try {
-                        return ((string)(this[this.tableFullApplication.ArDatePaySanRadColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ArDatePaySanRad\' in table \'FullApplication\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFullApplication.ArDatePaySanRadColumn] = value;
+                    this[this.tableFullApplication.ArDateSumPayColumn] = value;
                 }
             }
             
@@ -1559,38 +1457,6 @@ namespace RadugaTur {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ArSumPay {
-                get {
-                    try {
-                        return ((string)(this[this.tableFullApplication.ArSumPayColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ArSumPay\' in table \'FullApplication\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFullApplication.ArSumPayColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ArDateSunPay {
-                get {
-                    try {
-                        return ((string)(this[this.tableFullApplication.ArDateSunPayColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ArDateSunPay\' in table \'FullApplication\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFullApplication.ArDateSunPayColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string ArPhone {
                 get {
                     try {
@@ -1607,6 +1473,134 @@ namespace RadugaTur {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ArRoute {
+                get {
+                    try {
+                        return ((string)(this[this.tableFullApplication.ArRouteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ArRoute\' in table \'FullApplication\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFullApplication.ArRouteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ArTransfer {
+                get {
+                    try {
+                        return ((string)(this[this.tableFullApplication.ArTransferColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ArTransfer\' in table \'FullApplication\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFullApplication.ArTransferColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ArTourProgram {
+                get {
+                    try {
+                        return ((string)(this[this.tableFullApplication.ArTourProgramColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ArTourProgram\' in table \'FullApplication\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFullApplication.ArTourProgramColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ArVise {
+                get {
+                    try {
+                        return ((string)(this[this.tableFullApplication.ArViseColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ArVise\' in table \'FullApplication\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFullApplication.ArViseColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ArTicket {
+                get {
+                    try {
+                        return ((string)(this[this.tableFullApplication.ArTicketColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ArTicket\' in table \'FullApplication\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFullApplication.ArTicketColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ArInsurance {
+                get {
+                    try {
+                        return ((string)(this[this.tableFullApplication.ArInsuranceColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ArInsurance\' in table \'FullApplication\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFullApplication.ArInsuranceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string AppTipe {
+                get {
+                    try {
+                        return ((string)(this[this.tableFullApplication.AppTipeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'AppTipe\' in table \'FullApplication\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFullApplication.AppTipeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double AppAgentProcent {
+                get {
+                    try {
+                        return ((double)(this[this.tableFullApplication.AppAgentProcentColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'AppAgentProcent\' in table \'FullApplication\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFullApplication.AppAgentProcentColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsAppDateNull() {
                 return this.IsNull(this.tableFullApplication.AppDateColumn);
             }
@@ -1615,6 +1609,18 @@ namespace RadugaTur {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetAppDateNull() {
                 this[this.tableFullApplication.AppDateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsAppNumContractNull() {
+                return this.IsNull(this.tableFullApplication.AppNumContractColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAppNumContractNull() {
+                this[this.tableFullApplication.AppNumContractColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1775,14 +1781,14 @@ namespace RadugaTur {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsArNumDaysHealthNull() {
-                return this.IsNull(this.tableFullApplication.ArNumDaysHealthColumn);
+            public bool IsAppNumDaysHealthNull() {
+                return this.IsNull(this.tableFullApplication.AppNumDaysHealthColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetArNumDaysHealthNull() {
-                this[this.tableFullApplication.ArNumDaysHealthColumn] = global::System.Convert.DBNull;
+            public void SetAppNumDaysHealthNull() {
+                this[this.tableFullApplication.AppNumDaysHealthColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1835,98 +1841,26 @@ namespace RadugaTur {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsArAccountNumberSanNull() {
-                return this.IsNull(this.tableFullApplication.ArAccountNumberSanColumn);
+            public bool IsArSumPayNull() {
+                return this.IsNull(this.tableFullApplication.ArSumPayColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetArAccountNumberSanNull() {
-                this[this.tableFullApplication.ArAccountNumberSanColumn] = global::System.Convert.DBNull;
+            public void SetArSumPayNull() {
+                this[this.tableFullApplication.ArSumPayColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsArDateAccNumSanNull() {
-                return this.IsNull(this.tableFullApplication.ArDateAccNumSanColumn);
+            public bool IsArDateSumPayNull() {
+                return this.IsNull(this.tableFullApplication.ArDateSumPayColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetArDateAccNumSanNull() {
-                this[this.tableFullApplication.ArDateAccNumSanColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsArAccountNumberRadNull() {
-                return this.IsNull(this.tableFullApplication.ArAccountNumberRadColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetArAccountNumberRadNull() {
-                this[this.tableFullApplication.ArAccountNumberRadColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsArDateAccNumRadNull() {
-                return this.IsNull(this.tableFullApplication.ArDateAccNumRadColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetArDateAccNumRadNull() {
-                this[this.tableFullApplication.ArDateAccNumRadColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsArMoneyOrgNull() {
-                return this.IsNull(this.tableFullApplication.ArMoneyOrgColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetArMoneyOrgNull() {
-                this[this.tableFullApplication.ArMoneyOrgColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsArDateMoneyOrgNull() {
-                return this.IsNull(this.tableFullApplication.ArDateMoneyOrgColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetArDateMoneyOrgNull() {
-                this[this.tableFullApplication.ArDateMoneyOrgColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsArPaySanRadNull() {
-                return this.IsNull(this.tableFullApplication.ArPaySanRadColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetArPaySanRadNull() {
-                this[this.tableFullApplication.ArPaySanRadColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsArDatePaySanRadNull() {
-                return this.IsNull(this.tableFullApplication.ArDatePaySanRadColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetArDatePaySanRadNull() {
-                this[this.tableFullApplication.ArDatePaySanRadColumn] = global::System.Convert.DBNull;
+            public void SetArDateSumPayNull() {
+                this[this.tableFullApplication.ArDateSumPayColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1955,30 +1889,6 @@ namespace RadugaTur {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsArSumPayNull() {
-                return this.IsNull(this.tableFullApplication.ArSumPayColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetArSumPayNull() {
-                this[this.tableFullApplication.ArSumPayColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsArDateSunPayNull() {
-                return this.IsNull(this.tableFullApplication.ArDateSunPayColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetArDateSunPayNull() {
-                this[this.tableFullApplication.ArDateSunPayColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsArPhoneNull() {
                 return this.IsNull(this.tableFullApplication.ArPhoneColumn);
             }
@@ -1987,6 +1897,102 @@ namespace RadugaTur {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetArPhoneNull() {
                 this[this.tableFullApplication.ArPhoneColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsArRouteNull() {
+                return this.IsNull(this.tableFullApplication.ArRouteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetArRouteNull() {
+                this[this.tableFullApplication.ArRouteColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsArTransferNull() {
+                return this.IsNull(this.tableFullApplication.ArTransferColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetArTransferNull() {
+                this[this.tableFullApplication.ArTransferColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsArTourProgramNull() {
+                return this.IsNull(this.tableFullApplication.ArTourProgramColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetArTourProgramNull() {
+                this[this.tableFullApplication.ArTourProgramColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsArViseNull() {
+                return this.IsNull(this.tableFullApplication.ArViseColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetArViseNull() {
+                this[this.tableFullApplication.ArViseColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsArTicketNull() {
+                return this.IsNull(this.tableFullApplication.ArTicketColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetArTicketNull() {
+                this[this.tableFullApplication.ArTicketColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsArInsuranceNull() {
+                return this.IsNull(this.tableFullApplication.ArInsuranceColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetArInsuranceNull() {
+                this[this.tableFullApplication.ArInsuranceColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsAppTipeNull() {
+                return this.IsNull(this.tableFullApplication.AppTipeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAppTipeNull() {
+                this[this.tableFullApplication.AppTipeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsAppAgentProcentNull() {
+                return this.IsNull(this.tableFullApplication.AppAgentProcentColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAppAgentProcentNull() {
+                this[this.tableFullApplication.AppAgentProcentColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2025,7 +2031,7 @@ namespace RadugaTur {
         }
     }
 }
-namespace RadugaTur.RadugaDBDataSet19TableAdapters {
+namespace RadugaTur.RadugaDBDataSet25TableAdapters {
     
     
     /// <summary>
@@ -2165,101 +2171,28 @@ namespace RadugaTur.RadugaDBDataSet19TableAdapters {
             tableMapping.ColumnMappings.Add("AppChildrensAge", "AppChildrensAge");
             tableMapping.ColumnMappings.Add("AppCategory", "AppCategory");
             tableMapping.ColumnMappings.Add("AppNotes", "AppNotes");
-            tableMapping.ColumnMappings.Add("ArNumDaysHealth", "ArNumDaysHealth");
+            tableMapping.ColumnMappings.Add("AppNumDaysHealth", "AppNumDaysHealth");
             tableMapping.ColumnMappings.Add("ArFood", "ArFood");
             tableMapping.ColumnMappings.Add("ArBase", "ArBase");
             tableMapping.ColumnMappings.Add("ArCost", "ArCost");
             tableMapping.ColumnMappings.Add("ArCostWithoutProcent", "ArCostWithoutProcent");
-            tableMapping.ColumnMappings.Add("ArAccountNumberSan", "ArAccountNumberSan");
-            tableMapping.ColumnMappings.Add("ArDateAccNumSan", "ArDateAccNumSan");
-            tableMapping.ColumnMappings.Add("ArAccountNumberRad", "ArAccountNumberRad");
-            tableMapping.ColumnMappings.Add("ArDateAccNumRad", "ArDateAccNumRad");
-            tableMapping.ColumnMappings.Add("ArMoneyOrg", "ArMoneyOrg");
-            tableMapping.ColumnMappings.Add("ArDateMoneyOrg", "ArDateMoneyOrg");
-            tableMapping.ColumnMappings.Add("ArPaySanRad", "ArPaySanRad");
-            tableMapping.ColumnMappings.Add("ArDatePaySanRad", "ArDatePaySanRad");
+            tableMapping.ColumnMappings.Add("ArSumPay", "ArSumPay");
+            tableMapping.ColumnMappings.Add("ArDateSumPay", "ArDateSumPay");
             tableMapping.ColumnMappings.Add("ArDebt", "ArDebt");
             tableMapping.ColumnMappings.Add("ArOtherMoney", "ArOtherMoney");
-            tableMapping.ColumnMappings.Add("ArSumPay", "ArSumPay");
-            tableMapping.ColumnMappings.Add("ArDateSunPay", "ArDateSunPay");
             tableMapping.ColumnMappings.Add("ArPhone", "ArPhone");
+            tableMapping.ColumnMappings.Add("ArRoute", "ArRoute");
+            tableMapping.ColumnMappings.Add("ArTransfer", "ArTransfer");
+            tableMapping.ColumnMappings.Add("ArTourProgram", "ArTourProgram");
+            tableMapping.ColumnMappings.Add("ArVise", "ArVise");
+            tableMapping.ColumnMappings.Add("ArTicket", "ArTicket");
+            tableMapping.ColumnMappings.Add("ArInsurance", "ArInsurance");
+            tableMapping.ColumnMappings.Add("AppTipe", "AppTipe");
+            tableMapping.ColumnMappings.Add("AppAgentProcent", "AppAgentProcent");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[FullApplication] WHERE (([AppId] = @Original_AppId) AND ((@IsN" +
-                "ull_AppDate = 1 AND [AppDate] IS NULL) OR ([AppDate] = @Original_AppDate)) AND (" +
-                "[AppNumContract] = @Original_AppNumContract) AND ((@IsNull_AppStartTour = 1 AND " +
-                "[AppStartTour] IS NULL) OR ([AppStartTour] = @Original_AppStartTour)) AND ((@IsN" +
-                "ull_AppNumDays = 1 AND [AppNumDays] IS NULL) OR ([AppNumDays] = @Original_AppNum" +
-                "Days)) AND ((@IsNull_AppNumNights = 1 AND [AppNumNights] IS NULL) OR ([AppNumNig" +
-                "hts] = @Original_AppNumNights)) AND ((@IsNull_AppNumPeople = 1 AND [AppNumPeople" +
-                "] IS NULL) OR ([AppNumPeople] = @Original_AppNumPeople)) AND ((@IsNull_AppNumOld" +
-                "People = 1 AND [AppNumOldPeople] IS NULL) OR ([AppNumOldPeople] = @Original_AppN" +
-                "umOldPeople)) AND ((@IsNull_AppNumChildren = 1 AND [AppNumChildren] IS NULL) OR " +
-                "([AppNumChildren] = @Original_AppNumChildren)) AND ((@IsNull_ArNumDaysHealth = 1" +
-                " AND [ArNumDaysHealth] IS NULL) OR ([ArNumDaysHealth] = @Original_ArNumDaysHealt" +
-                "h)) AND ((@IsNull_ArCost = 1 AND [ArCost] IS NULL) OR ([ArCost] = @Original_ArCo" +
-                "st)) AND ((@IsNull_ArCostWithoutProcent = 1 AND [ArCostWithoutProcent] IS NULL) " +
-                "OR ([ArCostWithoutProcent] = @Original_ArCostWithoutProcent)) AND ((@IsNull_ArDa" +
-                "teAccNumSan = 1 AND [ArDateAccNumSan] IS NULL) OR ([ArDateAccNumSan] = @Original" +
-                "_ArDateAccNumSan)) AND ((@IsNull_ArDateAccNumRad = 1 AND [ArDateAccNumRad] IS NU" +
-                "LL) OR ([ArDateAccNumRad] = @Original_ArDateAccNumRad)) AND ((@IsNull_ArDateMone" +
-                "yOrg = 1 AND [ArDateMoneyOrg] IS NULL) OR ([ArDateMoneyOrg] = @Original_ArDateMo" +
-                "neyOrg)) AND ((@IsNull_ArDatePaySanRad = 1 AND [ArDatePaySanRad] IS NULL) OR ([A" +
-                "rDatePaySanRad] = @Original_ArDatePaySanRad)))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AppDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppDate", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppNumContract", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumContract", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AppStartTour", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppStartTour", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppStartTour", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppStartTour", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AppNumDays", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumDays", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppNumDays", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumDays", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AppNumNights", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumNights", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppNumNights", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumNights", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AppNumPeople", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumPeople", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppNumPeople", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumPeople", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AppNumOldPeople", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumOldPeople", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppNumOldPeople", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumOldPeople", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AppNumChildren", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumChildren", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppNumChildren", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumChildren", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ArNumDaysHealth", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArNumDaysHealth", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ArNumDaysHealth", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArNumDaysHealth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ArCost", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArCost", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ArCost", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArCost", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ArCostWithoutProcent", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArCostWithoutProcent", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ArCostWithoutProcent", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArCostWithoutProcent", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ArDateAccNumSan", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateAccNumSan", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ArDateAccNumSan", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateAccNumSan", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ArDateAccNumRad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateAccNumRad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ArDateAccNumRad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateAccNumRad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ArDateMoneyOrg", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateMoneyOrg", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ArDateMoneyOrg", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateMoneyOrg", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ArDatePaySanRad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDatePaySanRad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ArDatePaySanRad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDatePaySanRad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[FullApplication] ([AppDate], [AppNumContract], [AppFullName], " +
-                "[AppNameOrgOrPF], [AppCountry], [AppWay], [AppStartTour], [AppNumDays], [AppNumN" +
-                "ights], [AppNumPeople], [AppNumOldPeople], [AppNumChildren], [AppChildrensAge], " +
-                "[AppCategory], [AppNotes], [ArNumDaysHealth], [ArFood], [ArBase], [ArCost], [ArC" +
-                "ostWithoutProcent], [ArAccountNumberSan], [ArDateAccNumSan], [ArAccountNumberRad" +
-                "], [ArDateAccNumRad], [ArMoneyOrg], [ArDateMoneyOrg], [ArPaySanRad], [ArDatePayS" +
-                "anRad], [ArDebt], [ArOtherMoney], [ArSumPay], [ArDateSunPay], [ArPhone]) VALUES " +
-                "(@AppDate, @AppNumContract, @AppFullName, @AppNameOrgOrPF, @AppCountry, @AppWay," +
-                " @AppStartTour, @AppNumDays, @AppNumNights, @AppNumPeople, @AppNumOldPeople, @Ap" +
-                "pNumChildren, @AppChildrensAge, @AppCategory, @AppNotes, @ArNumDaysHealth, @ArFo" +
-                "od, @ArBase,  @ArCost, @ArCostWithoutProcent, @ArAccountNumberSan, @ArDateAccNum" +
-                "San, @ArAccountNumberRad, @ArDateAccNumRad, @ArMoneyOrg, @ArDateMoneyOrg, @ArPay" +
-                "SanRad, @ArDatePaySanRad, @ArDebt, @ArOtherMoney, @ArSumPay, @ArDateSunPay, @ArP" +
-                "hone);\r\nSELECT AppId, AppDate, AppNumContract, AppFullName, AppNameOrgOrPF, AppC" +
-                "ountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldP" +
-                "eople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, ArNumDaysHealth, " +
-                "ArFood, ArBase,  ArCost, ArCostWithoutProcent, ArAccountNumberSan, ArDateAccNumS" +
-                "an, ArAccountNumberRad, ArDateAccNumRad, ArMoneyOrg, ArDateMoneyOrg, ArPaySanRad" +
-                ", ArDatePaySanRad, ArDebt, ArOtherMoney, ArSumPay, ArDateSunPay, ArPhone FROM Fu" +
-                "llApplication WHERE (AppId = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[FullApplication] ([AppDate], [AppNumContract], [AppFullName], [AppNameOrgOrPF], [AppCountry], [AppWay], [AppStartTour], [AppNumDays], [AppNumNights], [AppNumPeople], [AppNumOldPeople], [AppNumChildren], [AppChildrensAge], [AppCategory], [AppNotes], [AppNumDaysHealth], [ArFood], [ArBase], [ArCost], [ArCostWithoutProcent], [ArSumPay], [ArDateSumPay], [ArDebt], [ArOtherMoney], [ArPhone], [ArRoute], [ArTransfer], [ArTourProgram], [ArVise], [ArTicket], [ArInsurance], [AppTipe], [AppAgentProcent]) VALUES (@AppDate, @AppNumContract, @AppFullName, @AppNameOrgOrPF, @AppCountry, @AppWay, @AppStartTour, @AppNumDays, @AppNumNights, @AppNumPeople, @AppNumOldPeople, @AppNumChildren, @AppChildrensAge, @AppCategory, @AppNotes, @AppNumDaysHealth, @ArFood, @ArBase, @ArCost, @ArCostWithoutProcent, @ArSumPay, @ArDateSumPay, @ArDebt, @ArOtherMoney, @ArPhone, @ArRoute, @ArTransfer, @ArTourProgram, @ArVise, @ArTicket, @ArInsurance, @AppTipe, @AppAgentProcent)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppDate", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNumContract", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumContract", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2268,139 +2201,32 @@ namespace RadugaTur.RadugaDBDataSet19TableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppCountry", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppCountry", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppWay", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppWay", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppStartTour", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppStartTour", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNumDays", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumDays", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNumNights", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumNights", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNumDays", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumDays", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNumNights", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumNights", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNumPeople", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumPeople", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNumOldPeople", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumOldPeople", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNumChildren", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumChildren", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppChildrensAge", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppChildrensAge", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppCategory", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppCategory", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNotes", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNotes", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArNumDaysHealth", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArNumDaysHealth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNumDaysHealth", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumDaysHealth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArFood", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArFood", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArBase", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArBase", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArCost", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArCost", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArCostWithoutProcent", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArCostWithoutProcent", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArAccountNumberSan", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArAccountNumberSan", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArDateAccNumSan", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateAccNumSan", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArAccountNumberRad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArAccountNumberRad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArDateAccNumRad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateAccNumRad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArMoneyOrg", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArMoneyOrg", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArDateMoneyOrg", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateMoneyOrg", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArPaySanRad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArPaySanRad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArDatePaySanRad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDatePaySanRad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArCost", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArCost", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArCostWithoutProcent", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArCostWithoutProcent", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArSumPay", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArSumPay", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArDateSumPay", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateSumPay", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArDebt", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDebt", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArOtherMoney", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArOtherMoney", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArSumPay", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArSumPay", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArDateSunPay", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateSunPay", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArPhone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArPhone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[FullApplication] SET [AppDate] = @AppDate, [AppNumContract] = @AppN" +
-                "umContract, [AppFullName] = @AppFullName, [AppNameOrgOrPF] = @AppNameOrgOrPF, [A" +
-                "ppCountry] = @AppCountry, [AppWay] = @AppWay, [AppStartTour] = @AppStartTour, [A" +
-                "ppNumDays] = @AppNumDays, [AppNumNights] = @AppNumNights, [AppNumPeople] = @AppN" +
-                "umPeople, [AppNumOldPeople] = @AppNumOldPeople, [AppNumChildren] = @AppNumChildr" +
-                "en, [AppChildrensAge] = @AppChildrensAge, [AppCategory] = @AppCategory, [AppNote" +
-                "s] = @AppNotes, [ArNumDaysHealth] = @ArNumDaysHealth, [ArFood] = @ArFood, [ArBas" +
-                "e] = @ArBase, [ArCost] = @ArCost, [ArCostWithoutProcent] = @ArCostWithoutProcent" +
-                ", [ArAccountNumberSan] = @ArAccountNumberSan, [ArDateAccNumSan] = @ArDateAccNumS" +
-                "an, [ArAccountNumberRad] = @ArAccountNumberRad, [ArDateAccNumRad] = @ArDateAccNu" +
-                "mRad, [ArMoneyOrg] = @ArMoneyOrg, [ArDateMoneyOrg] = @ArDateMoneyOrg, [ArPaySanR" +
-                "ad] = @ArPaySanRad, [ArDatePaySanRad] = @ArDatePaySanRad, [ArDebt] = @ArDebt, [A" +
-                "rOtherMoney] = @ArOtherMoney, [ArSumPay] = @ArSumPay, [ArDateSunPay] = @ArDateSu" +
-                "nPay, [ArPhone] = @ArPhone WHERE (([AppId] = @Original_AppId) AND ((@IsNull_AppD" +
-                "ate = 1 AND [AppDate] IS NULL) OR ([AppDate] = @Original_AppDate)) AND ([AppNumC" +
-                "ontract] = @Original_AppNumContract) AND ((@IsNull_AppStartTour = 1 AND [AppStar" +
-                "tTour] IS NULL) OR ([AppStartTour] = @Original_AppStartTour)) AND ((@IsNull_AppN" +
-                "umDays = 1 AND [AppNumDays] IS NULL) OR ([AppNumDays] = @Original_AppNumDays)) A" +
-                "ND ((@IsNull_AppNumNights = 1 AND [AppNumNights] IS NULL) OR ([AppNumNights] = @" +
-                "Original_AppNumNights)) AND ((@IsNull_AppNumPeople = 1 AND [AppNumPeople] IS NUL" +
-                "L) OR ([AppNumPeople] = @Original_AppNumPeople)) AND ((@IsNull_AppNumOldPeople =" +
-                " 1 AND [AppNumOldPeople] IS NULL) OR ([AppNumOldPeople] = @Original_AppNumOldPeo" +
-                "ple)) AND ((@IsNull_AppNumChildren = 1 AND [AppNumChildren] IS NULL) OR ([AppNum" +
-                "Children] = @Original_AppNumChildren)) AND ((@IsNull_ArNumDaysHealth = 1 AND [Ar" +
-                "NumDaysHealth] IS NULL) OR ([ArNumDaysHealth] = @Original_ArNumDaysHealth)) AND " +
-                "((@IsNull_ArCost = 1 AND [ArCost] IS NULL) OR ([ArCost] = @Original_ArCost)) AND" +
-                " ((@IsNull_ArCostWithoutProcent = 1 AND [ArCostWithoutProcent] IS NULL) OR ([ArC" +
-                "ostWithoutProcent] = @Original_ArCostWithoutProcent)) AND ((@IsNull_ArDateAccNum" +
-                "San = 1 AND [ArDateAccNumSan] IS NULL) OR ([ArDateAccNumSan] = @Original_ArDateA" +
-                "ccNumSan)) AND ((@IsNull_ArDateAccNumRad = 1 AND [ArDateAccNumRad] IS NULL) OR (" +
-                "[ArDateAccNumRad] = @Original_ArDateAccNumRad)) AND ((@IsNull_ArDateMoneyOrg = 1" +
-                " AND [ArDateMoneyOrg] IS NULL) OR ([ArDateMoneyOrg] = @Original_ArDateMoneyOrg))" +
-                " AND ((@IsNull_ArDatePaySanRad = 1 AND [ArDatePaySanRad] IS NULL) OR ([ArDatePay" +
-                "SanRad] = @Original_ArDatePaySanRad)));\r\nSELECT AppId, AppDate, AppNumContract, " +
-                "AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNu" +
-                "mNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCate" +
-                "gory, AppNotes, ArNumDaysHealth, ArFood, ArBase, ArCost, ArCostWithoutProcent, A" +
-                "rAccountNumberSan, ArDateAccNumSan, ArAccountNumberRad, ArDateAccNumRad, ArMoney" +
-                "Org, ArDateMoneyOrg, ArPaySanRad, ArDatePaySanRad, ArDebt, ArOtherMoney, ArSumPa" +
-                "y, ArDateSunPay, ArPhone FROM FullApplication WHERE (AppId = @AppId)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppDate", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNumContract", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumContract", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppFullName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppFullName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNameOrgOrPF", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNameOrgOrPF", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppCountry", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppCountry", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppWay", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppWay", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppStartTour", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppStartTour", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNumDays", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumDays", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNumNights", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumNights", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNumPeople", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumPeople", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNumOldPeople", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumOldPeople", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNumChildren", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumChildren", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppChildrensAge", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppChildrensAge", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppCategory", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppCategory", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNotes", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNotes", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArNumDaysHealth", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArNumDaysHealth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArFood", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArFood", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArBase", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArBase", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArCost", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArCost", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArCostWithoutProcent", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArCostWithoutProcent", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArAccountNumberSan", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArAccountNumberSan", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArDateAccNumSan", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateAccNumSan", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArAccountNumberRad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArAccountNumberRad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArDateAccNumRad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateAccNumRad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArMoneyOrg", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArMoneyOrg", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArDateMoneyOrg", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateMoneyOrg", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArPaySanRad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArPaySanRad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArDatePaySanRad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDatePaySanRad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArDebt", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDebt", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArOtherMoney", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArOtherMoney", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArSumPay", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArSumPay", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArDateSunPay", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateSunPay", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArPhone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArPhone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AppDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppDate", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppNumContract", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumContract", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AppStartTour", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppStartTour", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppStartTour", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppStartTour", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AppNumDays", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumDays", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppNumDays", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumDays", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AppNumNights", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumNights", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppNumNights", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumNights", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AppNumPeople", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumPeople", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppNumPeople", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumPeople", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AppNumOldPeople", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumOldPeople", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppNumOldPeople", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumOldPeople", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AppNumChildren", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumChildren", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AppNumChildren", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumChildren", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ArNumDaysHealth", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArNumDaysHealth", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ArNumDaysHealth", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArNumDaysHealth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ArCost", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArCost", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ArCost", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArCost", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ArCostWithoutProcent", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArCostWithoutProcent", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ArCostWithoutProcent", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArCostWithoutProcent", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ArDateAccNumSan", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateAccNumSan", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ArDateAccNumSan", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateAccNumSan", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ArDateAccNumRad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateAccNumRad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ArDateAccNumRad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateAccNumRad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ArDateMoneyOrg", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateMoneyOrg", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ArDateMoneyOrg", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDateMoneyOrg", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ArDatePaySanRad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDatePaySanRad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ArDatePaySanRad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArDatePaySanRad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "AppId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArRoute", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArRoute", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArTransfer", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArTransfer", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArTourProgram", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArTourProgram", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArVise", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArVise", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArTicket", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArTicket", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArInsurance", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArInsurance", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppTipe", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppTipe", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppAgentProcent", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppAgentProcent", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2416,7 +2242,7 @@ namespace RadugaTur.RadugaDBDataSet19TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT AppId, AppDate, AppNumContract, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, ArNumDaysHealth, ArFood, ArBase, ArCost, ArCostWithoutProcent, ArAccountNumberSan, ArDateAccNumSan, ArAccountNumberRad, ArDateAccNumRad, ArMoneyOrg, ArDateMoneyOrg, ArPaySanRad, ArDatePaySanRad, ArDebt, ArOtherMoney, ArSumPay, ArDateSunPay, ArPhone FROM dbo.FullApplication";
+            this._commandCollection[0].CommandText = @"SELECT AppId, AppDate, AppNumContract, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, AppNumDaysHealth, ArFood, ArBase, ArCost, ArCostWithoutProcent, ArSumPay, ArDateSumPay, ArDebt, ArOtherMoney, ArPhone, ArRoute, ArTransfer, ArTourProgram, ArVise, ArTicket, ArInsurance, AppTipe, AppAgentProcent FROM dbo.FullApplication";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -2424,7 +2250,7 @@ namespace RadugaTur.RadugaDBDataSet19TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(RadugaDBDataSet19.FullApplicationDataTable dataTable) {
+        public virtual int Fill(RadugaDBDataSet25.FullApplicationDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2437,9 +2263,9 @@ namespace RadugaTur.RadugaDBDataSet19TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual RadugaDBDataSet19.FullApplicationDataTable GetData() {
+        public virtual RadugaDBDataSet25.FullApplicationDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            RadugaDBDataSet19.FullApplicationDataTable dataTable = new RadugaDBDataSet19.FullApplicationDataTable();
+            RadugaDBDataSet25.FullApplicationDataTable dataTable = new RadugaDBDataSet25.FullApplicationDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -2447,14 +2273,14 @@ namespace RadugaTur.RadugaDBDataSet19TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(RadugaDBDataSet19.FullApplicationDataTable dataTable) {
+        public virtual int Update(RadugaDBDataSet25.FullApplicationDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(RadugaDBDataSet19 dataSet) {
+        public virtual int Update(RadugaDBDataSet25 dataSet) {
             return this.Adapter.Update(dataSet, "FullApplication");
         }
         
@@ -2476,199 +2302,53 @@ namespace RadugaTur.RadugaDBDataSet19TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(
-                    int Original_AppId, 
-                    string Original_AppDate, 
-                    int Original_AppNumContract, 
-                    string Original_AppStartTour, 
-                    string Original_AppNumDays, 
-                    string Original_AppNumNights, 
-                    global::System.Nullable<int> Original_AppNumPeople, 
-                    global::System.Nullable<int> Original_AppNumOldPeople, 
-                    global::System.Nullable<int> Original_AppNumChildren, 
-                    global::System.Nullable<int> Original_ArNumDaysHealth, 
-                    global::System.Nullable<decimal> Original_ArCost, 
-                    global::System.Nullable<decimal> Original_ArCostWithoutProcent, 
-                    string Original_ArDateAccNumSan, 
-                    string Original_ArDateAccNumRad, 
-                    string Original_ArDateMoneyOrg, 
-                    string Original_ArDatePaySanRad) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_AppId));
-            if ((Original_AppDate == null)) {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_AppDate));
-            }
-            this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_AppNumContract));
-            if ((Original_AppStartTour == null)) {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_AppStartTour));
-            }
-            if ((Original_AppNumDays == null)) {
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((string)(Original_AppNumDays));
-            }
-            if ((Original_AppNumNights == null)) {
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((string)(Original_AppNumNights));
-            }
-            if ((Original_AppNumPeople.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((int)(Original_AppNumPeople.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[11].Value = global::System.DBNull.Value;
-            }
-            if ((Original_AppNumOldPeople.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((int)(Original_AppNumOldPeople.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[13].Value = global::System.DBNull.Value;
-            }
-            if ((Original_AppNumChildren.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[15].Value = ((int)(Original_AppNumChildren.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[15].Value = global::System.DBNull.Value;
-            }
-            if ((Original_ArNumDaysHealth.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[17].Value = ((int)(Original_ArNumDaysHealth.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[16].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[17].Value = global::System.DBNull.Value;
-            }
-            if ((Original_ArCost.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[19].Value = ((decimal)(Original_ArCost.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[19].Value = global::System.DBNull.Value;
-            }
-            if ((Original_ArCostWithoutProcent.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[21].Value = ((decimal)(Original_ArCostWithoutProcent.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[21].Value = global::System.DBNull.Value;
-            }
-            if ((Original_ArDateAccNumSan == null)) {
-                this.Adapter.DeleteCommand.Parameters[22].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[23].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[23].Value = ((string)(Original_ArDateAccNumSan));
-            }
-            if ((Original_ArDateAccNumRad == null)) {
-                this.Adapter.DeleteCommand.Parameters[24].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[25].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[24].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[25].Value = ((string)(Original_ArDateAccNumRad));
-            }
-            if ((Original_ArDateMoneyOrg == null)) {
-                this.Adapter.DeleteCommand.Parameters[26].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[27].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[26].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[27].Value = ((string)(Original_ArDateMoneyOrg));
-            }
-            if ((Original_ArDatePaySanRad == null)) {
-                this.Adapter.DeleteCommand.Parameters[28].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[29].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[28].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[29].Value = ((string)(Original_ArDatePaySanRad));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
         public virtual int Insert(
                     string AppDate, 
-                    int AppNumContract, 
+                    global::System.Nullable<int> AppNumContract, 
                     string AppFullName, 
                     string AppNameOrgOrPF, 
                     string AppCountry, 
                     string AppWay, 
                     string AppStartTour, 
-                    string AppNumDays, 
-                    string AppNumNights, 
+                    global::System.Nullable<int> AppNumDays, 
+                    global::System.Nullable<int> AppNumNights, 
                     global::System.Nullable<int> AppNumPeople, 
                     global::System.Nullable<int> AppNumOldPeople, 
                     global::System.Nullable<int> AppNumChildren, 
                     string AppChildrensAge, 
                     string AppCategory, 
                     string AppNotes, 
-                    global::System.Nullable<int> ArNumDaysHealth, 
+                    string AppNumDaysHealth, 
                     string ArFood, 
                     string ArBase, 
-                    global::System.Nullable<decimal> ArCost, 
-                    global::System.Nullable<decimal> ArCostWithoutProcent, 
-                    string ArAccountNumberSan, 
-                    string ArDateAccNumSan, 
-                    string ArAccountNumberRad, 
-                    string ArDateAccNumRad, 
-                    string ArMoneyOrg, 
-                    string ArDateMoneyOrg, 
-                    string ArPaySanRad, 
-                    string ArDatePaySanRad, 
+                    string ArCost, 
+                    string ArCostWithoutProcent, 
+                    string ArSumPay, 
+                    string ArDateSumPay, 
                     string ArDebt, 
                     string ArOtherMoney, 
-                    string ArSumPay, 
-                    string ArDateSunPay, 
-                    string ArPhone) {
+                    string ArPhone, 
+                    string ArRoute, 
+                    string ArTransfer, 
+                    string ArTourProgram, 
+                    string ArVise, 
+                    string ArTicket, 
+                    string ArInsurance, 
+                    string AppTipe, 
+                    global::System.Nullable<double> AppAgentProcent) {
             if ((AppDate == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(AppDate));
             }
-            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(AppNumContract));
+            if ((AppNumContract.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((int)(AppNumContract.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
             if ((AppFullName == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
@@ -2699,17 +2379,17 @@ namespace RadugaTur.RadugaDBDataSet19TableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[6].Value = ((string)(AppStartTour));
             }
-            if ((AppNumDays == null)) {
+            if ((AppNumDays.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((int)(AppNumDays.Value));
+            }
+            else {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(AppNumDays));
+            if ((AppNumNights.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[8].Value = ((int)(AppNumNights.Value));
             }
-            if ((AppNumNights == null)) {
+            else {
                 this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(AppNumNights));
             }
             if ((AppNumPeople.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[9].Value = ((int)(AppNumPeople.Value));
@@ -2747,11 +2427,11 @@ namespace RadugaTur.RadugaDBDataSet19TableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[14].Value = ((string)(AppNotes));
             }
-            if ((ArNumDaysHealth.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[15].Value = ((int)(ArNumDaysHealth.Value));
+            if ((AppNumDaysHealth == null)) {
+                this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[15].Value = ((string)(AppNumDaysHealth));
             }
             if ((ArFood == null)) {
                 this.Adapter.InsertCommand.Parameters[16].Value = global::System.DBNull.Value;
@@ -2765,95 +2445,95 @@ namespace RadugaTur.RadugaDBDataSet19TableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[17].Value = ((string)(ArBase));
             }
-            if ((ArCost.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[18].Value = ((decimal)(ArCost.Value));
-            }
-            else {
+            if ((ArCost == null)) {
                 this.Adapter.InsertCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
-            if ((ArCostWithoutProcent.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[19].Value = ((decimal)(ArCostWithoutProcent.Value));
-            }
             else {
+                this.Adapter.InsertCommand.Parameters[18].Value = ((string)(ArCost));
+            }
+            if ((ArCostWithoutProcent == null)) {
                 this.Adapter.InsertCommand.Parameters[19].Value = global::System.DBNull.Value;
             }
-            if ((ArAccountNumberSan == null)) {
+            else {
+                this.Adapter.InsertCommand.Parameters[19].Value = ((string)(ArCostWithoutProcent));
+            }
+            if ((ArSumPay == null)) {
                 this.Adapter.InsertCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[20].Value = ((string)(ArAccountNumberSan));
+                this.Adapter.InsertCommand.Parameters[20].Value = ((string)(ArSumPay));
             }
-            if ((ArDateAccNumSan == null)) {
+            if ((ArDateSumPay == null)) {
                 this.Adapter.InsertCommand.Parameters[21].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[21].Value = ((string)(ArDateAccNumSan));
+                this.Adapter.InsertCommand.Parameters[21].Value = ((string)(ArDateSumPay));
             }
-            if ((ArAccountNumberRad == null)) {
+            if ((ArDebt == null)) {
                 this.Adapter.InsertCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[22].Value = ((string)(ArAccountNumberRad));
+                this.Adapter.InsertCommand.Parameters[22].Value = ((string)(ArDebt));
             }
-            if ((ArDateAccNumRad == null)) {
+            if ((ArOtherMoney == null)) {
                 this.Adapter.InsertCommand.Parameters[23].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[23].Value = ((string)(ArDateAccNumRad));
+                this.Adapter.InsertCommand.Parameters[23].Value = ((string)(ArOtherMoney));
             }
-            if ((ArMoneyOrg == null)) {
+            if ((ArPhone == null)) {
                 this.Adapter.InsertCommand.Parameters[24].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[24].Value = ((string)(ArMoneyOrg));
+                this.Adapter.InsertCommand.Parameters[24].Value = ((string)(ArPhone));
             }
-            if ((ArDateMoneyOrg == null)) {
+            if ((ArRoute == null)) {
                 this.Adapter.InsertCommand.Parameters[25].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[25].Value = ((string)(ArDateMoneyOrg));
+                this.Adapter.InsertCommand.Parameters[25].Value = ((string)(ArRoute));
             }
-            if ((ArPaySanRad == null)) {
+            if ((ArTransfer == null)) {
                 this.Adapter.InsertCommand.Parameters[26].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[26].Value = ((string)(ArPaySanRad));
+                this.Adapter.InsertCommand.Parameters[26].Value = ((string)(ArTransfer));
             }
-            if ((ArDatePaySanRad == null)) {
+            if ((ArTourProgram == null)) {
                 this.Adapter.InsertCommand.Parameters[27].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[27].Value = ((string)(ArDatePaySanRad));
+                this.Adapter.InsertCommand.Parameters[27].Value = ((string)(ArTourProgram));
             }
-            if ((ArDebt == null)) {
+            if ((ArVise == null)) {
                 this.Adapter.InsertCommand.Parameters[28].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[28].Value = ((string)(ArDebt));
+                this.Adapter.InsertCommand.Parameters[28].Value = ((string)(ArVise));
             }
-            if ((ArOtherMoney == null)) {
+            if ((ArTicket == null)) {
                 this.Adapter.InsertCommand.Parameters[29].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[29].Value = ((string)(ArOtherMoney));
+                this.Adapter.InsertCommand.Parameters[29].Value = ((string)(ArTicket));
             }
-            if ((ArSumPay == null)) {
+            if ((ArInsurance == null)) {
                 this.Adapter.InsertCommand.Parameters[30].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[30].Value = ((string)(ArSumPay));
+                this.Adapter.InsertCommand.Parameters[30].Value = ((string)(ArInsurance));
             }
-            if ((ArDateSunPay == null)) {
+            if ((AppTipe == null)) {
                 this.Adapter.InsertCommand.Parameters[31].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[31].Value = ((string)(ArDateSunPay));
+                this.Adapter.InsertCommand.Parameters[31].Value = ((string)(AppTipe));
             }
-            if ((ArPhone == null)) {
-                this.Adapter.InsertCommand.Parameters[32].Value = global::System.DBNull.Value;
+            if ((AppAgentProcent.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[32].Value = ((double)(AppAgentProcent.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[32].Value = ((string)(ArPhone));
+                this.Adapter.InsertCommand.Parameters[32].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2869,442 +2549,6 @@ namespace RadugaTur.RadugaDBDataSet19TableAdapters {
                     this.Adapter.InsertCommand.Connection.Close();
                 }
             }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    string AppDate, 
-                    int AppNumContract, 
-                    string AppFullName, 
-                    string AppNameOrgOrPF, 
-                    string AppCountry, 
-                    string AppWay, 
-                    string AppStartTour, 
-                    string AppNumDays, 
-                    string AppNumNights, 
-                    global::System.Nullable<int> AppNumPeople, 
-                    global::System.Nullable<int> AppNumOldPeople, 
-                    global::System.Nullable<int> AppNumChildren, 
-                    string AppChildrensAge, 
-                    string AppCategory, 
-                    string AppNotes, 
-                    global::System.Nullable<int> ArNumDaysHealth, 
-                    string ArFood, 
-                    string ArBase, 
-                    global::System.Nullable<decimal> ArCost, 
-                    global::System.Nullable<decimal> ArCostWithoutProcent, 
-                    string ArAccountNumberSan, 
-                    string ArDateAccNumSan, 
-                    string ArAccountNumberRad, 
-                    string ArDateAccNumRad, 
-                    string ArMoneyOrg, 
-                    string ArDateMoneyOrg, 
-                    string ArPaySanRad, 
-                    string ArDatePaySanRad, 
-                    string ArDebt, 
-                    string ArOtherMoney, 
-                    string ArSumPay, 
-                    string ArDateSunPay, 
-                    string ArPhone, 
-                    int Original_AppId, 
-                    string Original_AppDate, 
-                    int Original_AppNumContract, 
-                    string Original_AppStartTour, 
-                    string Original_AppNumDays, 
-                    string Original_AppNumNights, 
-                    global::System.Nullable<int> Original_AppNumPeople, 
-                    global::System.Nullable<int> Original_AppNumOldPeople, 
-                    global::System.Nullable<int> Original_AppNumChildren, 
-                    global::System.Nullable<int> Original_ArNumDaysHealth, 
-                    global::System.Nullable<decimal> Original_ArCost, 
-                    global::System.Nullable<decimal> Original_ArCostWithoutProcent, 
-                    string Original_ArDateAccNumSan, 
-                    string Original_ArDateAccNumRad, 
-                    string Original_ArDateMoneyOrg, 
-                    string Original_ArDatePaySanRad, 
-                    int AppId) {
-            if ((AppDate == null)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(AppDate));
-            }
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(AppNumContract));
-            if ((AppFullName == null)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(AppFullName));
-            }
-            if ((AppNameOrgOrPF == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(AppNameOrgOrPF));
-            }
-            if ((AppCountry == null)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(AppCountry));
-            }
-            if ((AppWay == null)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(AppWay));
-            }
-            if ((AppStartTour == null)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(AppStartTour));
-            }
-            if ((AppNumDays == null)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(AppNumDays));
-            }
-            if ((AppNumNights == null)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(AppNumNights));
-            }
-            if ((AppNumPeople.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(AppNumPeople.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            if ((AppNumOldPeople.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(AppNumOldPeople.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            if ((AppNumChildren.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(AppNumChildren.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
-            }
-            if ((AppChildrensAge == null)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(AppChildrensAge));
-            }
-            if ((AppCategory == null)) {
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(AppCategory));
-            }
-            if ((AppNotes == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(AppNotes));
-            }
-            if ((ArNumDaysHealth.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(ArNumDaysHealth.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
-            }
-            if ((ArFood == null)) {
-                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(ArFood));
-            }
-            if ((ArBase == null)) {
-                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(ArBase));
-            }
-            if ((ArCost.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((decimal)(ArCost.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
-            }
-            if ((ArCostWithoutProcent.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((decimal)(ArCostWithoutProcent.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
-            }
-            if ((ArAccountNumberSan == null)) {
-                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((string)(ArAccountNumberSan));
-            }
-            if ((ArDateAccNumSan == null)) {
-                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(ArDateAccNumSan));
-            }
-            if ((ArAccountNumberRad == null)) {
-                this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(ArAccountNumberRad));
-            }
-            if ((ArDateAccNumRad == null)) {
-                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(ArDateAccNumRad));
-            }
-            if ((ArMoneyOrg == null)) {
-                this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(ArMoneyOrg));
-            }
-            if ((ArDateMoneyOrg == null)) {
-                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(ArDateMoneyOrg));
-            }
-            if ((ArPaySanRad == null)) {
-                this.Adapter.UpdateCommand.Parameters[26].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((string)(ArPaySanRad));
-            }
-            if ((ArDatePaySanRad == null)) {
-                this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(ArDatePaySanRad));
-            }
-            if ((ArDebt == null)) {
-                this.Adapter.UpdateCommand.Parameters[28].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((string)(ArDebt));
-            }
-            if ((ArOtherMoney == null)) {
-                this.Adapter.UpdateCommand.Parameters[29].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(ArOtherMoney));
-            }
-            if ((ArSumPay == null)) {
-                this.Adapter.UpdateCommand.Parameters[30].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((string)(ArSumPay));
-            }
-            if ((ArDateSunPay == null)) {
-                this.Adapter.UpdateCommand.Parameters[31].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(ArDateSunPay));
-            }
-            if ((ArPhone == null)) {
-                this.Adapter.UpdateCommand.Parameters[32].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((string)(ArPhone));
-            }
-            this.Adapter.UpdateCommand.Parameters[33].Value = ((int)(Original_AppId));
-            if ((Original_AppDate == null)) {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[35].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[35].Value = ((string)(Original_AppDate));
-            }
-            this.Adapter.UpdateCommand.Parameters[36].Value = ((int)(Original_AppNumContract));
-            if ((Original_AppStartTour == null)) {
-                this.Adapter.UpdateCommand.Parameters[37].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[38].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[37].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[38].Value = ((string)(Original_AppStartTour));
-            }
-            if ((Original_AppNumDays == null)) {
-                this.Adapter.UpdateCommand.Parameters[39].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[40].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[39].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[40].Value = ((string)(Original_AppNumDays));
-            }
-            if ((Original_AppNumNights == null)) {
-                this.Adapter.UpdateCommand.Parameters[41].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[42].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[41].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[42].Value = ((string)(Original_AppNumNights));
-            }
-            if ((Original_AppNumPeople.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[43].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[44].Value = ((int)(Original_AppNumPeople.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[43].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[44].Value = global::System.DBNull.Value;
-            }
-            if ((Original_AppNumOldPeople.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[45].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[46].Value = ((int)(Original_AppNumOldPeople.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[45].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[46].Value = global::System.DBNull.Value;
-            }
-            if ((Original_AppNumChildren.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[47].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[48].Value = ((int)(Original_AppNumChildren.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[47].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[48].Value = global::System.DBNull.Value;
-            }
-            if ((Original_ArNumDaysHealth.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[49].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[50].Value = ((int)(Original_ArNumDaysHealth.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[49].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[50].Value = global::System.DBNull.Value;
-            }
-            if ((Original_ArCost.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[51].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[52].Value = ((decimal)(Original_ArCost.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[51].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[52].Value = global::System.DBNull.Value;
-            }
-            if ((Original_ArCostWithoutProcent.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[53].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[54].Value = ((decimal)(Original_ArCostWithoutProcent.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[53].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[54].Value = global::System.DBNull.Value;
-            }
-            if ((Original_ArDateAccNumSan == null)) {
-                this.Adapter.UpdateCommand.Parameters[55].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[56].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[55].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[56].Value = ((string)(Original_ArDateAccNumSan));
-            }
-            if ((Original_ArDateAccNumRad == null)) {
-                this.Adapter.UpdateCommand.Parameters[57].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[58].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[57].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[58].Value = ((string)(Original_ArDateAccNumRad));
-            }
-            if ((Original_ArDateMoneyOrg == null)) {
-                this.Adapter.UpdateCommand.Parameters[59].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[60].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[59].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[60].Value = ((string)(Original_ArDateMoneyOrg));
-            }
-            if ((Original_ArDatePaySanRad == null)) {
-                this.Adapter.UpdateCommand.Parameters[61].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[62].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[61].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[62].Value = ((string)(Original_ArDatePaySanRad));
-            }
-            this.Adapter.UpdateCommand.Parameters[63].Value = ((int)(AppId));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    string AppDate, 
-                    int AppNumContract, 
-                    string AppFullName, 
-                    string AppNameOrgOrPF, 
-                    string AppCountry, 
-                    string AppWay, 
-                    string AppStartTour, 
-                    string AppNumDays, 
-                    string AppNumNights, 
-                    global::System.Nullable<int> AppNumPeople, 
-                    global::System.Nullable<int> AppNumOldPeople, 
-                    global::System.Nullable<int> AppNumChildren, 
-                    string AppChildrensAge, 
-                    string AppCategory, 
-                    string AppNotes, 
-                    global::System.Nullable<int> ArNumDaysHealth, 
-                    string ArFood, 
-                    string ArBase, 
-                    global::System.Nullable<decimal> ArCost, 
-                    global::System.Nullable<decimal> ArCostWithoutProcent, 
-                    string ArAccountNumberSan, 
-                    string ArDateAccNumSan, 
-                    string ArAccountNumberRad, 
-                    string ArDateAccNumRad, 
-                    string ArMoneyOrg, 
-                    string ArDateMoneyOrg, 
-                    string ArPaySanRad, 
-                    string ArDatePaySanRad, 
-                    string ArDebt, 
-                    string ArOtherMoney, 
-                    string ArSumPay, 
-                    string ArDateSunPay, 
-                    string ArPhone, 
-                    int Original_AppId, 
-                    string Original_AppDate, 
-                    int Original_AppNumContract, 
-                    string Original_AppStartTour, 
-                    string Original_AppNumDays, 
-                    string Original_AppNumNights, 
-                    global::System.Nullable<int> Original_AppNumPeople, 
-                    global::System.Nullable<int> Original_AppNumOldPeople, 
-                    global::System.Nullable<int> Original_AppNumChildren, 
-                    global::System.Nullable<int> Original_ArNumDaysHealth, 
-                    global::System.Nullable<decimal> Original_ArCost, 
-                    global::System.Nullable<decimal> Original_ArCostWithoutProcent, 
-                    string Original_ArDateAccNumSan, 
-                    string Original_ArDateAccNumRad, 
-                    string Original_ArDateMoneyOrg, 
-                    string Original_ArDatePaySanRad) {
-            return this.Update(AppDate, AppNumContract, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, ArNumDaysHealth, ArFood, ArBase, ArCost, ArCostWithoutProcent, ArAccountNumberSan, ArDateAccNumSan, ArAccountNumberRad, ArDateAccNumRad, ArMoneyOrg, ArDateMoneyOrg, ArPaySanRad, ArDatePaySanRad, ArDebt, ArOtherMoney, ArSumPay, ArDateSunPay, ArPhone, Original_AppId, Original_AppDate, Original_AppNumContract, Original_AppStartTour, Original_AppNumDays, Original_AppNumNights, Original_AppNumPeople, Original_AppNumOldPeople, Original_AppNumChildren, Original_ArNumDaysHealth, Original_ArCost, Original_ArCostWithoutProcent, Original_ArDateAccNumSan, Original_ArDateAccNumRad, Original_ArDateMoneyOrg, Original_ArDatePaySanRad, Original_AppId);
         }
     }
     
@@ -3399,7 +2643,7 @@ namespace RadugaTur.RadugaDBDataSet19TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(RadugaDBDataSet19 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(RadugaDBDataSet25 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._fullApplicationTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.FullApplication.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -3418,7 +2662,7 @@ namespace RadugaTur.RadugaDBDataSet19TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(RadugaDBDataSet19 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(RadugaDBDataSet25 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._fullApplicationTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.FullApplication.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -3436,7 +2680,7 @@ namespace RadugaTur.RadugaDBDataSet19TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(RadugaDBDataSet19 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(RadugaDBDataSet25 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._fullApplicationTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.FullApplication.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -3478,7 +2722,7 @@ namespace RadugaTur.RadugaDBDataSet19TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(RadugaDBDataSet19 dataSet) {
+        public virtual int UpdateAll(RadugaDBDataSet25 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

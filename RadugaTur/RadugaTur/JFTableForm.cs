@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace RadugaTur
 {
@@ -25,6 +26,33 @@ namespace RadugaTur
 
         private void JFTableForm_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the '_1gb_rrrrrDataSet1.JuridicalFace' table. You can move, or remove it, as needed.
+            this.juridicalFaceTableAdapter1.Fill(this._1gb_rrrrrDataSet1.JuridicalFace);
+            /*string MyString = "Data Source=mysql56.1gb.ru;Database=db_radugatour;Uid=db_radugatour;Pwd=82f6b51c345;";
+            SqlConnection connection = new SqlConnection(MyString);
+            connection.Open();
+            try
+            {
+
+                SqlCommand cmd = connection.CreateCommand();
+                cmd.CommandText = "select JFId, JFNameOrg, JFFullNameOrg, JFFullName, JFPhone, JFCargoCarrier from JuridicalFace";
+                SqlDataAdapter adap = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                adap.Fill(ds);
+                dataGridView1.DataSource = ds.Tables[0].DefaultView;
+            }
+            catch
+            {
+                throw;
+            }
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }*/
+
             // TODO: This line of code loads data into the 'radugaDBDataSet3.JuridicalFace' table. You can move, or remove it, as needed.
             this.juridicalFaceTableAdapter.Fill(this.radugaDBDataSet3.JuridicalFace);
 
@@ -49,6 +77,7 @@ namespace RadugaTur
                   string JFFullNameOrg = fields[1].ToString();
                   parent.setFullName2(JFFullNameOrg);
                   parent.fillData4(JFId, JFFullNameOrg);
+                  this.Close();
               }
 
           
@@ -64,7 +93,7 @@ namespace RadugaTur
         private void changeJFButton_Click(object sender, EventArgs e)
         {
             JuridicalFaceForm JFForm = new JuridicalFaceForm();
-            JFForm.Show();
+            
             int i = dataGridView1.SelectedCells[0].RowIndex;
             int JFid = int.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString());
             string query = "select JFId, JFNameOrg, JFFullNameOrg, JFFullName, JFPhone, JFCargoCarrier from JuridicalFace where (JFId = " + JFid + ")";
@@ -81,6 +110,7 @@ namespace RadugaTur
             string JFPhone = fields2[4].ToString(), JFCargoCarrier = fields2[5].ToString();
 
             JFForm.fillData(JFId, JFNameOrg, JFFullNameOrg, JFFullName, JFPhone, JFCargoCarrier);
+            JFForm.ShowDialog();
 
             this.Close();
            

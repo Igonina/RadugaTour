@@ -14,6 +14,7 @@ using Microsoft.Office.Interop.Excel;
 
 
 
+
 namespace RadugaTur
 {
     public partial class ApplicationForm : Form
@@ -52,7 +53,7 @@ namespace RadugaTur
 
         bool isUpdateModeEnabled = false;
         int updateAppId;
-        internal void fillData(int AppId, string AppDate, int AppNumContract, string AppFullName, string AppNameOrgOrPF, string AppCountry, string AppWay, string AppStartTour, string AppNumDays, string AppNumNights, int AppNumPeople, int AppNumOldPeople, int AppNumChildren, string AppChildrensAge, string AppCategory, string AppNotes, int AppNumDaysHealth, string ArFood, string ArBase, string ArMoreTourists, string ArCost, string ArCostWithoutProcent, string ArSumPay, string ArDateSumPay, string ArDebt, string ArOtherMoney, string ArPhone, string ArRoute, string ArTransfer, string ArTourProgram, string ArVise, string ArTicket, string ArInsurance, string AppTipe, string AppAgentProcent)
+        internal void fillData(int AppId, string AppDate, int AppNumContract, string AppFullName, string AppNameOrgOrPF, string AppCountry, string AppWay, string AppStartTour, string AppNumDays, string AppNumNights, int AppNumPeople, int AppNumOldPeople, int AppNumChildren, string AppChildrensAge, string AppCategory, string AppNotes, string AppNumDaysHealth, string ArFood, string ArBase,  string ArCost, string ArCostWithoutProcent, string ArSumPay, string ArDateSumPay, string ArDebt, string ArOtherMoney, string ArPhone, string ArRoute, string ArTransfer, string ArTourProgram, string ArVise, string ArTicket, string ArInsurance, string AppTipe, string AppAgentProcent)
         {
             this.inputAppDate.Text = AppDate;
 
@@ -70,10 +71,9 @@ namespace RadugaTur
             this.inputAppChildAge.Text = AppChildrensAge;
             this.inputAppNumberAndCategory.Text = AppCategory;
             this.inputAppNotes.Text = AppNotes;
-            this.inputNumDaysHealth.Text = AppNumDaysHealth.ToString();
+            this.inputNumDaysHealth.Text = AppNumDaysHealth;
             this.inputFood.Text = ArFood;
             this.inputArBase.Text = ArBase;
-            this.inputAppTourists.Text = ArMoreTourists;
             this.inputAppCost.Text = ArCost;
             this.inputAppCostWithoutProcent.Text = ArCostWithoutProcent;
             this.inputAppSumPay.Text = ArSumPay;
@@ -134,7 +134,7 @@ namespace RadugaTur
         {
             if (updateAppId == 0)
             {
-                string query = "insert into FullApplication(AppDate, AppNumContract, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople,AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, AppNumDaysHealth, ArFood, ArBase, ArMoreTourists, ArCost, ArCostWithoutProcent, ArSumPay, ArDateSumPay, ArDebt, ArOtherMoney,  ArPhone, ArRoute, ArTransfer, ArTourProgram, ArVise, ArTicket, ArInsurance, AppTipe, AppAgentProcent) values (\'" +
+                string query = "insert into FullApplication(AppDate, AppNumContract, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople,AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, AppNumDaysHealth, ArFood, ArBase, ArCost, ArCostWithoutProcent, ArSumPay, ArDateSumPay, ArDebt, ArOtherMoney,  ArPhone, ArRoute, ArTransfer, ArTourProgram, ArVise, ArTicket, ArInsurance, AppTipe, AppAgentProcent) values (\'" +
                     inputAppDate.Text + "\', \'" +
                     inputNumContract.Text + "\', \'" +
                     inputAppFullName.Text + "\',\'" +
@@ -152,8 +152,7 @@ namespace RadugaTur
                     inputAppNotes.Text + "\',\'" +
                     inputNumDaysHealth.Text + "\', \'" +
                     inputFood.Text + "\',\'" +
-                    inputArBase.Text + "\',\'" +
-                    inputAppTourists.Text + "\',\'" +
+                    inputArBase.Text + "\',\'" +                   
                     inputAppCost.Text + "\',\'" +
                     inputAppCostWithoutProcent.Text + "\',\'" +
                     inputAppSumPay.Text + "\' , \'" +
@@ -206,7 +205,7 @@ namespace RadugaTur
                 this.Close();
             }
             else {
-                string query3 = "update FullApplication set AppDate  = \'" + inputAppDate.Text + "\',  AppNumContract = \'" + inputNumContract.Text + "\',  AppFullName = \'" + inputAppFullName.Text + "\',  AppNameOrgOrPF = \'" + inputAppNameOrgOrPF.Text + "\',  AppCountry = \'" + inputAppCountry.Text + "\',  AppWay = \'" + inputAppWay.Text + "\',  AppStartTour = \'" + inputAppStartTour.Text + "\',  AppNumDays = \'" + inputNumDays.Text + "\',  AppNumNights = \'" + inputNumNights.Text + "\',  AppNumPeople = \'" + inputAppNumPeople.Text + "\',   AppNumOldPeople = \'" + inputAppOldPeople.Text + "\',  AppNumChildren = \'" + inputAppNumChildren.Text + "\',  AppChildrensAge = \'" + inputAppChildAge.Text + "\',  AppCategory = \'" + inputAppNumberAndCategory.Text + "\',  AppNotes = \'" + inputAppNotes.Text + "\',  AppNumDaysHealth = \'" + inputNumDaysHealth.Text + "\',  ArFood = \'" + inputFood.Text + "\',  ArBase = \'" + inputArBase.Text + "\',  ArMoreTourists = \'" + inputAppTourists.Text + "\',  ArCost = \'" + inputAppCost.Text + "\',  ArCostWithoutProcent = \'" + inputAppCostWithoutProcent.Text + "\',  ArSumPay =   \'" + inputAppSumPay.Text + "\',  ArDateSumPay = \'" + inputAppDateSumPay.Text + "\',  ArDebt  = \'" + inputAppDebt.Text + "\',  ArOtherMoney = \'" + inputAppOtherMoney.Text + "\',   ArPhone = \'" + inputAppPhone.Text + "\',  ArRoute = \'" + inputRoute.Text + "\',  ArTransfer = \'" + inputTransfer.Text + "\',  ArTourProgram = \'" + inputTourProgram.Text + "\',  ArVise = \'" + inputVisa.Text + "\',  ArTicket = \'" + inputTick.Text + "\',  ArInsurance = \'" + inputIns.Text + "\',  AppTipe = \'" + inputTipeApp.Text + "\',  AppAgentProcent = \'" + inputAgentsProcent.Text + "\' where (AppId = " + updateAppId + ")";
+                string query3 = "update FullApplication set AppDate  = \'" + inputAppDate.Text + "\',  AppNumContract = \'" + inputNumContract.Text + "\',  AppFullName = \'" + inputAppFullName.Text + "\',  AppNameOrgOrPF = \'" + inputAppNameOrgOrPF.Text + "\',  AppCountry = \'" + inputAppCountry.Text + "\',  AppWay = \'" + inputAppWay.Text + "\',  AppStartTour = \'" + inputAppStartTour.Text + "\',  AppNumDays = \'" + inputNumDays.Text + "\',  AppNumNights = \'" + inputNumNights.Text + "\',  AppNumPeople = \'" + inputAppNumPeople.Text + "\',   AppNumOldPeople = \'" + inputAppOldPeople.Text + "\',  AppNumChildren = \'" + inputAppNumChildren.Text + "\',  AppChildrensAge = \'" + inputAppChildAge.Text + "\',  AppCategory = \'" + inputAppNumberAndCategory.Text + "\',  AppNotes = \'" + inputAppNotes.Text + "\',  AppNumDaysHealth = \'" + inputNumDaysHealth.Text + "\',  ArFood = \'" + inputFood.Text + "\',  ArBase = \'" + inputArBase.Text + "\',  ArCost = \'" + inputAppCost.Text + "\',  ArCostWithoutProcent = \'" + inputAppCostWithoutProcent.Text + "\',  ArSumPay =   \'" + inputAppSumPay.Text + "\',  ArDateSumPay = \'" + inputAppDateSumPay.Text + "\',  ArDebt  = \'" + inputAppDebt.Text + "\',  ArOtherMoney = \'" + inputAppOtherMoney.Text + "\',   ArPhone = \'" + inputAppPhone.Text + "\',  ArRoute = \'" + inputRoute.Text + "\',  ArTransfer = \'" + inputTransfer.Text + "\',  ArTourProgram = \'" + inputTourProgram.Text + "\',  ArVise = \'" + inputVisa.Text + "\',  ArTicket = \'" + inputTick.Text + "\',  ArInsurance = \'" + inputIns.Text + "\',  AppTipe = \'" + inputTipeApp.Text + "\',  AppAgentProcent = \'" + inputAgentsProcent.Text + "\' where (AppId = " + updateAppId + ")";
                 string query4 = "update TouristsPayment set tourDateAcc = \'" + dateAcc.Text + "\', tourSumAcc = \'" + sumAcc.Text + "\', tourPayAcc = \'" + payAcc.Text + "\', tourOrderAcc = \'" + orderAcc.Text + "\', tourDateRec = \'" + dateRec.Text + "\', tourSumRec = \'" + sumRec.Text + "\', tourPayRec = \'" + payRec.Text + "\', tourOrderRec = \'" + orderRec.Text + "\', tourDateDebt = \'" + DateDeb.Text + "\', tourSumDebt = \'" + sumDeb.Text + "\', tourPayDebt = \'" + payDeb.Text + "\', tourOrderDebt = \'" + orderDeb.Text + "\', forTourJurTick = \'" + jurTick.Text + "\', forTourDateTick = \'" + dateTick.Text + "\', forTourSumTick = \'" + sumTick.Text + "\', forTourPayTick = \'" + payTick.Text + "\', forTourOrderTick = \'" + orderTick.Text + "\', forTourJurWay = \'" + jurWay.Text + "\', forTourDateWay = \'" + dateWay.Text + "\', forTourSumWay = \'" + sumWay.Text + "\', forTourPayWay = \'" + payWay.Text + "\', forTourOrderWay = \'" + orderWay.Text + "\', forTourJurIns = \'" + jurIns.Text + "\', forTourDateIns = \'" + dateIns.Text + "\', forTourSumIns = \'" + sumIns.Text + "\', forTourPayIns = \'" + payIns.Text + "\', forTourOrderIns = \'" + orderIns.Text + "\' where (tourNumContract = " + inputNumContract.Text + ")";
                 Database.executeQuery(query3).Close();
                 Database.executeQuery(query4).Close();
@@ -268,7 +267,7 @@ namespace RadugaTur
         private void PrintButton_Click(object sender, EventArgs e)
         {
             Documents documents = new Documents(inputAppDate, inputNumContract, inputAppFullName, inputAppNameOrgOrPF, inputAppCountry, inputAppWay, inputAppStartTour, inputNumDays, inputNumNights, inputAppNumPeople,
-                inputAppOldPeople, inputAppNumChildren, inputAppChildAge, inputAppNumberAndCategory, inputAppNotes, inputNumDaysHealth, inputFood, inputArBase, inputAppTourists, inputAppCost,
+                inputAppOldPeople, inputAppNumChildren, inputAppChildAge, inputAppNumberAndCategory, inputAppNotes, inputNumDaysHealth, inputFood, inputArBase, inputAppCost,
                 inputAppCostWithoutProcent, inputAppSumPay, inputAppDateSumPay, inputAppDebt, inputAppOtherMoney, inputAppPhone, inputRoute, inputTransfer, inputTourProgram, inputVisa,
                 inputTick, inputIns, inputTipeApp, inputAgentsProcent, dateAcc, sumAcc, payAcc, orderAcc, dateRec, sumRec, payRec, orderRec, DateDeb, sumDeb, payDeb, orderDeb, jurTick, dateTick, sumTick, payTick,
                 orderTick, jurWay, dateWay, sumWay, payWay, orderWay, jurIns, dateIns, sumIns, payIns, orderIns);
@@ -293,10 +292,15 @@ namespace RadugaTur
             pfTable.Show();
         }
         string Name;
+        int counter = 0;
 
         internal void addFullName(string name)
         {
+            counter++;
             inputAppFullName.Text += (inputAppFullName.Text == "" ? "" : "; ") + name;
+            inputAppNumPeople.Text = counter.ToString();
+            
+
         }
 
         

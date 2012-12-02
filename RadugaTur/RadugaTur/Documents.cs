@@ -35,7 +35,6 @@ namespace RadugaTur
             System.Windows.Forms.TextBox inputNumDaysHealth, 
             System.Windows.Forms.TextBox inputFood, 
             System.Windows.Forms.TextBox inputArBase, 
-            System.Windows.Forms.TextBox inputAppTourists, 
             System.Windows.Forms.TextBox inputAppCost,  
             System.Windows.Forms.TextBox inputAppCostWithoutProcent,
             System.Windows.Forms.TextBox inputAppSumPay, 
@@ -98,7 +97,6 @@ namespace RadugaTur
             this.inputNumDaysHealth = inputNumDaysHealth;
             this.inputFood = inputFood;
             this.inputArBase = inputArBase;
-            this.inputAppTourists = inputAppTourists;
             this.inputAppCost = inputAppCost;
             this.inputAppCostWithoutProcent = inputAppCostWithoutProcent;
             this.inputAppSumPay = inputAppSumPay;
@@ -161,7 +159,6 @@ namespace RadugaTur
         TextBox inputNumDaysHealth;
         TextBox inputFood;
         TextBox inputArBase;
-        TextBox inputAppTourists;
         TextBox inputAppCost;
         TextBox inputAppCostWithoutProcent;
         TextBox inputAppSumPay;
@@ -230,6 +227,41 @@ namespace RadugaTur
         string PFOrgGetForeignPassport;
         string PFBirthPlace;
         string PFPhone;
+
+        internal void fillDocumentH(string PFFullEngName, string PFBirthday, string PFNumAndSerForeignPassport, string PFDateEndForeignPassport) {
+            this.PFFullEngName = PFFEN;
+            this.PFBirthday =  PFB;
+            this.PFNumAndSerForeignPassport = PFNASFP;
+            this.PFDateEndForeignPassport =  PFDEFP;
+        }
+        string PFFEN;
+        string PFB;
+        string PFNASFP;
+        string PFDEFP;
+
+        internal void fillDocumentF(string PFFullEngName, string PFBirthday, string PFNumAndSerForeignPassport, string PFDateEndForeignPassport)
+        {
+            this.PFFullEngName = PFFEN2;
+            this.PFBirthday = PFB2;
+            this.PFNumAndSerForeignPassport = PFNASFP2;
+            this.PFDateEndForeignPassport = PFDEFP2;
+        }
+        string PFFEN2;
+        string PFB2;
+        string PFNASFP2;
+        string PFDEFP2;
+
+        internal void fillDocumentK(string PFFullEngName, string PFBirthday, string PFNumAndSerForeignPassport, string PFDateEndForeignPassport)
+        {
+            this.PFFullEngName = PFFEN3;
+            this.PFBirthday = PFB3;
+            this.PFNumAndSerForeignPassport = PFNASFP3;
+            this.PFDateEndForeignPassport = PFDEFP3;
+        }
+        string PFFEN3;
+        string PFB3;
+        string PFNASFP3;
+        string PFDEFP3;
 
 
         internal void fillDocument3(string JFNameOrg, string JFCargoCarrier) {
@@ -400,7 +432,9 @@ namespace RadugaTur
             Object wFalse = false;
 
             string[] text = inputAppFullName.Text.Split(';');
-            string d = text[0]; 
+            string d = text[0];
+           
+           
 
             Microsoft.Office.Interop.Excel.Application appExcel1 = new Microsoft.Office.Interop.Excel.Application();
             // Microsoft.Office.Interop.Excel.Workbook bookExcel = new Microsoft.Office.Interop.Excel.Workbook();
@@ -594,37 +628,92 @@ namespace RadugaTur
         
         private void button1_Click(object sender, EventArgs e)
         {
-            string[] text = inputAppFullName.Text.Split(';');
-            string s = text[0]; 
             int i = inputAppFullName.Lines.Length;
+            string[] text = inputAppFullName.Text.Split(';');
+            if (text[0] != null)
+            {
+                string s = text[0];
+
+
+                string query6 = "select  PFFullEngName, PFBirthday, PFNumAndSerRussPassport, PFDateGetRussPassport,  PFOrgGetRussPassport, PFNumAndSerForeignPassport, PFDateGetForeignPassport, PFDateEndForeignPassport,PFOrgGetForeignPassport, PFBirthPlace, PFPhone from PhisicalFace where (PFFullRussName = \'" + s + "\')";
+
+                SqlDataReader data3 = Database.executeQuery(query6);
+                object[] fields3 = new object[11];
+                data3.Read();
+                data3.GetValues(fields3);
+                data3.Close();
+
+                string PFFullEngName = fields3[0].ToString(), PFBirthday = fields3[1].ToString(), PFNumAndSerRussPassport = fields3[2].ToString();
+                string PFDateGetRussPassport = fields3[3].ToString(), PFOrgGetRussPassport = fields3[4].ToString(), PFNumAndSerForeignPassport = fields3[5].ToString();
+                string PFDateGetForeignPassport = fields3[6].ToString(), PFDateEndForeignPassport = fields3[7].ToString();
+                string PFOrgGetForeignPassport = fields3[8].ToString(), PFBirthPlace = fields3[9].ToString(), PFPhone = fields3[10].ToString();
+
+                fillDocument2(PFFullEngName, PFBirthday, PFNumAndSerRussPassport, PFDateGetRussPassport, PFOrgGetRussPassport, PFNumAndSerForeignPassport, PFDateGetForeignPassport, PFDateEndForeignPassport, PFOrgGetForeignPassport, PFBirthPlace, PFPhone);
+            }
+                   
+
             
 
-            string query6 = "select  PFFullEngName, PFBirthday, PFNumAndSerRussPassport, PFDateGetRussPassport,  PFOrgGetRussPassport, PFNumAndSerForeignPassport, PFDateGetForeignPassport, PFDateEndForeignPassport,PFOrgGetForeignPassport, PFBirthPlace, PFPhone from PhisicalFace where (PFFullRussName = \'" + s +"\')";
 
-            SqlDataReader data3 = Database.executeQuery(query6);
-            object[] fields3 = new object[11];
-            data3.Read();
-            data3.GetValues(fields3);
-            data3.Close();
+            string query5 = "select JFNameOrg, JFCargoCarrier from JuridicalFace where (JFFullNameOrg =\'" + inputAppNameOrgOrPF.Text + "\')";
+            SqlDataReader data5 = Database.executeQuery(query5);
+            object[] fields5 = new object[2];
+            data5.Read();
+            data5.GetValues(fields5);
+            data5.Close();
 
-            string PFFullEngName = fields3[0].ToString(), PFBirthday = fields3[1].ToString(), PFNumAndSerRussPassport = fields3[2].ToString(); 
-            string PFDateGetRussPassport = fields3[3].ToString(),  PFOrgGetRussPassport = fields3[4].ToString(), PFNumAndSerForeignPassport = fields3[5].ToString(); 
-            string PFDateGetForeignPassport = fields3[6].ToString(), PFDateEndForeignPassport = fields3[7].ToString();
-            string PFOrgGetForeignPassport = fields3[8].ToString(), PFBirthPlace = fields3[9].ToString(), PFPhone = fields3[10].ToString();
-
-            fillDocument2(PFFullEngName, PFBirthday, PFNumAndSerRussPassport, PFDateGetRussPassport, PFOrgGetRussPassport, PFNumAndSerForeignPassport, PFDateGetForeignPassport, PFDateEndForeignPassport, PFOrgGetForeignPassport, PFBirthPlace, PFPhone);
-
-
-            string query7 = "select JFNameOrg, JFCargoCarrier from JuridicalFace where (JFFullNameOrg =\'" + inputAppNameOrgOrPF.Text + "\')";
-            SqlDataReader data4 = Database.executeQuery(query7);
-            object[] fields4 = new object[2];
-            data4.Read();
-            data4.GetValues(fields4);
-            data4.Close();
-
-            string JFNameOrg = fields4[0].ToString(), JFCargoCarrier = fields4[1].ToString();
+            string JFNameOrg = fields5[0].ToString(), JFCargoCarrier = fields5[1].ToString();
 
             fillDocument3(JFNameOrg, JFCargoCarrier);
+
+            /*if (text[1] != null)
+           {
+               string h = text[1];
+               string query1 = "select  PFFullEngName, PFBirthday, PFNumAndSerForeignPassport, PFDateEndForeignPassport from PhisicalFace where (PFFullRussName = \'" + h + "\')";
+
+               SqlDataReader data1 = Database.executeQuery(query1);
+               object[] fields1 = new object[4];
+               data1.Read();
+               data1.GetValues(fields1);
+               data1.Close();
+
+               string PFFullEngName = fields1[0].ToString(), PFBirthday = fields1[1].ToString(),  PFNumAndSerForeignPassport = fields1[2].ToString();
+               string PFDateEndForeignPassport = fields1[3].ToString();                
+
+               fillDocumentH(PFFullEngName, PFBirthday,  PFNumAndSerForeignPassport, PFDateEndForeignPassport);
+           }
+           if (text[2] != null)
+           {
+               string f = text[2];
+               string query2 = "select  PFFullEngName, PFBirthday, PFNumAndSerForeignPassport, PFDateEndForeignPassport from PhisicalFace where (PFFullRussName = \'" + f + "\')";
+
+               SqlDataReader data2 = Database.executeQuery(query2);
+               object[] fields2 = new object[4];
+               data2.Read();
+               data2.GetValues(fields2);
+               data2.Close();
+
+               string PFFullEngName = fields2[0].ToString(), PFBirthday = fields2[1].ToString(), PFNumAndSerForeignPassport = fields2[2].ToString();
+               string PFDateEndForeignPassport = fields2[3].ToString();
+
+               fillDocumentF(PFFullEngName, PFBirthday, PFNumAndSerForeignPassport, PFDateEndForeignPassport);
+           }
+           if (text[3] != null)
+           {
+               string k = text[3];
+               string query4 = "select  PFFullEngName, PFBirthday, PFNumAndSerForeignPassport, PFDateEndForeignPassport from PhisicalFace where (PFFullRussName = \'" + k + "\')";
+
+               SqlDataReader data4 = Database.executeQuery(query4);
+               object[] fields4 = new object[4];
+               data4.Read();
+               data4.GetValues(fields4);
+               data4.Close();
+
+               string PFFullEngName = fields4[0].ToString(), PFBirthday = fields4[1].ToString(), PFNumAndSerForeignPassport = fields4[2].ToString();
+               string PFDateEndForeignPassport = fields4[3].ToString();
+
+               fillDocumentK(PFFullEngName, PFBirthday, PFNumAndSerForeignPassport, PFDateEndForeignPassport);
+           }*/
 
            
             
@@ -636,7 +725,7 @@ namespace RadugaTur
                 List<ReplacePattern> replacePatterns = new List<ReplacePattern>();
                 ReplacePattern pattern;
                 pattern = new ReplacePattern(); pattern.replaced = "Sanat"; pattern.replacing = inputAppWay.Text; pattern.how = 0; replacePatterns.Add(pattern);
-                pattern = new ReplacePattern(); pattern.replaced = "name"; pattern.replacing = s; pattern.how = 1; replacePatterns.Add(pattern);
+                pattern = new ReplacePattern(); pattern.replaced = "name"; pattern.replacing = text[0]; pattern.how = 1; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "category"; pattern.replacing = inputAppNumberAndCategory.Text; pattern.how = 0; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "arrived"; pattern.replacing = inputAppStartTour.Text; pattern.how = 0; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "num"; pattern.replacing = inputNumDays.Text; pattern.how = 0; replacePatterns.Add(pattern);
@@ -650,7 +739,7 @@ namespace RadugaTur
                 pattern = new ReplacePattern(); pattern.replaced = "way"; pattern.replacing = "Санаторий  " + inputAppWay.Text; pattern.how = 1; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "starttour"; pattern.replacing = inputAppStartTour.Text; pattern.how = 1; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "category"; pattern.replacing = inputAppNumberAndCategory.Text; pattern.how = 1; replacePatterns.Add(pattern);
-                pattern = new ReplacePattern(); pattern.replaced = "fullname"; pattern.replacing = s; pattern.how = 0; replacePatterns.Add(pattern);
+                pattern = new ReplacePattern(); pattern.replaced = "fullname"; pattern.replacing = text[0]; pattern.how = 0; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "food"; pattern.replacing = inputFood.Text; pattern.how = 1; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "numdays"; pattern.replacing = inputNumDays.Text; pattern.how = 1; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "cost"; pattern.replacing = inputAppCost.Text; pattern.how = 0; replacePatterns.Add(pattern);
@@ -668,7 +757,7 @@ namespace RadugaTur
                 ReplacePattern pattern;
 
              
-                pattern = new ReplacePattern(); pattern.replaced = "fullname"; pattern.replacing = s; pattern.how = 0; replacePatterns.Add(pattern);
+                pattern = new ReplacePattern(); pattern.replaced = "fullname"; pattern.replacing = text[0]; pattern.how = 0; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "birthday"; pattern.replacing = PFBirthday; pattern.how = 0; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "passport"; pattern.replacing = PFNumAndSerRussPassport; pattern.how = 0; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "get"; pattern.replacing = PFOrgGetRussPassport; pattern.how = 0; replacePatterns.Add(pattern);
@@ -686,7 +775,7 @@ namespace RadugaTur
                 ReplacePattern pattern;
                 pattern = new ReplacePattern(); pattern.replaced = "contract"; pattern.replacing = inputNumContract.Text; pattern.how = 0; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "sanat"; pattern.replacing = inputAppWay.Text; pattern.how = 0; replacePatterns.Add(pattern);
-                pattern = new ReplacePattern(); pattern.replaced = "name"; pattern.replacing = s; pattern.how = 0; replacePatterns.Add(pattern);
+                pattern = new ReplacePattern(); pattern.replaced = "name"; pattern.replacing = text[0]; pattern.how = 0; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "Org"; pattern.replacing = inputAppNameOrgOrPF.Text; pattern.how = 0; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "arrived"; pattern.replacing = inputAppStartTour.Text; pattern.how = 0; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "days"; pattern.replacing = inputNumDays.Text; pattern.how = 0; replacePatterns.Add(pattern);
@@ -699,7 +788,7 @@ namespace RadugaTur
             if (contractTourProductCheckBox1.Checked) {
                 List<ReplacePattern> replacePatterns = new List<ReplacePattern>();
                 ReplacePattern pattern;
-                pattern = new ReplacePattern(); pattern.replaced = "fullname"; pattern.replacing = s; pattern.how = 0; replacePatterns.Add(pattern);
+                pattern = new ReplacePattern(); pattern.replaced = "fullname"; pattern.replacing = text[0]; pattern.how = 0; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "route"; pattern.replacing = inputRoute.Text; pattern.how = 0; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "starttour"; pattern.replacing = inputAppStartTour.Text; pattern.how = 0; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "category"; pattern.replacing = inputAppNumberAndCategory.Text; pattern.how = 0; replacePatterns.Add(pattern);
@@ -720,7 +809,8 @@ namespace RadugaTur
             if (contractPersonalDatacheckBox1.Checked) {
                 List<ReplacePattern> replacePatterns = new List<ReplacePattern>();
                 ReplacePattern pattern;
-                pattern = new ReplacePattern(); pattern.replaced = "fullname"; pattern.replacing = s; pattern.how = 0; replacePatterns.Add(pattern);
+
+                pattern = new ReplacePattern(); pattern.replaced = "fullname"; pattern.replacing = text[0]; pattern.how = 0; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "country"; pattern.replacing = inputAppCountry.Text; pattern.how = 0; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "starttour"; pattern.replacing = inputAppStartTour.Text; pattern.how = 0; replacePatterns.Add(pattern);
                 pattern = new ReplacePattern(); pattern.replaced = "category"; pattern.replacing = inputAppNumberAndCategory.Text; pattern.how = 0; replacePatterns.Add(pattern);

@@ -42,9 +42,14 @@
             this.addJFButton = new System.Windows.Forms.Button();
             this.changeJFButton = new System.Windows.Forms.Button();
             this.cancelJFButton = new System.Windows.Forms.Button();
+            this._1gb_rrrrrDataSet1 = new RadugaTur._1gb_rrrrrDataSet1();
+            this.juridicalFaceBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.juridicalFaceTableAdapter1 = new RadugaTur._1gb_rrrrrDataSet1TableAdapters.JuridicalFaceTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -62,7 +67,7 @@
             this.jFFullNameDataGridViewTextBoxColumn,
             this.jFPhoneDataGridViewTextBoxColumn,
             this.jFCargoCarrierDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.juridicalFaceBindingSource;
+            this.dataGridView1.DataSource = this.juridicalFaceBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(13, 13);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
@@ -165,6 +170,20 @@
             this.cancelJFButton.UseVisualStyleBackColor = true;
             this.cancelJFButton.Click += new System.EventHandler(this.cancelJFButton_Click);
             // 
+            // _1gb_rrrrrDataSet1
+            // 
+            this._1gb_rrrrrDataSet1.DataSetName = "_1gb_rrrrrDataSet1";
+            this._1gb_rrrrrDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // juridicalFaceBindingSource1
+            // 
+            this.juridicalFaceBindingSource1.DataMember = "JuridicalFace";
+            this.juridicalFaceBindingSource1.DataSource = this._1gb_rrrrrDataSet1;
+            // 
+            // juridicalFaceTableAdapter1
+            // 
+            this.juridicalFaceTableAdapter1.ClearBeforeFill = true;
+            // 
             // JFTableForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,6 +200,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -200,5 +221,8 @@
         private System.Windows.Forms.Button addJFButton;
         private System.Windows.Forms.Button changeJFButton;
         private System.Windows.Forms.Button cancelJFButton;
+        private _1gb_rrrrrDataSet1 _1gb_rrrrrDataSet1;
+        private System.Windows.Forms.BindingSource juridicalFaceBindingSource1;
+        private _1gb_rrrrrDataSet1TableAdapters.JuridicalFaceTableAdapter juridicalFaceTableAdapter1;
     }
 }

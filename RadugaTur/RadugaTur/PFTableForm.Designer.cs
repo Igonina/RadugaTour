@@ -55,6 +55,9 @@
             this.changePFbutton = new System.Windows.Forms.Button();
             this.cancelPFbutton = new System.Windows.Forms.Button();
             this.phisicalFaceTableAdapter2 = new RadugaTur.RadugaDBDataSet22TableAdapters.PhisicalFaceTableAdapter();
+            this._1gb_rrrrrDataSet3 = new RadugaTur._1gb_rrrrrDataSet3();
+            this.phisicalFaceBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.phisicalFaceTableAdapter3 = new RadugaTur._1gb_rrrrrDataSet3TableAdapters.PhisicalFaceTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.PhisicalFaceView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet22)).BeginInit();
@@ -62,6 +65,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // PhisicalFaceView
@@ -86,7 +91,7 @@
             this.pFOrgGetForeignPassportDataGridViewTextBoxColumn,
             this.pFBirthPlaceDataGridViewTextBoxColumn,
             this.pFPhoneDataGridViewTextBoxColumn});
-            this.PhisicalFaceView.DataSource = this.phisicalFaceBindingSource2;
+            this.PhisicalFaceView.DataSource = this.phisicalFaceBindingSource3;
             this.PhisicalFaceView.Location = new System.Drawing.Point(2, 1);
             this.PhisicalFaceView.Name = "PhisicalFaceView";
             this.PhisicalFaceView.RowHeadersVisible = false;
@@ -269,6 +274,20 @@
             // 
             this.phisicalFaceTableAdapter2.ClearBeforeFill = true;
             // 
+            // _1gb_rrrrrDataSet3
+            // 
+            this._1gb_rrrrrDataSet3.DataSetName = "_1gb_rrrrrDataSet3";
+            this._1gb_rrrrrDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // phisicalFaceBindingSource3
+            // 
+            this.phisicalFaceBindingSource3.DataMember = "PhisicalFace";
+            this.phisicalFaceBindingSource3.DataSource = this._1gb_rrrrrDataSet3;
+            // 
+            // phisicalFaceTableAdapter3
+            // 
+            this.phisicalFaceTableAdapter3.ClearBeforeFill = true;
+            // 
             // PFTableForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -289,6 +308,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -321,5 +342,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn pFOrgGetForeignPassportDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pFBirthPlaceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pFPhoneDataGridViewTextBoxColumn;
+        private _1gb_rrrrrDataSet3 _1gb_rrrrrDataSet3;
+        private System.Windows.Forms.BindingSource phisicalFaceBindingSource3;
+        private _1gb_rrrrrDataSet3TableAdapters.PhisicalFaceTableAdapter phisicalFaceTableAdapter3;
     }
 }

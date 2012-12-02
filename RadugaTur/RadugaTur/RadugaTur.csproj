@@ -257,6 +257,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RadugaDBDataSet24.xsd</DependentUpon>
     </Compile>
+    <Compile Include="RadugaDBDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadugaDBDataSet25.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RadugaDBDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -316,6 +321,26 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RadugaTourDatabaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_1gb_rrrrrDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1gb_rrrrrDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_1gb_rrrrrDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1gb_rrrrrDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_1gb_rrrrrDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1gb_rrrrrDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_1gb_rrrrrDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1gb_rrrrrDataSet3.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ApplicationForm.resx">
       <DependentUpon>ApplicationForm.cs</DependentUpon>
@@ -382,6 +407,50 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_1gb_rrrrrDataSet.xsc">
+      <DependentUpon>_1gb_rrrrrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_1gb_rrrrrDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1gb_rrrrrDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1gb_rrrrrDataSet.xss">
+      <DependentUpon>_1gb_rrrrrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_1gb_rrrrrDataSet1.xsc">
+      <DependentUpon>_1gb_rrrrrDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_1gb_rrrrrDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1gb_rrrrrDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1gb_rrrrrDataSet1.xss">
+      <DependentUpon>_1gb_rrrrrDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_1gb_rrrrrDataSet2.xsc">
+      <DependentUpon>_1gb_rrrrrDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_1gb_rrrrrDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1gb_rrrrrDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1gb_rrrrrDataSet2.xss">
+      <DependentUpon>_1gb_rrrrrDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_1gb_rrrrrDataSet3.xsc">
+      <DependentUpon>_1gb_rrrrrDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_1gb_rrrrrDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1gb_rrrrrDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1gb_rrrrrDataSet3.xss">
+      <DependentUpon>_1gb_rrrrrDataSet3.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="RadugaDBDataSet.xsc">
@@ -582,6 +651,17 @@
     <None Include="RadugaDBDataSet24.xss">
       <DependentUpon>RadugaDBDataSet24.xsd</DependentUpon>
     </None>
+    <None Include="RadugaDBDataSet25.xsc">
+      <DependentUpon>RadugaDBDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="RadugaDBDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RadugaDBDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RadugaDBDataSet25.xss">
+      <DependentUpon>RadugaDBDataSet25.xsd</DependentUpon>
+    </None>
     <None Include="RadugaDBDataSet3.xsc">
       <DependentUpon>RadugaDBDataSet3.xsd</DependentUpon>
     </None>
@@ -714,7 +794,6 @@
     <None Include="RadugaTourDatabaseDataSet4.xss">
       <DependentUpon>RadugaTourDatabaseDataSet4.xsd</DependentUpon>
     </None>
-    <None Include="Resources\Главная картинка.jpg" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -756,6 +835,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

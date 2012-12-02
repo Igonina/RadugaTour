@@ -317,8 +317,6 @@ namespace RadugaTur {
             
             private global::System.Data.DataColumn columnArBase;
             
-            private global::System.Data.DataColumn columnArMoreTourists;
-            
             private global::System.Data.DataColumn columnArCost;
             
             private global::System.Data.DataColumn columnArCostWithoutProcent;
@@ -536,14 +534,6 @@ namespace RadugaTur {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ArMoreTouristsColumn {
-                get {
-                    return this.columnArMoreTourists;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn ArCostColumn {
                 get {
                     return this.columnArCost;
@@ -718,7 +708,6 @@ namespace RadugaTur {
                         string AppNumDaysHealth, 
                         string ArFood, 
                         string ArBase, 
-                        string ArMoreTourists, 
                         string ArCost, 
                         string ArCostWithoutProcent, 
                         string ArSumPay, 
@@ -755,7 +744,6 @@ namespace RadugaTur {
                         AppNumDaysHealth,
                         ArFood,
                         ArBase,
-                        ArMoreTourists,
                         ArCost,
                         ArCostWithoutProcent,
                         ArSumPay,
@@ -812,7 +800,6 @@ namespace RadugaTur {
                 this.columnAppNumDaysHealth = base.Columns["AppNumDaysHealth"];
                 this.columnArFood = base.Columns["ArFood"];
                 this.columnArBase = base.Columns["ArBase"];
-                this.columnArMoreTourists = base.Columns["ArMoreTourists"];
                 this.columnArCost = base.Columns["ArCost"];
                 this.columnArCostWithoutProcent = base.Columns["ArCostWithoutProcent"];
                 this.columnArSumPay = base.Columns["ArSumPay"];
@@ -871,8 +858,6 @@ namespace RadugaTur {
                 base.Columns.Add(this.columnArFood);
                 this.columnArBase = new global::System.Data.DataColumn("ArBase", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnArBase);
-                this.columnArMoreTourists = new global::System.Data.DataColumn("ArMoreTourists", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnArMoreTourists);
                 this.columnArCost = new global::System.Data.DataColumn("ArCost", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnArCost);
                 this.columnArCostWithoutProcent = new global::System.Data.DataColumn("ArCostWithoutProcent", typeof(string), null, global::System.Data.MappingType.Element);
@@ -920,7 +905,6 @@ namespace RadugaTur {
                 this.columnAppNumDaysHealth.MaxLength = 2147483647;
                 this.columnArFood.MaxLength = 2147483647;
                 this.columnArBase.MaxLength = 2147483647;
-                this.columnArMoreTourists.MaxLength = 2147483647;
                 this.columnArCost.MaxLength = 2147483647;
                 this.columnArCostWithoutProcent.MaxLength = 2147483647;
                 this.columnArSumPay.MaxLength = 2147483647;
@@ -1371,22 +1355,6 @@ namespace RadugaTur {
                 }
                 set {
                     this[this.tableFullApplication.ArBaseColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ArMoreTourists {
-                get {
-                    try {
-                        return ((string)(this[this.tableFullApplication.ArMoreTouristsColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ArMoreTourists\' in table \'FullApplication\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFullApplication.ArMoreTouristsColumn] = value;
                 }
             }
             
@@ -1849,18 +1817,6 @@ namespace RadugaTur {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsArMoreTouristsNull() {
-                return this.IsNull(this.tableFullApplication.ArMoreTouristsColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetArMoreTouristsNull() {
-                this[this.tableFullApplication.ArMoreTouristsColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsArCostNull() {
                 return this.IsNull(this.tableFullApplication.ArCostColumn);
             }
@@ -2218,7 +2174,6 @@ namespace RadugaTur.RadugaDBDataSet24TableAdapters {
             tableMapping.ColumnMappings.Add("AppNumDaysHealth", "AppNumDaysHealth");
             tableMapping.ColumnMappings.Add("ArFood", "ArFood");
             tableMapping.ColumnMappings.Add("ArBase", "ArBase");
-            tableMapping.ColumnMappings.Add("ArMoreTourists", "ArMoreTourists");
             tableMapping.ColumnMappings.Add("ArCost", "ArCost");
             tableMapping.ColumnMappings.Add("ArCostWithoutProcent", "ArCostWithoutProcent");
             tableMapping.ColumnMappings.Add("ArSumPay", "ArSumPay");
@@ -2237,7 +2192,7 @@ namespace RadugaTur.RadugaDBDataSet24TableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[FullApplication] ([AppDate], [AppNumContract], [AppFullName], [AppNameOrgOrPF], [AppCountry], [AppWay], [AppStartTour], [AppNumDays], [AppNumNights], [AppNumPeople], [AppNumOldPeople], [AppNumChildren], [AppChildrensAge], [AppCategory], [AppNotes], [AppNumDaysHealth], [ArFood], [ArBase], [ArMoreTourists], [ArCost], [ArCostWithoutProcent], [ArSumPay], [ArDateSumPay], [ArDebt], [ArOtherMoney], [ArPhone], [ArRoute], [ArTransfer], [ArTourProgram], [ArVise], [ArTicket], [ArInsurance], [AppTipe], [AppAgentProcent]) VALUES (@AppDate, @AppNumContract, @AppFullName, @AppNameOrgOrPF, @AppCountry, @AppWay, @AppStartTour, @AppNumDays, @AppNumNights, @AppNumPeople, @AppNumOldPeople, @AppNumChildren, @AppChildrensAge, @AppCategory, @AppNotes, @AppNumDaysHealth, @ArFood, @ArBase, @ArMoreTourists, @ArCost, @ArCostWithoutProcent, @ArSumPay, @ArDateSumPay, @ArDebt, @ArOtherMoney, @ArPhone, @ArRoute, @ArTransfer, @ArTourProgram, @ArVise, @ArTicket, @ArInsurance, @AppTipe, @AppAgentProcent)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[FullApplication] ([AppDate], [AppNumContract], [AppFullName], [AppNameOrgOrPF], [AppCountry], [AppWay], [AppStartTour], [AppNumDays], [AppNumNights], [AppNumPeople], [AppNumOldPeople], [AppNumChildren], [AppChildrensAge], [AppCategory], [AppNotes], [AppNumDaysHealth], [ArFood], [ArBase], [ArCost], [ArCostWithoutProcent], [ArSumPay], [ArDateSumPay], [ArDebt], [ArOtherMoney], [ArPhone], [ArRoute], [ArTransfer], [ArTourProgram], [ArVise], [ArTicket], [ArInsurance], [AppTipe], [AppAgentProcent]) VALUES (@AppDate, @AppNumContract, @AppFullName, @AppNameOrgOrPF, @AppCountry, @AppWay, @AppStartTour, @AppNumDays, @AppNumNights, @AppNumPeople, @AppNumOldPeople, @AppNumChildren, @AppChildrensAge, @AppCategory, @AppNotes, @AppNumDaysHealth, @ArFood, @ArBase, @ArCost, @ArCostWithoutProcent, @ArSumPay, @ArDateSumPay, @ArDebt, @ArOtherMoney, @ArPhone, @ArRoute, @ArTransfer, @ArTourProgram, @ArVise, @ArTicket, @ArInsurance, @AppTipe, @AppAgentProcent)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppDate", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNumContract", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumContract", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2257,7 +2212,6 @@ namespace RadugaTur.RadugaDBDataSet24TableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppNumDaysHealth", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AppNumDaysHealth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArFood", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArFood", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArBase", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArBase", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArMoreTourists", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArMoreTourists", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArCost", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArCost", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArCostWithoutProcent", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArCostWithoutProcent", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArSumPay", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ArSumPay", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2288,7 +2242,7 @@ namespace RadugaTur.RadugaDBDataSet24TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT AppId, AppDate, AppNumContract, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, AppNumDaysHealth, ArFood, ArBase, ArMoreTourists, ArCost, ArCostWithoutProcent, ArSumPay, ArDateSumPay, ArDebt, ArOtherMoney, ArPhone, ArRoute, ArTransfer, ArTourProgram, ArVise, ArTicket, ArInsurance, AppTipe, AppAgentProcent FROM dbo.FullApplication";
+            this._commandCollection[0].CommandText = @"SELECT AppId, AppDate, AppNumContract, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, AppNumDaysHealth, ArFood, ArBase, ArCost, ArCostWithoutProcent, ArSumPay, ArDateSumPay, ArDebt, ArOtherMoney, ArPhone, ArRoute, ArTransfer, ArTourProgram, ArVise, ArTicket, ArInsurance, AppTipe, AppAgentProcent FROM dbo.FullApplication";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -2368,7 +2322,6 @@ namespace RadugaTur.RadugaDBDataSet24TableAdapters {
                     string AppNumDaysHealth, 
                     string ArFood, 
                     string ArBase, 
-                    string ArMoreTourists, 
                     string ArCost, 
                     string ArCostWithoutProcent, 
                     string ArSumPay, 
@@ -2492,101 +2445,95 @@ namespace RadugaTur.RadugaDBDataSet24TableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[17].Value = ((string)(ArBase));
             }
-            if ((ArMoreTourists == null)) {
+            if ((ArCost == null)) {
                 this.Adapter.InsertCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[18].Value = ((string)(ArMoreTourists));
+                this.Adapter.InsertCommand.Parameters[18].Value = ((string)(ArCost));
             }
-            if ((ArCost == null)) {
+            if ((ArCostWithoutProcent == null)) {
                 this.Adapter.InsertCommand.Parameters[19].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[19].Value = ((string)(ArCost));
+                this.Adapter.InsertCommand.Parameters[19].Value = ((string)(ArCostWithoutProcent));
             }
-            if ((ArCostWithoutProcent == null)) {
+            if ((ArSumPay == null)) {
                 this.Adapter.InsertCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[20].Value = ((string)(ArCostWithoutProcent));
+                this.Adapter.InsertCommand.Parameters[20].Value = ((string)(ArSumPay));
             }
-            if ((ArSumPay == null)) {
+            if ((ArDateSumPay == null)) {
                 this.Adapter.InsertCommand.Parameters[21].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[21].Value = ((string)(ArSumPay));
+                this.Adapter.InsertCommand.Parameters[21].Value = ((string)(ArDateSumPay));
             }
-            if ((ArDateSumPay == null)) {
+            if ((ArDebt == null)) {
                 this.Adapter.InsertCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[22].Value = ((string)(ArDateSumPay));
+                this.Adapter.InsertCommand.Parameters[22].Value = ((string)(ArDebt));
             }
-            if ((ArDebt == null)) {
+            if ((ArOtherMoney == null)) {
                 this.Adapter.InsertCommand.Parameters[23].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[23].Value = ((string)(ArDebt));
+                this.Adapter.InsertCommand.Parameters[23].Value = ((string)(ArOtherMoney));
             }
-            if ((ArOtherMoney == null)) {
+            if ((ArPhone == null)) {
                 this.Adapter.InsertCommand.Parameters[24].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[24].Value = ((string)(ArOtherMoney));
+                this.Adapter.InsertCommand.Parameters[24].Value = ((string)(ArPhone));
             }
-            if ((ArPhone == null)) {
+            if ((ArRoute == null)) {
                 this.Adapter.InsertCommand.Parameters[25].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[25].Value = ((string)(ArPhone));
+                this.Adapter.InsertCommand.Parameters[25].Value = ((string)(ArRoute));
             }
-            if ((ArRoute == null)) {
+            if ((ArTransfer == null)) {
                 this.Adapter.InsertCommand.Parameters[26].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[26].Value = ((string)(ArRoute));
+                this.Adapter.InsertCommand.Parameters[26].Value = ((string)(ArTransfer));
             }
-            if ((ArTransfer == null)) {
+            if ((ArTourProgram == null)) {
                 this.Adapter.InsertCommand.Parameters[27].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[27].Value = ((string)(ArTransfer));
+                this.Adapter.InsertCommand.Parameters[27].Value = ((string)(ArTourProgram));
             }
-            if ((ArTourProgram == null)) {
+            if ((ArVise == null)) {
                 this.Adapter.InsertCommand.Parameters[28].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[28].Value = ((string)(ArTourProgram));
+                this.Adapter.InsertCommand.Parameters[28].Value = ((string)(ArVise));
             }
-            if ((ArVise == null)) {
+            if ((ArTicket == null)) {
                 this.Adapter.InsertCommand.Parameters[29].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[29].Value = ((string)(ArVise));
+                this.Adapter.InsertCommand.Parameters[29].Value = ((string)(ArTicket));
             }
-            if ((ArTicket == null)) {
+            if ((ArInsurance == null)) {
                 this.Adapter.InsertCommand.Parameters[30].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[30].Value = ((string)(ArTicket));
+                this.Adapter.InsertCommand.Parameters[30].Value = ((string)(ArInsurance));
             }
-            if ((ArInsurance == null)) {
+            if ((AppTipe == null)) {
                 this.Adapter.InsertCommand.Parameters[31].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[31].Value = ((string)(ArInsurance));
-            }
-            if ((AppTipe == null)) {
-                this.Adapter.InsertCommand.Parameters[32].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[32].Value = ((string)(AppTipe));
+                this.Adapter.InsertCommand.Parameters[31].Value = ((string)(AppTipe));
             }
             if ((AppAgentProcent.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[33].Value = ((double)(AppAgentProcent.Value));
+                this.Adapter.InsertCommand.Parameters[32].Value = ((double)(AppAgentProcent.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[33].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[32].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 

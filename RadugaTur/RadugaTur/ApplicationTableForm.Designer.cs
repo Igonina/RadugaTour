@@ -41,6 +41,8 @@
             this.appNumNightsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.appNumPeopleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.appCategoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fullApplicationBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.radugaDBDataSet25 = new RadugaTur.RadugaDBDataSet25();
             this.fullApplicationBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.radugaDBDataSet24 = new RadugaTur.RadugaDBDataSet24();
             this.fullApplicationBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -54,13 +56,21 @@
             this.changeApplicationButton = new System.Windows.Forms.Button();
             this.cancelApplicationButton = new System.Windows.Forms.Button();
             this.fullApplicationTableAdapter3 = new RadugaTur.RadugaDBDataSet24TableAdapters.FullApplicationTableAdapter();
+            this.fullApplicationTableAdapter4 = new RadugaTur.RadugaDBDataSet25TableAdapters.FullApplicationTableAdapter();
+            this._1gb_rrrrrDataSet = new RadugaTur._1gb_rrrrrDataSet();
+            this.fullApplicationBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.fullApplicationTableAdapter5 = new RadugaTur._1gb_rrrrrDataSetTableAdapters.FullApplicationTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.ApplicationTabledataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
             // ApplicationTabledataGridView
@@ -85,7 +95,7 @@
             this.appNumNightsDataGridViewTextBoxColumn,
             this.appNumPeopleDataGridViewTextBoxColumn,
             this.appCategoryDataGridViewTextBoxColumn});
-            this.ApplicationTabledataGridView.DataSource = this.fullApplicationBindingSource2;
+            this.ApplicationTabledataGridView.DataSource = this.fullApplicationBindingSource4;
             this.ApplicationTabledataGridView.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ApplicationTabledataGridView.Location = new System.Drawing.Point(13, 13);
             this.ApplicationTabledataGridView.Name = "ApplicationTabledataGridView";
@@ -93,7 +103,6 @@
             this.ApplicationTabledataGridView.RowHeadersVisible = false;
             this.ApplicationTabledataGridView.Size = new System.Drawing.Size(1286, 311);
             this.ApplicationTabledataGridView.TabIndex = 0;
-            
             this.ApplicationTabledataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // Column1
@@ -183,6 +192,16 @@
             this.appCategoryDataGridViewTextBoxColumn.Name = "appCategoryDataGridViewTextBoxColumn";
             this.appCategoryDataGridViewTextBoxColumn.Width = 85;
             // 
+            // fullApplicationBindingSource3
+            // 
+            this.fullApplicationBindingSource3.DataMember = "FullApplication";
+            this.fullApplicationBindingSource3.DataSource = this.radugaDBDataSet25;
+            // 
+            // radugaDBDataSet25
+            // 
+            this.radugaDBDataSet25.DataSetName = "RadugaDBDataSet25";
+            this.radugaDBDataSet25.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // fullApplicationBindingSource2
             // 
             this.fullApplicationBindingSource2.DataMember = "FullApplication";
@@ -262,6 +281,24 @@
             // 
             this.fullApplicationTableAdapter3.ClearBeforeFill = true;
             // 
+            // fullApplicationTableAdapter4
+            // 
+            this.fullApplicationTableAdapter4.ClearBeforeFill = true;
+            // 
+            // _1gb_rrrrrDataSet
+            // 
+            this._1gb_rrrrrDataSet.DataSetName = "_1gb_rrrrrDataSet";
+            this._1gb_rrrrrDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // fullApplicationBindingSource4
+            // 
+            this.fullApplicationBindingSource4.DataMember = "FullApplication";
+            this.fullApplicationBindingSource4.DataSource = this._1gb_rrrrrDataSet;
+            // 
+            // fullApplicationTableAdapter5
+            // 
+            this.fullApplicationTableAdapter5.ClearBeforeFill = true;
+            // 
             // ApplicationTableForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -277,12 +314,16 @@
             this.Text = "Заявки";
             this.Load += new System.EventHandler(this.ApplicationTableForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ApplicationTabledataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -314,6 +355,12 @@
         private RadugaDBDataSet24 radugaDBDataSet24;
         private System.Windows.Forms.BindingSource fullApplicationBindingSource2;
         private RadugaDBDataSet24TableAdapters.FullApplicationTableAdapter fullApplicationTableAdapter3;
+        private RadugaDBDataSet25 radugaDBDataSet25;
+        private System.Windows.Forms.BindingSource fullApplicationBindingSource3;
+        private RadugaDBDataSet25TableAdapters.FullApplicationTableAdapter fullApplicationTableAdapter4;
+        private _1gb_rrrrrDataSet _1gb_rrrrrDataSet;
+        private System.Windows.Forms.BindingSource fullApplicationBindingSource4;
+        private _1gb_rrrrrDataSetTableAdapters.FullApplicationTableAdapter fullApplicationTableAdapter5;
 
     }
 }

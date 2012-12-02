@@ -19,6 +19,33 @@ namespace RadugaTur
 
         private void ApplicationTableForm_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the '_1gb_rrrrrDataSet.FullApplication' table. You can move, or remove it, as needed.
+            this.fullApplicationTableAdapter5.Fill(this._1gb_rrrrrDataSet.FullApplication);
+           /* string MyString = "Data Source=mysql56.1gb.ru;Database=db_radugatour;Uid=db_radugatour;Pwd=82f6b51c345;";
+            SqlConnection connection = new SqlConnection(MyString);
+            connection.Open();
+            try
+            {
+                
+                SqlCommand cmd = connection.CreateCommand();
+                cmd.CommandText = "select AppId, AppDate, AppNumContract, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, AppNumDaysHealth, ArFood, ArBase, ArCost, ArCostWithoutProcent, ArSumPay, ArDateSumPay, ArDebt, ArOtherMoney,  ArPhone, ArRoute, ArTransfer, ArTourProgram, ArVise, ArTicket, ArInsurance, AppTipe, AppAgentProcent from FullApplication";
+                SqlDataAdapter adap = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                adap.Fill(ds);
+                ApplicationTabledataGridView.DataSource = ds.Tables[0].DefaultView;
+            }
+            catch
+            {
+                throw;
+            }
+            finally {
+                if (connection.State == ConnectionState.Open) {
+                    connection.Close();
+                } 
+            }*/
+
+            // TODO: This line of code loads data into the 'radugaDBDataSet25.FullApplication' table. You can move, or remove it, as needed.
+            this.fullApplicationTableAdapter4.Fill(this.radugaDBDataSet25.FullApplication);
             // TODO: This line of code loads data into the 'radugaDBDataSet24.FullApplication' table. You can move, or remove it, as needed.
             this.fullApplicationTableAdapter3.Fill(this.radugaDBDataSet24.FullApplication);
             // TODO: This line of code loads data into the 'radugaDBDataSet23.FullApplication' table. You can move, or remove it, as needed.
@@ -35,16 +62,16 @@ namespace RadugaTur
         {
             
             ApplicationForm appForm = new ApplicationForm();
-            appForm.Show();
+            
             
 
             //("select * from FullApplication where AppId = 2");
             //.;
             int i = ApplicationTabledataGridView.SelectedCells[0].RowIndex;
             int id = int.Parse(ApplicationTabledataGridView.Rows[i].Cells[0].Value.ToString());
-            string query = "select AppId, AppDate, AppNumContract, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, AppNumDaysHealth, ArFood, ArBase, ArMoreTourists, ArCost, ArCostWithoutProcent, ArSumPay, ArDateSumPay, ArDebt, ArOtherMoney,  ArPhone, ArRoute, ArTransfer, ArTourProgram, ArVise, ArTicket, ArInsurance, AppTipe, AppAgentProcent from FullApplication where (AppId = " + id + ")";
+            string query = "select AppId, AppDate, AppNumContract, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, AppNumDaysHealth, ArFood, ArBase, ArCost, ArCostWithoutProcent, ArSumPay, ArDateSumPay, ArDebt, ArOtherMoney,  ArPhone, ArRoute, ArTransfer, ArTourProgram, ArVise, ArTicket, ArInsurance, AppTipe, AppAgentProcent from FullApplication where (AppId = " + id + ")";
             SqlDataReader data = Database.executeQuery(query);
-            object[] fields = new object[35];
+            object[] fields = new object[34];
             data.Read();
             data.GetValues(fields);
             data.Close();
@@ -55,15 +82,15 @@ namespace RadugaTur
             string AppFullName = fields[3].ToString(), AppNameOrgOrPF = fields[4].ToString(), AppCountry = fields[5].ToString(), AppWay = fields[6].ToString(), AppStartTour = fields[7].ToString(), AppNumDays = fields[8].ToString(), AppNumNights = fields[9].ToString();
             int AppNumPeople = int.Parse(fields[10].ToString()), AppNumOldPeople = int.Parse(fields[11].ToString()), AppNumChildren = int.Parse(fields[12].ToString());
             string AppChildrensAge = fields[13].ToString(), AppCategory = fields[14].ToString(), AppNotes = fields[15].ToString();
-            int AppNumDaysHealth = int.Parse(fields[16].ToString());
-            string ArFood = fields[17].ToString(), ArBase = fields[18].ToString(), ArMoreTourists = fields[19].ToString();
+            string AppNumDaysHealth = fields[16].ToString();
+            string ArFood = fields[17].ToString(), ArBase = fields[18].ToString();
             //money?
-            string ArCost = fields[20].ToString(), ArCostWithoutProcent = fields[21].ToString();
-            string ArSumPay = fields[22].ToString(), ArDateSumPay = fields[23].ToString();
-            string ArDebt = fields[24].ToString(), ArOtherMoney = fields[25].ToString(), ArPhone = fields[26].ToString(), ArRoute = fields[27].ToString(), ArTransfer = fields[28].ToString();
-            string ArTourProgram = fields[29].ToString(), ArVise = fields[30].ToString(), ArTicket = fields[31].ToString(), ArInsurance = fields[32].ToString(), AppTipe = fields[33].ToString();
-            string AppAgentProcent = fields[34].ToString();
-            appForm.fillData(AppId, AppDate, AppNumContact, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, AppNumDaysHealth, ArFood, ArBase, ArMoreTourists, ArCost, ArCostWithoutProcent, ArSumPay, ArDateSumPay, ArDebt, ArOtherMoney, ArPhone, ArRoute, ArTransfer, ArTourProgram, ArVise, ArTicket, ArInsurance, AppTipe, AppAgentProcent);
+            string ArCost = fields[19].ToString(), ArCostWithoutProcent = fields[20].ToString();
+            string ArSumPay = fields[21].ToString(), ArDateSumPay = fields[22].ToString();
+            string ArDebt = fields[23].ToString(), ArOtherMoney = fields[24].ToString(), ArPhone = fields[25].ToString(), ArRoute = fields[26].ToString(), ArTransfer = fields[27].ToString();
+            string ArTourProgram = fields[28].ToString(), ArVise = fields[29].ToString(), ArTicket = fields[30].ToString(), ArInsurance = fields[31].ToString(), AppTipe = fields[32].ToString();
+            string AppAgentProcent = fields[33].ToString();
+            appForm.fillData(AppId, AppDate, AppNumContact, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, AppNumDaysHealth, ArFood, ArBase, ArCost, ArCostWithoutProcent, ArSumPay, ArDateSumPay, ArDebt, ArOtherMoney, ArPhone, ArRoute, ArTransfer, ArTourProgram, ArVise, ArTicket, ArInsurance, AppTipe, AppAgentProcent);
             
             string query2 = "select tourId, tourNumContract, tourDateAcc, tourSumAcc, tourPayAcc, tourOrderAcc, tourDateRec, tourSumRec, tourPayRec, tourOrderRec, tourDateDebt, tourSumDebt, tourPayDebt, tourOrderDebt, forTourJurTick, forTourDateTick, forTourSumTick, forTourPayTick, forTourOrderTick, forTourJurWay, forTourDateWay, forTourSumWay, forTourPayWay, forTourOrderWay, forTourJurIns, forTourDateIns, forTourSumIns, forTourPayIns, forTourOrderIns from TouristsPayment where(tourNumContract = " + AppNumContact + ")";
             SqlDataReader data2 = Database.executeQuery(query2);
@@ -83,6 +110,7 @@ namespace RadugaTur
             string forTourOrderWay = fields2[23].ToString(), forTourJurIns = fields2[24].ToString(), forTourDateIns = fields2[25].ToString();
             string forTourSumIns = fields2[26].ToString(), forTourPayIns = fields2[27].ToString(), forTourOrderIns = fields2[28].ToString();
             appForm.fillData2(tourId, tourNumContract, tourDateAcc, tourSumAcc, tourPayAcc, tourOrderAcc, tourDateRec, tourSumRec, tourPayRec, tourOrderRec, tourDateDebt, tourSumDebt, tourPayDebt, tourOrderDebt, forTourJurTick, forTourDateTick, forTourSumTick, forTourPayTick, forTourOrderTick, forTourJurWay, forTourDateWay, forTourSumWay, forTourPayWay, forTourOrderWay, forTourJurIns, forTourDateIns, forTourSumIns, forTourPayIns, forTourOrderIns);
+            appForm.ShowDialog();
             this.Close();
         }
 
@@ -96,16 +124,16 @@ namespace RadugaTur
         private void changeApplicationButton_Click(object sender, EventArgs e)
         {
             ApplicationForm appForm = new ApplicationForm();
-            appForm.Show();
+            
 
 
             //("select * from FullApplication where AppId = 2");
             //.;
             int i = ApplicationTabledataGridView.SelectedCells[0].RowIndex;
             int id = int.Parse(ApplicationTabledataGridView.Rows[i].Cells[0].Value.ToString());
-            string query = "select AppId, AppDate, AppNumContract, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, AppNumDaysHealth, ArFood, ArBase, ArMoreTourists, ArCost, ArCostWithoutProcent, ArSumPay, ArDateSumPay, ArDebt, ArOtherMoney,  ArPhone, ArRoute, ArTransfer, ArTourProgram, ArVise, ArTicket, ArInsurance, AppTipe, AppAgentProcent from FullApplication where (AppId = " + id + ")";
+            string query = "select AppId, AppDate, AppNumContract, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, AppNumDaysHealth, ArFood, ArBase, ArCost, ArCostWithoutProcent, ArSumPay, ArDateSumPay, ArDebt, ArOtherMoney,  ArPhone, ArRoute, ArTransfer, ArTourProgram, ArVise, ArTicket, ArInsurance, AppTipe, AppAgentProcent from FullApplication where (AppId = " + id + ")";
             SqlDataReader data = Database.executeQuery(query);
-            object[] fields = new object[35];
+            object[] fields = new object[34];
             data.Read();
             data.GetValues(fields);
             data.Close();
@@ -116,15 +144,16 @@ namespace RadugaTur
             string AppFullName = fields[3].ToString(), AppNameOrgOrPF = fields[4].ToString(), AppCountry = fields[5].ToString(), AppWay = fields[6].ToString(), AppStartTour = fields[7].ToString(), AppNumDays = fields[8].ToString(), AppNumNights = fields[9].ToString();
             int AppNumPeople = int.Parse(fields[10].ToString()), AppNumOldPeople = int.Parse(fields[11].ToString()), AppNumChildren = int.Parse(fields[12].ToString());
             string AppChildrensAge = fields[13].ToString(), AppCategory = fields[14].ToString(), AppNotes = fields[15].ToString();
-            int AppNumDaysHealth = int.Parse(fields[16].ToString());
-            string ArFood = fields[17].ToString(), ArBase = fields[18].ToString(), ArMoreTourists = fields[19].ToString();
+            string AppNumDaysHealth = fields[16].ToString();
+            string ArFood = fields[17].ToString(), ArBase = fields[18].ToString();
             //money?
-            string ArCost = fields[20].ToString(), ArCostWithoutProcent = fields[21].ToString();
-            string ArSumPay = fields[22].ToString(), ArDateSumPay = fields[23].ToString();
-            string ArDebt = fields[24].ToString(), ArOtherMoney = fields[25].ToString(), ArPhone = fields[26].ToString(), ArRoute = fields[27].ToString(), ArTransfer = fields[28].ToString();
-            string ArTourProgram = fields[29].ToString(), ArVise = fields[30].ToString(), ArTicket = fields[31].ToString(), ArInsurance = fields[32].ToString(), AppTipe = fields[33].ToString();
-            string AppAgentProcent = fields[34].ToString();
-            appForm.fillData(AppId, AppDate, AppNumContact, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, AppNumDaysHealth, ArFood, ArBase, ArMoreTourists, ArCost, ArCostWithoutProcent, ArSumPay, ArDateSumPay, ArDebt, ArOtherMoney, ArPhone, ArRoute, ArTransfer, ArTourProgram, ArVise, ArTicket, ArInsurance, AppTipe, AppAgentProcent);
+            string ArCost = fields[19].ToString(), ArCostWithoutProcent = fields[20].ToString();
+            string ArSumPay = fields[21].ToString(), ArDateSumPay = fields[22].ToString();
+            string ArDebt = fields[23].ToString(), ArOtherMoney = fields[24].ToString(), ArPhone = fields[25].ToString(), ArRoute = fields[26].ToString(), ArTransfer = fields[27].ToString();
+            string ArTourProgram = fields[28].ToString(), ArVise = fields[29].ToString(), ArTicket = fields[30].ToString(), ArInsurance = fields[31].ToString(), AppTipe = fields[32].ToString();
+            string AppAgentProcent = fields[33].ToString();
+
+            appForm.fillData(AppId, AppDate, AppNumContact, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, AppNumDaysHealth, ArFood, ArBase, ArCost, ArCostWithoutProcent, ArSumPay, ArDateSumPay, ArDebt, ArOtherMoney, ArPhone, ArRoute, ArTransfer, ArTourProgram, ArVise, ArTicket, ArInsurance, AppTipe, AppAgentProcent);
 
             string query2 = "select tourId, tourNumContract, tourDateAcc, tourSumAcc, tourPayAcc, tourOrderAcc, tourDateRec, tourSumRec, tourPayRec, tourOrderRec, tourDateDebt, tourSumDebt, tourPayDebt, tourOrderDebt, forTourJurTick, forTourDateTick, forTourSumTick, forTourPayTick, forTourOrderTick, forTourJurWay, forTourDateWay, forTourSumWay, forTourPayWay, forTourOrderWay, forTourJurIns, forTourDateIns, forTourSumIns, forTourPayIns, forTourOrderIns from TouristsPayment where(tourNumContract = " + AppNumContact + ")";
             SqlDataReader data2 = Database.executeQuery(query2);
@@ -144,7 +173,7 @@ namespace RadugaTur
             string forTourOrderWay = fields2[23].ToString(), forTourJurIns = fields2[24].ToString(), forTourDateIns = fields2[25].ToString();
             string forTourSumIns = fields2[26].ToString(), forTourPayIns = fields2[27].ToString(), forTourOrderIns = fields2[28].ToString();
             appForm.fillData2(tourId, tourNumContract, tourDateAcc, tourSumAcc, tourPayAcc, tourOrderAcc, tourDateRec, tourSumRec, tourPayRec, tourOrderRec, tourDateDebt, tourSumDebt, tourPayDebt, tourOrderDebt, forTourJurTick, forTourDateTick, forTourSumTick, forTourPayTick, forTourOrderTick, forTourJurWay, forTourDateWay, forTourSumWay, forTourPayWay, forTourOrderWay, forTourJurIns, forTourDateIns, forTourSumIns, forTourPayIns, forTourOrderIns);
-
+            appForm.ShowDialog();
             this.Close();
 
         }

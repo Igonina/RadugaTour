@@ -46,6 +46,9 @@
             this.managerTable1TableAdapter1 = new RadugaTur.RadugaTourDatabaseDataSet3TableAdapters.ManagerTable1TableAdapter();
             this.managerTableTableAdapter = new RadugaTur.RadugaDBDataSetTableAdapters.ManagerTableTableAdapter();
             this.hashingTableAdapter = new RadugaTur.RadugaDBDataSet16TableAdapters.HashingTableAdapter();
+            this._1gb_rrrrrDataSet2 = new RadugaTur._1gb_rrrrrDataSet2();
+            this.hashingBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.hashingTableAdapter1 = new RadugaTur._1gb_rrrrrDataSet2TableAdapters.HashingTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.managerTable1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet2)).BeginInit();
@@ -57,6 +60,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.managerTable1BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hashingBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // managerTable1BindingSource
@@ -94,7 +99,7 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.hashNameDataGridViewTextBoxColumn,
             this.hashPositionDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.hashingBindingSource;
+            this.dataGridView1.DataSource = this.hashingBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
@@ -159,6 +164,20 @@
             // 
             this.hashingTableAdapter.ClearBeforeFill = true;
             // 
+            // _1gb_rrrrrDataSet2
+            // 
+            this._1gb_rrrrrDataSet2.DataSetName = "_1gb_rrrrrDataSet2";
+            this._1gb_rrrrrDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // hashingBindingSource1
+            // 
+            this.hashingBindingSource1.DataMember = "Hashing";
+            this.hashingBindingSource1.DataSource = this._1gb_rrrrrDataSet2;
+            // 
+            // hashingTableAdapter1
+            // 
+            this.hashingTableAdapter1.ClearBeforeFill = true;
+            // 
             // ManagerFormTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -180,6 +199,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.managerTable1BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hashingBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -203,5 +224,8 @@
         private RadugaDBDataSet16TableAdapters.HashingTableAdapter hashingTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn hashNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hashPositionDataGridViewTextBoxColumn;
+        private _1gb_rrrrrDataSet2 _1gb_rrrrrDataSet2;
+        private System.Windows.Forms.BindingSource hashingBindingSource1;
+        private _1gb_rrrrrDataSet2TableAdapters.HashingTableAdapter hashingTableAdapter1;
     }
 }

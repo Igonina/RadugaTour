@@ -153,6 +153,7 @@
             this.LookAtApplications.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.LookAtApplications.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LookAtApplications.Location = new System.Drawing.Point(228, 210);
+            this.LookAtApplications.MinimumSize = new System.Drawing.Size(139, 36);
             this.LookAtApplications.Name = "LookAtApplications";
             this.LookAtApplications.Size = new System.Drawing.Size(139, 36);
             this.LookAtApplications.TabIndex = 12;
