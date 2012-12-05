@@ -44,15 +44,7 @@ namespace RadugaTur
                 } 
             }*/
 
-            // TODO: This line of code loads data into the 'radugaDBDataSet25.FullApplication' table. You can move, or remove it, as needed.
-            this.fullApplicationTableAdapter4.Fill(this.radugaDBDataSet25.FullApplication);
-            // TODO: This line of code loads data into the 'radugaDBDataSet24.FullApplication' table. You can move, or remove it, as needed.
-            this.fullApplicationTableAdapter3.Fill(this.radugaDBDataSet24.FullApplication);
-            // TODO: This line of code loads data into the 'radugaDBDataSet23.FullApplication' table. You can move, or remove it, as needed.
-            this.fullApplicationTableAdapter2.Fill(this.radugaDBDataSet23.FullApplication);
-            // TODO: This line of code loads data into the 'radugaDBDataSet13.FullApplication' table. You can move, or remove it, as needed.
-            this.fullApplicationTableAdapter1.Fill(this.radugaDBDataSet13.FullApplication);
-            // TODO: This line of code loads data into the 'radugaDBDataSet12.FullApplication' table. You can move, or remove it, as needed.
+        
            
 
 

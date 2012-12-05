@@ -24,6 +24,10 @@ namespace RadugaTur
         private ApplicationForm parent = null;
         private void PFTableForm_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the '_1gb_rrrrrDataSet10.PhisicalFace' table. You can move, or remove it, as needed.
+            this.phisicalFaceTableAdapter.Fill(this._1gb_rrrrrDataSet10.PhisicalFace);
+            // TODO: This line of code loads data into the '_1gb_rrrrrDataSet5.PhisicalFace' table. You can move, or remove it, as needed.
+            this.phisicalFaceTableAdapter4.Fill(this._1gb_rrrrrDataSet5.PhisicalFace);
             // TODO: This line of code loads data into the '_1gb_rrrrrDataSet3.PhisicalFace' table. You can move, or remove it, as needed.
             this.phisicalFaceTableAdapter3.Fill(this._1gb_rrrrrDataSet3.PhisicalFace);
             /*string MyString = "Database=db_radugatour;Data Source=mysql56.1gb.ru;Database=db_radugatour;User id=db_radugatour;Password=82f6b51c345;";
@@ -51,12 +55,6 @@ namespace RadugaTur
                 }
             }*/
 
-            // TODO: This line of code loads data into the 'radugaDBDataSet22.PhisicalFace' table. You can move, or remove it, as needed.
-            this.phisicalFaceTableAdapter2.Fill(this.radugaDBDataSet22.PhisicalFace);
-            // TODO: This line of code loads data into the 'radugaDBDataSet20.PhisicalFace' table. You can move, or remove it, as needed.
-            this.phisicalFaceTableAdapter1.Fill(this.radugaDBDataSet20.PhisicalFace);
-            // TODO: This line of code loads data into the 'radugaDBDataSet4.PhisicalFace' table. You can move, or remove it, as needed.
-            this.phisicalFaceTableAdapter.Fill(this.radugaDBDataSet4.PhisicalFace);
             
         }
 

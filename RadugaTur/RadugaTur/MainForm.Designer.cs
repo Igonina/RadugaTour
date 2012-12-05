@@ -40,12 +40,9 @@
             this.LookAtApplications = new System.Windows.Forms.Button();
             this.outputProfile = new System.Windows.Forms.Label();
             this.outputLogin = new System.Windows.Forms.Label();
-            this.radugaTourDatabaseDataSet1 = new RadugaTur.RadugaTourDatabaseDataSet1();
             this.managerTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.managerTable1TableAdapter = new RadugaTur.RadugaTourDatabaseDataSet1TableAdapters.ManagerTable1TableAdapter();
             this.LookAtManagersbutton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.managerTable1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -184,20 +181,12 @@
             this.outputLogin.TabIndex = 15;
             this.outputLogin.Text = "Svetlyachok";
             this.outputLogin.Click += new System.EventHandler(this.outputLogin_Click);
-            // 
-            // radugaTourDatabaseDataSet1
-            // 
-            this.radugaTourDatabaseDataSet1.DataSetName = "RadugaTourDatabaseDataSet1";
-            this.radugaTourDatabaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+ 
             // 
             // managerTable1BindingSource
             // 
             this.managerTable1BindingSource.DataMember = "ManagerTable1";
-            this.managerTable1BindingSource.DataSource = this.radugaTourDatabaseDataSet1;
-            // 
-            // managerTable1TableAdapter
-            // 
-            this.managerTable1TableAdapter.ClearBeforeFill = true;
+       
             // 
             // LookAtManagersbutton
             // 
@@ -251,8 +240,6 @@
             this.Name = "ApplicationJunkClass";
             this.Text = "Домашняя страница";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.ApplicationJunkClass_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.radugaTourDatabaseDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.managerTable1BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -271,9 +258,7 @@
         private System.Windows.Forms.Button LookAtApplications;
         private System.Windows.Forms.Label outputProfile;
         private System.Windows.Forms.Label outputLogin;
-        private RadugaTourDatabaseDataSet1 radugaTourDatabaseDataSet1;
         private System.Windows.Forms.BindingSource managerTable1BindingSource;
-        private RadugaTourDatabaseDataSet1TableAdapters.ManagerTable1TableAdapter managerTable1TableAdapter;
         private System.Windows.Forms.Button LookAtManagersbutton;
         private System.Windows.Forms.Button button1;
 

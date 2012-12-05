@@ -61,8 +61,6 @@
             this.PrintButton = new System.Windows.Forms.Button();
             this.addPerson = new System.Windows.Forms.Button();
             this.touristPaymentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.radugaDBDataSet21 = new RadugaTur.RadugaDBDataSet21();
-            this.touristPaymentTableAdapter = new RadugaTur.RadugaDBDataSet21TableAdapters.TouristPaymentTableAdapter();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -154,7 +152,6 @@
             this.inputAppPhone = new System.Windows.Forms.TextBox();
             this.inputAppNotes = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.touristPaymentBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet21)).BeginInit();
             this.SuspendLayout();
             // 
             // SaveButton
@@ -444,16 +441,7 @@
             // touristPaymentBindingSource
             // 
             this.touristPaymentBindingSource.DataMember = "TouristPayment";
-            this.touristPaymentBindingSource.DataSource = this.radugaDBDataSet21;
-            // 
-            // radugaDBDataSet21
-            // 
-            this.radugaDBDataSet21.DataSetName = "RadugaDBDataSet21";
-            this.radugaDBDataSet21.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // touristPaymentTableAdapter
-            // 
-            this.touristPaymentTableAdapter.ClearBeforeFill = true;
+      
             // 
             // label8
             // 
@@ -1309,7 +1297,6 @@
             this.Name = "ApplicationForm";
             this.Text = "Заявка";
             ((System.ComponentModel.ISupportInitialize)(this.touristPaymentBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet21)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1348,9 +1335,7 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Button PrintButton;
         private System.Windows.Forms.Button addPerson;
-        private RadugaDBDataSet21 radugaDBDataSet21;
         private System.Windows.Forms.BindingSource touristPaymentBindingSource;
-        private RadugaDBDataSet21TableAdapters.TouristPaymentTableAdapter touristPaymentTableAdapter;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;

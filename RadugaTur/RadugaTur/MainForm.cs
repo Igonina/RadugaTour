@@ -79,12 +79,7 @@ namespace RadugaTur
             manForm.ShowDialog();
         }
 
-        private void ApplicationJunkClass_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'radugaTourDatabaseDataSet1.ManagerTable1' table. You can move, or remove it, as needed.
-            this.managerTable1TableAdapter.Fill(this.radugaTourDatabaseDataSet1.ManagerTable1);
-
-        }
+        
 
         private void ShowJuriFace_Click(object sender, EventArgs e)
         {

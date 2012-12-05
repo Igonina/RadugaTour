@@ -26,6 +26,10 @@ namespace RadugaTur
 
         private void JFTableForm_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the '_1gb_rrrrrDataSet7.JuridicalFace' table. You can move, or remove it, as needed.
+            this.juridicalFaceTableAdapter3.Fill(this._1gb_rrrrrDataSet7.JuridicalFace);
+            // TODO: This line of code loads data into the '_1gb_rrrrrDataSet4.JuridicalFace' table. You can move, or remove it, as needed.
+            this.juridicalFaceTableAdapter2.Fill(this._1gb_rrrrrDataSet4.JuridicalFace);
             // TODO: This line of code loads data into the '_1gb_rrrrrDataSet1.JuridicalFace' table. You can move, or remove it, as needed.
             this.juridicalFaceTableAdapter1.Fill(this._1gb_rrrrrDataSet1.JuridicalFace);
             /*string MyString = "Data Source=mysql56.1gb.ru;Database=db_radugatour;Uid=db_radugatour;Pwd=82f6b51c345;";
@@ -53,8 +57,7 @@ namespace RadugaTur
                 }
             }*/
 
-            // TODO: This line of code loads data into the 'radugaDBDataSet3.JuridicalFace' table. You can move, or remove it, as needed.
-            this.juridicalFaceTableAdapter.Fill(this.radugaDBDataSet3.JuridicalFace);
+          
 
         }
 

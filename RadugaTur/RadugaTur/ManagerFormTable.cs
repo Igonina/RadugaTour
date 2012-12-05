@@ -20,6 +20,8 @@ namespace RadugaTur
 
         private void ManagerTable_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the '_1gb_rrrrrDataSet8.Hashing' table. You can move, or remove it, as needed.
+            this.hashingTableAdapter2.Fill(this._1gb_rrrrrDataSet8.Hashing);
             // TODO: This line of code loads data into the '_1gb_rrrrrDataSet2.Hashing' table. You can move, or remove it, as needed.
             this.hashingTableAdapter1.Fill(this._1gb_rrrrrDataSet2.Hashing);
             /*string MyString = "Database=db_radugatour;Data Source=mysql56.1gb.ru;Database=db_radugatour;User id=db_radugatour;Password=82f6b51c345;";
@@ -47,15 +49,6 @@ namespace RadugaTur
                 }
             }*/
 
-           
-           // TODO: This line of code loads data into the 'radugaDBDataSet16.Hashing' table. You can move, or remove it, as needed.
-            this.hashingTableAdapter.Fill(this.radugaDBDataSet16.Hashing);
-            // TODO: This line of code loads data into the 'radugaDBDataSet.ManagerTable' table. You can move, or remove it, as needed.
-            this.managerTableTableAdapter.Fill(this.radugaDBDataSet.ManagerTable);
-            // TODO: This line of code loads data into the 'radugaTourDatabaseDataSet3.ManagerTable1' table. You can move, or remove it, as needed.
-            this.managerTable1TableAdapter1.Fill(this.radugaTourDatabaseDataSet3.ManagerTable1);
-            // TODO: This line of code loads data into the 'radugaTourDatabaseDataSet1.ManagerTable1' table. You can move, or remove it, as needed.
-            this.managerTable1TableAdapter.Fill(this.radugaTourDatabaseDataSet1.ManagerTable1);
             
         }
 

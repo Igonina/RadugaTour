@@ -37,19 +37,26 @@
             this.jFPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jFCargoCarrierDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.juridicalFaceBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.radugaDBDataSet3 = new RadugaTur.RadugaDBDataSet3();
-            this.juridicalFaceTableAdapter = new RadugaTur.RadugaDBDataSet3TableAdapters.JuridicalFaceTableAdapter();
             this.addJFButton = new System.Windows.Forms.Button();
             this.changeJFButton = new System.Windows.Forms.Button();
             this.cancelJFButton = new System.Windows.Forms.Button();
             this._1gb_rrrrrDataSet1 = new RadugaTur._1gb_rrrrrDataSet1();
             this.juridicalFaceBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.juridicalFaceTableAdapter1 = new RadugaTur._1gb_rrrrrDataSet1TableAdapters.JuridicalFaceTableAdapter();
+            this._1gb_rrrrrDataSet4 = new RadugaTur._1gb_rrrrrDataSet4();
+            this.juridicalFaceBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.juridicalFaceTableAdapter2 = new RadugaTur._1gb_rrrrrDataSet4TableAdapters.JuridicalFaceTableAdapter();
+            this._1gb_rrrrrDataSet7 = new RadugaTur._1gb_rrrrrDataSet7();
+            this.juridicalFaceBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.juridicalFaceTableAdapter3 = new RadugaTur._1gb_rrrrrDataSet7TableAdapters.JuridicalFaceTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -67,7 +74,7 @@
             this.jFFullNameDataGridViewTextBoxColumn,
             this.jFPhoneDataGridViewTextBoxColumn,
             this.jFCargoCarrierDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.juridicalFaceBindingSource1;
+            this.dataGridView1.DataSource = this.juridicalFaceBindingSource3;
             this.dataGridView1.Location = new System.Drawing.Point(13, 13);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
@@ -126,16 +133,7 @@
             // juridicalFaceBindingSource
             // 
             this.juridicalFaceBindingSource.DataMember = "JuridicalFace";
-            this.juridicalFaceBindingSource.DataSource = this.radugaDBDataSet3;
-            // 
-            // radugaDBDataSet3
-            // 
-            this.radugaDBDataSet3.DataSetName = "RadugaDBDataSet3";
-            this.radugaDBDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // juridicalFaceTableAdapter
-            // 
-            this.juridicalFaceTableAdapter.ClearBeforeFill = true;
+           
             // 
             // addJFButton
             // 
@@ -184,6 +182,34 @@
             // 
             this.juridicalFaceTableAdapter1.ClearBeforeFill = true;
             // 
+            // _1gb_rrrrrDataSet4
+            // 
+            this._1gb_rrrrrDataSet4.DataSetName = "_1gb_rrrrrDataSet4";
+            this._1gb_rrrrrDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // juridicalFaceBindingSource2
+            // 
+            this.juridicalFaceBindingSource2.DataMember = "JuridicalFace";
+            this.juridicalFaceBindingSource2.DataSource = this._1gb_rrrrrDataSet4;
+            // 
+            // juridicalFaceTableAdapter2
+            // 
+            this.juridicalFaceTableAdapter2.ClearBeforeFill = true;
+            // 
+            // _1gb_rrrrrDataSet7
+            // 
+            this._1gb_rrrrrDataSet7.DataSetName = "_1gb_rrrrrDataSet7";
+            this._1gb_rrrrrDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // juridicalFaceBindingSource3
+            // 
+            this.juridicalFaceBindingSource3.DataMember = "JuridicalFace";
+            this.juridicalFaceBindingSource3.DataSource = this._1gb_rrrrrDataSet7;
+            // 
+            // juridicalFaceTableAdapter3
+            // 
+            this.juridicalFaceTableAdapter3.ClearBeforeFill = true;
+            // 
             // JFTableForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -199,9 +225,12 @@
             this.Load += new System.EventHandler(this.JFTableForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -209,9 +238,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private RadugaDBDataSet3 radugaDBDataSet3;
         private System.Windows.Forms.BindingSource juridicalFaceBindingSource;
-        private RadugaDBDataSet3TableAdapters.JuridicalFaceTableAdapter juridicalFaceTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn JFId;
         private System.Windows.Forms.DataGridViewTextBoxColumn jFNameOrgDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn jFFullNameOrgDataGridViewTextBoxColumn;
@@ -224,5 +251,11 @@
         private _1gb_rrrrrDataSet1 _1gb_rrrrrDataSet1;
         private System.Windows.Forms.BindingSource juridicalFaceBindingSource1;
         private _1gb_rrrrrDataSet1TableAdapters.JuridicalFaceTableAdapter juridicalFaceTableAdapter1;
+        private _1gb_rrrrrDataSet4 _1gb_rrrrrDataSet4;
+        private System.Windows.Forms.BindingSource juridicalFaceBindingSource2;
+        private _1gb_rrrrrDataSet4TableAdapters.JuridicalFaceTableAdapter juridicalFaceTableAdapter2;
+        private _1gb_rrrrrDataSet7 _1gb_rrrrrDataSet7;
+        private System.Windows.Forms.BindingSource juridicalFaceBindingSource3;
+        private _1gb_rrrrrDataSet7TableAdapters.JuridicalFaceTableAdapter juridicalFaceTableAdapter3;
     }
 }

@@ -43,30 +43,27 @@
             this.pFOrgGetForeignPassportDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pFBirthPlaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pFPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phisicalFaceBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this._1gb_rrrrrDataSet5 = new RadugaTur._1gb_rrrrrDataSet5();
             this.phisicalFaceBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.radugaDBDataSet22 = new RadugaTur.RadugaDBDataSet22();
-            this.phisicalFaceBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.radugaDBDataSet20 = new RadugaTur.RadugaDBDataSet20();
-            this.phisicalFaceBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.radugaDBDataSet4 = new RadugaTur.RadugaDBDataSet4();
-            this.phisicalFaceTableAdapter = new RadugaTur.RadugaDBDataSet4TableAdapters.PhisicalFaceTableAdapter();
-            this.phisicalFaceTableAdapter1 = new RadugaTur.RadugaDBDataSet20TableAdapters.PhisicalFaceTableAdapter();
             this.addPFbutton = new System.Windows.Forms.Button();
             this.changePFbutton = new System.Windows.Forms.Button();
             this.cancelPFbutton = new System.Windows.Forms.Button();
-            this.phisicalFaceTableAdapter2 = new RadugaTur.RadugaDBDataSet22TableAdapters.PhisicalFaceTableAdapter();
             this._1gb_rrrrrDataSet3 = new RadugaTur._1gb_rrrrrDataSet3();
             this.phisicalFaceBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.phisicalFaceTableAdapter3 = new RadugaTur._1gb_rrrrrDataSet3TableAdapters.PhisicalFaceTableAdapter();
+            this.phisicalFaceTableAdapter4 = new RadugaTur._1gb_rrrrrDataSet5TableAdapters.PhisicalFaceTableAdapter();
+            this._1gb_rrrrrDataSet10 = new RadugaTur._1gb_rrrrrDataSet10();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.phisicalFaceTableAdapter = new RadugaTur._1gb_rrrrrDataSet10TableAdapters.PhisicalFaceTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.PhisicalFaceView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // PhisicalFaceView
@@ -91,7 +88,7 @@
             this.pFOrgGetForeignPassportDataGridViewTextBoxColumn,
             this.pFBirthPlaceDataGridViewTextBoxColumn,
             this.pFPhoneDataGridViewTextBoxColumn});
-            this.PhisicalFaceView.DataSource = this.phisicalFaceBindingSource3;
+            this.PhisicalFaceView.DataSource = this.bindingSource1;
             this.PhisicalFaceView.Location = new System.Drawing.Point(2, 1);
             this.PhisicalFaceView.Name = "PhisicalFaceView";
             this.PhisicalFaceView.RowHeadersVisible = false;
@@ -199,43 +196,19 @@
             this.pFPhoneDataGridViewTextBoxColumn.Name = "pFPhoneDataGridViewTextBoxColumn";
             this.pFPhoneDataGridViewTextBoxColumn.Width = 77;
             // 
+            // phisicalFaceBindingSource4
+            // 
+            this.phisicalFaceBindingSource4.DataMember = "PhisicalFace";
+            this.phisicalFaceBindingSource4.DataSource = this._1gb_rrrrrDataSet5;
+            // 
+            // _1gb_rrrrrDataSet5
+            // 
+            this._1gb_rrrrrDataSet5.DataSetName = "_1gb_rrrrrDataSet5";
+            this._1gb_rrrrrDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // phisicalFaceBindingSource2
             // 
             this.phisicalFaceBindingSource2.DataMember = "PhisicalFace";
-            this.phisicalFaceBindingSource2.DataSource = this.radugaDBDataSet22;
-            // 
-            // radugaDBDataSet22
-            // 
-            this.radugaDBDataSet22.DataSetName = "RadugaDBDataSet22";
-            this.radugaDBDataSet22.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // phisicalFaceBindingSource1
-            // 
-            this.phisicalFaceBindingSource1.DataMember = "PhisicalFace";
-            this.phisicalFaceBindingSource1.DataSource = this.radugaDBDataSet20;
-            // 
-            // radugaDBDataSet20
-            // 
-            this.radugaDBDataSet20.DataSetName = "RadugaDBDataSet20";
-            this.radugaDBDataSet20.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // phisicalFaceBindingSource
-            // 
-            this.phisicalFaceBindingSource.DataMember = "PhisicalFace";
-            this.phisicalFaceBindingSource.DataSource = this.radugaDBDataSet4;
-            // 
-            // radugaDBDataSet4
-            // 
-            this.radugaDBDataSet4.DataSetName = "RadugaDBDataSet4";
-            this.radugaDBDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // phisicalFaceTableAdapter
-            // 
-            this.phisicalFaceTableAdapter.ClearBeforeFill = true;
-            // 
-            // phisicalFaceTableAdapter1
-            // 
-            this.phisicalFaceTableAdapter1.ClearBeforeFill = true;
             // 
             // addPFbutton
             // 
@@ -270,10 +243,6 @@
             this.cancelPFbutton.UseVisualStyleBackColor = true;
             this.cancelPFbutton.Click += new System.EventHandler(this.cancelPFbutton_Click);
             // 
-            // phisicalFaceTableAdapter2
-            // 
-            this.phisicalFaceTableAdapter2.ClearBeforeFill = true;
-            // 
             // _1gb_rrrrrDataSet3
             // 
             this._1gb_rrrrrDataSet3.DataSetName = "_1gb_rrrrrDataSet3";
@@ -287,6 +256,24 @@
             // phisicalFaceTableAdapter3
             // 
             this.phisicalFaceTableAdapter3.ClearBeforeFill = true;
+            // 
+            // phisicalFaceTableAdapter4
+            // 
+            this.phisicalFaceTableAdapter4.ClearBeforeFill = true;
+            // 
+            // _1gb_rrrrrDataSet10
+            // 
+            this._1gb_rrrrrDataSet10.DataSetName = "_1gb_rrrrrDataSet10";
+            this._1gb_rrrrrDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataMember = "PhisicalFace";
+            this.bindingSource1.DataSource = this._1gb_rrrrrDataSet10;
+            // 
+            // phisicalFaceTableAdapter
+            // 
+            this.phisicalFaceTableAdapter.ClearBeforeFill = true;
             // 
             // PFTableForm
             // 
@@ -302,14 +289,13 @@
             this.Text = "Физические лица";
             this.Load += new System.EventHandler(this.PFTableForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PhisicalFaceView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radugaDBDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -317,18 +303,12 @@
         #endregion
 
         private System.Windows.Forms.DataGridView PhisicalFaceView;
-        private RadugaDBDataSet4 radugaDBDataSet4;
         private System.Windows.Forms.BindingSource phisicalFaceBindingSource;
-        private RadugaDBDataSet4TableAdapters.PhisicalFaceTableAdapter phisicalFaceTableAdapter;
-        private RadugaDBDataSet20 radugaDBDataSet20;
         private System.Windows.Forms.BindingSource phisicalFaceBindingSource1;
-        private RadugaDBDataSet20TableAdapters.PhisicalFaceTableAdapter phisicalFaceTableAdapter1;
         private System.Windows.Forms.Button addPFbutton;
         private System.Windows.Forms.Button changePFbutton;
         private System.Windows.Forms.Button cancelPFbutton;
-        private RadugaDBDataSet22 radugaDBDataSet22;
         private System.Windows.Forms.BindingSource phisicalFaceBindingSource2;
-        private RadugaDBDataSet22TableAdapters.PhisicalFaceTableAdapter phisicalFaceTableAdapter2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn pFFullRussNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pFFullEngNameDataGridViewTextBoxColumn;
@@ -345,5 +325,11 @@
         private _1gb_rrrrrDataSet3 _1gb_rrrrrDataSet3;
         private System.Windows.Forms.BindingSource phisicalFaceBindingSource3;
         private _1gb_rrrrrDataSet3TableAdapters.PhisicalFaceTableAdapter phisicalFaceTableAdapter3;
+        private _1gb_rrrrrDataSet5 _1gb_rrrrrDataSet5;
+        private System.Windows.Forms.BindingSource phisicalFaceBindingSource4;
+        private _1gb_rrrrrDataSet5TableAdapters.PhisicalFaceTableAdapter phisicalFaceTableAdapter4;
+        private _1gb_rrrrrDataSet10 _1gb_rrrrrDataSet10;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private _1gb_rrrrrDataSet10TableAdapters.PhisicalFaceTableAdapter phisicalFaceTableAdapter;
     }
 }

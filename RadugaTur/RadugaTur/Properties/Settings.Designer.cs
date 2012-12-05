@@ -26,27 +26,6 @@ namespace RadugaTur.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=|DataDirectory|\\RadugaTourDatabase.sdf")]
-        public string RadugaTourDatabaseConnectionString {
-            get {
-                return ((string)(this["RadugaTourDatabaseConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ms-sql-6.in-solve.ru;Initial Catalog=1gb_rrrrr;Integrated Security=Tr" +
-            "ue")]
-        public string RadugaDBConnectionString {
-            get {
-                return ((string)(this["RadugaDBConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ms-sql-6.in-solve.ru;Initial Catalog=1gb_rrrrr;User ID=1gb_radugakhv;" +
             "Password=9995ac11tyu")]
         public string _1gb_rrrrrConnectionString {
