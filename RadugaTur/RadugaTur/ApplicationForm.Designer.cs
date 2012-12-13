@@ -71,7 +71,6 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.addOrgbutton = new System.Windows.Forms.Button();
-            this.ItemTemplate = new Microsoft.VisualBasic.PowerPacks.DataRepeaterItem();
             this.label35 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
@@ -151,6 +150,10 @@
             this.inputAppOtherMoney = new System.Windows.Forms.TextBox();
             this.inputAppPhone = new System.Windows.Forms.TextBox();
             this.inputAppNotes = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.docTick = new System.Windows.Forms.TextBox();
+            this.docIns = new System.Windows.Forms.TextBox();
+            this.docWay = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.touristPaymentBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -269,9 +272,9 @@
             this.NumberContract.AutoSize = true;
             this.NumberContract.Location = new System.Drawing.Point(368, 10);
             this.NumberContract.Name = "NumberContract";
-            this.NumberContract.Size = new System.Drawing.Size(91, 13);
+            this.NumberContract.Size = new System.Drawing.Size(91, 26);
             this.NumberContract.TabIndex = 64;
-            this.NumberContract.Text = "Номер договора";
+            this.NumberContract.Text = "Номер договора\r\n      (заявка)";
             // 
             // label1
             // 
@@ -441,7 +444,6 @@
             // touristPaymentBindingSource
             // 
             this.touristPaymentBindingSource.DataMember = "TouristPayment";
-      
             // 
             // label8
             // 
@@ -533,10 +535,6 @@
             this.addOrgbutton.Text = "+";
             this.addOrgbutton.UseVisualStyleBackColor = true;
             this.addOrgbutton.Click += new System.EventHandler(this.addOrgbutton_Click);
-            // 
-            // ItemTemplate
-            // 
-            this.ItemTemplate.Size = new System.Drawing.Size(232, 51);
             // 
             // label35
             // 
@@ -869,6 +867,7 @@
             this.dateAcc.Name = "dateAcc";
             this.dateAcc.Size = new System.Drawing.Size(97, 20);
             this.dateAcc.TabIndex = 322;
+            this.dateAcc.TextChanged += new System.EventHandler(this.dateAcc_TextChanged);
             // 
             // sumAcc
             // 
@@ -1168,11 +1167,46 @@
             this.inputAppNotes.Size = new System.Drawing.Size(610, 20);
             this.inputAppNotes.TabIndex = 361;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label20.Location = new System.Drawing.Point(712, 467);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(96, 16);
+            this.label20.TabIndex = 362;
+            this.label20.Text = "№ документа";
+            // 
+            // docTick
+            // 
+            this.docTick.Location = new System.Drawing.Point(697, 486);
+            this.docTick.Name = "docTick";
+            this.docTick.Size = new System.Drawing.Size(128, 20);
+            this.docTick.TabIndex = 363;
+            // 
+            // docIns
+            // 
+            this.docIns.Location = new System.Drawing.Point(697, 508);
+            this.docIns.Name = "docIns";
+            this.docIns.Size = new System.Drawing.Size(128, 20);
+            this.docIns.TabIndex = 364;
+            // 
+            // docWay
+            // 
+            this.docWay.Location = new System.Drawing.Point(697, 530);
+            this.docWay.Name = "docWay";
+            this.docWay.Size = new System.Drawing.Size(128, 20);
+            this.docWay.TabIndex = 365;
+            // 
             // ApplicationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(997, 688);
+            this.Controls.Add(this.docWay);
+            this.Controls.Add(this.docIns);
+            this.Controls.Add(this.docTick);
+            this.Controls.Add(this.label20);
             this.Controls.Add(this.inputAppNotes);
             this.Controls.Add(this.inputAppPhone);
             this.Controls.Add(this.inputAppOtherMoney);
@@ -1346,7 +1380,6 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button addOrgbutton;
-        private Microsoft.VisualBasic.PowerPacks.DataRepeaterItem ItemTemplate;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label33;
@@ -1426,6 +1459,10 @@
         private System.Windows.Forms.TextBox inputAppOtherMoney;
         private System.Windows.Forms.TextBox inputAppPhone;
         private System.Windows.Forms.TextBox inputAppNotes;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox docTick;
+        private System.Windows.Forms.TextBox docIns;
+        private System.Windows.Forms.TextBox docWay;
 
     }
 }

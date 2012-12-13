@@ -41,6 +41,8 @@
             this.appNumNightsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.appNumPeopleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.appCategoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fullApplicationBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this._1gb_rrrrrDataSet = new RadugaTur._1gb_rrrrrDataSet();
             this.fullApplicationBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.fullApplicationBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.fullApplicationBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -48,16 +50,15 @@
             this.addApplicationButton = new System.Windows.Forms.Button();
             this.changeApplicationButton = new System.Windows.Forms.Button();
             this.cancelApplicationButton = new System.Windows.Forms.Button();
-            this._1gb_rrrrrDataSet = new RadugaTur._1gb_rrrrrDataSet();
-            this.fullApplicationBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.fullApplicationTableAdapter5 = new RadugaTur._1gb_rrrrrDataSetTableAdapters.FullApplicationTableAdapter();
+            this.deleteButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ApplicationTabledataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
             // ApplicationTabledataGridView
@@ -179,26 +180,31 @@
             this.appCategoryDataGridViewTextBoxColumn.Name = "appCategoryDataGridViewTextBoxColumn";
             this.appCategoryDataGridViewTextBoxColumn.Width = 85;
             // 
+            // fullApplicationBindingSource4
+            // 
+            this.fullApplicationBindingSource4.DataMember = "FullApplication";
+            this.fullApplicationBindingSource4.DataSource = this._1gb_rrrrrDataSet;
+            // 
+            // _1gb_rrrrrDataSet
+            // 
+            this._1gb_rrrrrDataSet.DataSetName = "_1gb_rrrrrDataSet";
+            this._1gb_rrrrrDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // fullApplicationBindingSource3
             // 
             this.fullApplicationBindingSource3.DataMember = "FullApplication";
             // 
-            // 
             // fullApplicationBindingSource2
             // 
             this.fullApplicationBindingSource2.DataMember = "FullApplication";
-          
             // 
             // fullApplicationBindingSource
             // 
             this.fullApplicationBindingSource.DataMember = "FullApplication";
-           
             // 
             // fullApplicationBindingSource1
             // 
             this.fullApplicationBindingSource1.DataMember = "FullApplication";
-           
-     
             // 
             // addApplicationButton
             // 
@@ -232,21 +238,20 @@
             this.cancelApplicationButton.Text = "Отменить";
             this.cancelApplicationButton.UseVisualStyleBackColor = true;
             this.cancelApplicationButton.Click += new System.EventHandler(this.cancelApplicationButton_Click);
-          
-            // 
-            // _1gb_rrrrrDataSet
-            // 
-            this._1gb_rrrrrDataSet.DataSetName = "_1gb_rrrrrDataSet";
-            this._1gb_rrrrrDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // fullApplicationBindingSource4
-            // 
-            this.fullApplicationBindingSource4.DataMember = "FullApplication";
-            this.fullApplicationBindingSource4.DataSource = this._1gb_rrrrrDataSet;
             // 
             // fullApplicationTableAdapter5
             // 
             this.fullApplicationTableAdapter5.ClearBeforeFill = true;
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.Location = new System.Drawing.Point(896, 330);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(114, 23);
+            this.deleteButton.TabIndex = 4;
+            this.deleteButton.Text = "Удалить";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // ApplicationTableForm
             // 
@@ -254,6 +259,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1331, 360);
+            this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.cancelApplicationButton);
             this.Controls.Add(this.changeApplicationButton);
             this.Controls.Add(this.addApplicationButton);
@@ -263,12 +269,12 @@
             this.Text = "Заявки";
             this.Load += new System.EventHandler(this.ApplicationTableForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ApplicationTabledataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fullApplicationBindingSource4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -297,6 +303,7 @@
         private _1gb_rrrrrDataSet _1gb_rrrrrDataSet;
         private System.Windows.Forms.BindingSource fullApplicationBindingSource4;
         private _1gb_rrrrrDataSetTableAdapters.FullApplicationTableAdapter fullApplicationTableAdapter5;
+        private System.Windows.Forms.Button deleteButton;
 
     }
 }

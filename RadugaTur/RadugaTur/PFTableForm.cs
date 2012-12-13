@@ -80,6 +80,7 @@ namespace RadugaTur
 
                   int i = PhisicalFaceView.SelectedCells[0].RowIndex;
                   int PFid = int.Parse(PhisicalFaceView.Rows[i].Cells[0].Value.ToString());
+                  PhisicalFaceView.Rows[i].DefaultCellStyle.BackColor = Color.Gray;
                   string query1 = "select PFId, PFFullRussName from PhisicalFace where (PFId = " + PFid + ")";
 
                   SqlDataReader data3 = Database.executeQuery(query1);
@@ -103,10 +104,10 @@ namespace RadugaTur
               
               int i = PhisicalFaceView.SelectedCells[0].RowIndex;
               int PFid = int.Parse(PhisicalFaceView.Rows[i].Cells[0].Value.ToString());
-              string query = "select PFId, PFFullRussName, PFFullEngName, PFBirthday, PFNumAndSerRussPassport, PFDateGetRussPassport, PFOrgGetRussPassport, PFNumAndSerForeignPassport, PFDateGetForeignPassport, PFDateEndForeignPassport, PFOrgGetForeignPassport, PFBirthPlace, PFPhone from PhisicalFace where (PFId = " + PFid + ")";
+              string query = "select PFId, PFFullRussName, PFFullEngName, PFBirthday, PFNumAndSerRussPassport, PFDateGetRussPassport, PFOrgGetRussPassport, PFNumAndSerForeignPassport, PFDateGetForeignPassport, PFDateEndForeignPassport, PFOrgGetForeignPassport, PFBirthPlace, PFPhone, PFMail from PhisicalFace where (PFId = " + PFid + ")";
 
               SqlDataReader data = Database.executeQuery(query);
-              object[] fields = new object[13];
+              object[] fields = new object[14];
               data.Read();
               data.GetValues(fields);
               data.Close();
@@ -116,9 +117,26 @@ namespace RadugaTur
               string PFFullRussName = fields[1].ToString(), PFFullEngName = fields[2].ToString(), PFBirthday = fields[3].ToString();
               string PFNumAndSerRussPassport = fields[4].ToString(), PFDateGetRussPassport = fields[5].ToString(), PFOrgGetRussPassport = fields[6].ToString();
               string PFNumAndSerForeignPassport = fields[7].ToString(), PFDateGetForeignPassport = fields[8].ToString(), PFDateEndForeignPassport = fields[9].ToString();
-              string PFOrgGetForeignPassport = fields[10].ToString(), PFBirthPlace = fields[11].ToString(), PFPhone = fields[12].ToString();
-              PFForm.fillData( PFId, PFFullRussName, PFFullEngName, PFBirthday, PFNumAndSerRussPassport, PFDateGetRussPassport, PFOrgGetRussPassport, PFNumAndSerForeignPassport, PFDateGetForeignPassport, PFDateEndForeignPassport, PFOrgGetForeignPassport, PFBirthPlace, PFPhone);
+              string PFOrgGetForeignPassport = fields[10].ToString(), PFBirthPlace = fields[11].ToString(), PFPhone = fields[12].ToString(), PFMail = fields[13].ToString();
+              PFForm.fillData( PFId, PFFullRussName, PFFullEngName, PFBirthday, PFNumAndSerRussPassport, PFDateGetRussPassport, PFOrgGetRussPassport, PFNumAndSerForeignPassport, PFDateGetForeignPassport, PFDateEndForeignPassport, PFOrgGetForeignPassport, PFBirthPlace, PFPhone, PFMail);
               PFForm.ShowDialog();
+          }
+
+          private void PhisicalFaceView_KeyPress(object sender, KeyPressEventArgs e)
+          {
+              if (e.KeyChar == '\r') {
+                  this.Close();
+              }
+              
+          }
+
+          private void deletePFButton_Click(object sender, EventArgs e)
+          {
+              int i2 = PhisicalFaceView.SelectedCells[0].RowIndex;
+              int PFid2 = int.Parse(PhisicalFaceView.Rows[i2].Cells[0].Value.ToString());
+              PhisicalFaceView.Rows[i2].DefaultCellStyle.BackColor = Color.Red;
+              string query2 = "delete from PhisicalFace where (PFId = " + PFid2 + ")";
+              Database.executeQuery(query2).Close();
           }
 
          

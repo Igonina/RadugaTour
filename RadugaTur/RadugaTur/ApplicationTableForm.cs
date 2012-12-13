@@ -83,10 +83,10 @@ namespace RadugaTur
             string ArTourProgram = fields[28].ToString(), ArVise = fields[29].ToString(), ArTicket = fields[30].ToString(), ArInsurance = fields[31].ToString(), AppTipe = fields[32].ToString();
             string AppAgentProcent = fields[33].ToString();
             appForm.fillData(AppId, AppDate, AppNumContact, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, AppNumDaysHealth, ArFood, ArBase, ArCost, ArCostWithoutProcent, ArSumPay, ArDateSumPay, ArDebt, ArOtherMoney, ArPhone, ArRoute, ArTransfer, ArTourProgram, ArVise, ArTicket, ArInsurance, AppTipe, AppAgentProcent);
-            
-            string query2 = "select tourId, tourNumContract, tourDateAcc, tourSumAcc, tourPayAcc, tourOrderAcc, tourDateRec, tourSumRec, tourPayRec, tourOrderRec, tourDateDebt, tourSumDebt, tourPayDebt, tourOrderDebt, forTourJurTick, forTourDateTick, forTourSumTick, forTourPayTick, forTourOrderTick, forTourJurWay, forTourDateWay, forTourSumWay, forTourPayWay, forTourOrderWay, forTourJurIns, forTourDateIns, forTourSumIns, forTourPayIns, forTourOrderIns from TouristsPayment where(tourNumContract = " + AppNumContact + ")";
+
+            string query2 = "select tourId, tourNumContract, tourDateAcc, tourSumAcc, tourPayAcc, tourOrderAcc, tourDateRec, tourSumRec, tourPayRec, tourOrderRec, tourDateDebt, tourSumDebt, tourPayDebt, tourOrderDebt, forTourJurTick, forTourDateTick, forTourSumTick, forTourPayTick, forTourOrderTick, forTourJurWay, forTourDateWay, forTourSumWay, forTourPayWay, forTourOrderWay, forTourJurIns, forTourDateIns, forTourSumIns, forTourPayIns, forTourOrderIns, forTourDocTick, forTourDocIns, forTourDocWay from TouristsPayment where(tourNumContract = " + AppNumContact + ")";
             SqlDataReader data2 = Database.executeQuery(query2);
-            object[] fields2 = new object[29];
+            object[] fields2 = new object[32];
             data2.Read();
             data2.GetValues(fields2);
             data2.Close();
@@ -101,7 +101,8 @@ namespace RadugaTur
             string forTourDateWay = fields2[20].ToString(), forTourSumWay = fields2[21].ToString(), forTourPayWay = fields2[22].ToString();
             string forTourOrderWay = fields2[23].ToString(), forTourJurIns = fields2[24].ToString(), forTourDateIns = fields2[25].ToString();
             string forTourSumIns = fields2[26].ToString(), forTourPayIns = fields2[27].ToString(), forTourOrderIns = fields2[28].ToString();
-            appForm.fillData2(tourId, tourNumContract, tourDateAcc, tourSumAcc, tourPayAcc, tourOrderAcc, tourDateRec, tourSumRec, tourPayRec, tourOrderRec, tourDateDebt, tourSumDebt, tourPayDebt, tourOrderDebt, forTourJurTick, forTourDateTick, forTourSumTick, forTourPayTick, forTourOrderTick, forTourJurWay, forTourDateWay, forTourSumWay, forTourPayWay, forTourOrderWay, forTourJurIns, forTourDateIns, forTourSumIns, forTourPayIns, forTourOrderIns);
+            string forTourDocTick = fields2[29].ToString(), forTourDocIns = fields2[30].ToString(), forTourDocWay = fields2[31].ToString();
+            appForm.fillData2(tourId, tourNumContract, tourDateAcc, tourSumAcc, tourPayAcc, tourOrderAcc, tourDateRec, tourSumRec, tourPayRec, tourOrderRec, tourDateDebt, tourSumDebt, tourPayDebt, tourOrderDebt, forTourJurTick, forTourDateTick, forTourSumTick, forTourPayTick, forTourOrderTick, forTourJurWay, forTourDateWay, forTourSumWay, forTourPayWay, forTourOrderWay, forTourJurIns, forTourDateIns, forTourSumIns, forTourPayIns, forTourOrderIns, forTourDocTick, forTourDocIns, forTourDocWay);
             appForm.ShowDialog();
             this.Close();
         }
@@ -147,9 +148,9 @@ namespace RadugaTur
 
             appForm.fillData(AppId, AppDate, AppNumContact, AppFullName, AppNameOrgOrPF, AppCountry, AppWay, AppStartTour, AppNumDays, AppNumNights, AppNumPeople, AppNumOldPeople, AppNumChildren, AppChildrensAge, AppCategory, AppNotes, AppNumDaysHealth, ArFood, ArBase, ArCost, ArCostWithoutProcent, ArSumPay, ArDateSumPay, ArDebt, ArOtherMoney, ArPhone, ArRoute, ArTransfer, ArTourProgram, ArVise, ArTicket, ArInsurance, AppTipe, AppAgentProcent);
 
-            string query2 = "select tourId, tourNumContract, tourDateAcc, tourSumAcc, tourPayAcc, tourOrderAcc, tourDateRec, tourSumRec, tourPayRec, tourOrderRec, tourDateDebt, tourSumDebt, tourPayDebt, tourOrderDebt, forTourJurTick, forTourDateTick, forTourSumTick, forTourPayTick, forTourOrderTick, forTourJurWay, forTourDateWay, forTourSumWay, forTourPayWay, forTourOrderWay, forTourJurIns, forTourDateIns, forTourSumIns, forTourPayIns, forTourOrderIns from TouristsPayment where(tourNumContract = " + AppNumContact + ")";
+            string query2 = "select tourId, tourNumContract, tourDateAcc, tourSumAcc, tourPayAcc, tourOrderAcc, tourDateRec, tourSumRec, tourPayRec, tourOrderRec, tourDateDebt, tourSumDebt, tourPayDebt, tourOrderDebt, forTourJurTick, forTourDateTick, forTourSumTick, forTourPayTick, forTourOrderTick, forTourJurWay, forTourDateWay, forTourSumWay, forTourPayWay, forTourOrderWay, forTourJurIns, forTourDateIns, forTourSumIns, forTourPayIns, forTourOrderIns, forTourDocTick, forTourDocIns, forTourDocWay from TouristsPayment where(tourNumContract = " + AppNumContact + ")";
             SqlDataReader data2 = Database.executeQuery(query2);
-            object[] fields2 = new object[29];
+            object[] fields2 = new object[32];
             data2.Read();
             data2.GetValues(fields2);
             data2.Close();
@@ -164,7 +165,8 @@ namespace RadugaTur
             string forTourDateWay = fields2[20].ToString(), forTourSumWay = fields2[21].ToString(), forTourPayWay = fields2[22].ToString();
             string forTourOrderWay = fields2[23].ToString(), forTourJurIns = fields2[24].ToString(), forTourDateIns = fields2[25].ToString();
             string forTourSumIns = fields2[26].ToString(), forTourPayIns = fields2[27].ToString(), forTourOrderIns = fields2[28].ToString();
-            appForm.fillData2(tourId, tourNumContract, tourDateAcc, tourSumAcc, tourPayAcc, tourOrderAcc, tourDateRec, tourSumRec, tourPayRec, tourOrderRec, tourDateDebt, tourSumDebt, tourPayDebt, tourOrderDebt, forTourJurTick, forTourDateTick, forTourSumTick, forTourPayTick, forTourOrderTick, forTourJurWay, forTourDateWay, forTourSumWay, forTourPayWay, forTourOrderWay, forTourJurIns, forTourDateIns, forTourSumIns, forTourPayIns, forTourOrderIns);
+            string forTourDocTick = fields2[29].ToString(), forTourDocIns = fields2[30].ToString(), forTourDocWay = fields2[31].ToString();
+            appForm.fillData2(tourId, tourNumContract, tourDateAcc, tourSumAcc, tourPayAcc, tourOrderAcc, tourDateRec, tourSumRec, tourPayRec, tourOrderRec, tourDateDebt, tourSumDebt, tourPayDebt, tourOrderDebt, forTourJurTick, forTourDateTick, forTourSumTick, forTourPayTick, forTourOrderTick, forTourJurWay, forTourDateWay, forTourSumWay, forTourPayWay, forTourOrderWay, forTourJurIns, forTourDateIns, forTourSumIns, forTourPayIns, forTourOrderIns, forTourDocTick, forTourDocIns, forTourDocWay);
             appForm.ShowDialog();
             this.Close();
 
@@ -174,6 +176,18 @@ namespace RadugaTur
         {
             this.Close();
         }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            int i2 = ApplicationTabledataGridView.SelectedCells[0].RowIndex;
+            int id2 = int.Parse(ApplicationTabledataGridView.Rows[i2].Cells[0].Value.ToString());
+            ApplicationTabledataGridView.Rows[i2].DefaultCellStyle.BackColor = Color.Red;
+            string query3 = "delete from FullApplication where (AppId = " + id2 + ")";
+            Database.executeQuery(query3).Close();
+        }
+
+       
+
 
        
 

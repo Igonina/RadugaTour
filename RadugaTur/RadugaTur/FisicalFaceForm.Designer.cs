@@ -59,6 +59,8 @@
             this.inputPFBirthday = new System.Windows.Forms.TextBox();
             this.inputPFBirthPlace = new System.Windows.Forms.TextBox();
             this.PFBirthdayButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.inputPFMail = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label3
@@ -181,7 +183,7 @@
             // 
             // SaveFisicalFaceFormButton
             // 
-            this.SaveFisicalFaceFormButton.Location = new System.Drawing.Point(282, 404);
+            this.SaveFisicalFaceFormButton.Location = new System.Drawing.Point(283, 435);
             this.SaveFisicalFaceFormButton.Name = "SaveFisicalFaceFormButton";
             this.SaveFisicalFaceFormButton.Size = new System.Drawing.Size(75, 23);
             this.SaveFisicalFaceFormButton.TabIndex = 30;
@@ -204,6 +206,7 @@
             this.inputPFFullRussName.Name = "inputPFFullRussName";
             this.inputPFFullRussName.Size = new System.Drawing.Size(477, 20);
             this.inputPFFullRussName.TabIndex = 31;
+            this.inputPFFullRussName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputPFFullRussName_KeyPress);
             // 
             // inputPFFullEngName
             // 
@@ -211,6 +214,7 @@
             this.inputPFFullEngName.Name = "inputPFFullEngName";
             this.inputPFFullEngName.Size = new System.Drawing.Size(477, 20);
             this.inputPFFullEngName.TabIndex = 32;
+            this.inputPFFullEngName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputPFFullRussName_KeyPress);
             // 
             // inputNumSerForeignPassport
             // 
@@ -218,6 +222,7 @@
             this.inputNumSerForeignPassport.Name = "inputNumSerForeignPassport";
             this.inputNumSerForeignPassport.Size = new System.Drawing.Size(126, 20);
             this.inputNumSerForeignPassport.TabIndex = 33;
+            this.inputNumSerForeignPassport.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputPFFullRussName_KeyPress);
             // 
             // inputPHDateGetForPassport
             // 
@@ -225,6 +230,7 @@
             this.inputPHDateGetForPassport.Name = "inputPHDateGetForPassport";
             this.inputPHDateGetForPassport.Size = new System.Drawing.Size(107, 20);
             this.inputPHDateGetForPassport.TabIndex = 34;
+            this.inputPHDateGetForPassport.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputPFFullRussName_KeyPress);
             // 
             // inputPHDateEndForPassport
             // 
@@ -232,6 +238,7 @@
             this.inputPHDateEndForPassport.Name = "inputPHDateEndForPassport";
             this.inputPHDateEndForPassport.Size = new System.Drawing.Size(107, 20);
             this.inputPHDateEndForPassport.TabIndex = 35;
+            this.inputPHDateEndForPassport.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputPFFullRussName_KeyPress);
             // 
             // PHDateGetForPassButton
             // 
@@ -257,6 +264,7 @@
             this.inputPFOrgGetEngPassport.Name = "inputPFOrgGetEngPassport";
             this.inputPFOrgGetEngPassport.Size = new System.Drawing.Size(477, 20);
             this.inputPFOrgGetEngPassport.TabIndex = 38;
+            this.inputPFOrgGetEngPassport.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputPFFullRussName_KeyPress);
             // 
             // inputPFSerialAndNumberRussPassport
             // 
@@ -264,6 +272,7 @@
             this.inputPFSerialAndNumberRussPassport.Name = "inputPFSerialAndNumberRussPassport";
             this.inputPFSerialAndNumberRussPassport.Size = new System.Drawing.Size(126, 20);
             this.inputPFSerialAndNumberRussPassport.TabIndex = 39;
+            this.inputPFSerialAndNumberRussPassport.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputPFFullRussName_KeyPress);
             // 
             // inputPFDateGetRussPassport
             // 
@@ -271,6 +280,7 @@
             this.inputPFDateGetRussPassport.Name = "inputPFDateGetRussPassport";
             this.inputPFDateGetRussPassport.Size = new System.Drawing.Size(107, 20);
             this.inputPFDateGetRussPassport.TabIndex = 40;
+            this.inputPFDateGetRussPassport.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputPFFullRussName_KeyPress);
             // 
             // PFDateGetRussPassportButton
             // 
@@ -287,6 +297,7 @@
             this.inputPFOrgGetRussPassport.Name = "inputPFOrgGetRussPassport";
             this.inputPFOrgGetRussPassport.Size = new System.Drawing.Size(477, 20);
             this.inputPFOrgGetRussPassport.TabIndex = 42;
+            this.inputPFOrgGetRussPassport.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputPFFullRussName_KeyPress);
             // 
             // inputPFPhone
             // 
@@ -294,6 +305,7 @@
             this.inputPFPhone.Name = "inputPFPhone";
             this.inputPFPhone.Size = new System.Drawing.Size(250, 20);
             this.inputPFPhone.TabIndex = 43;
+            this.inputPFPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputPFFullRussName_KeyPress);
             // 
             // inputPFBirthday
             // 
@@ -301,6 +313,7 @@
             this.inputPFBirthday.Name = "inputPFBirthday";
             this.inputPFBirthday.Size = new System.Drawing.Size(250, 20);
             this.inputPFBirthday.TabIndex = 44;
+            this.inputPFBirthday.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputPFFullRussName_KeyPress);
             // 
             // inputPFBirthPlace
             // 
@@ -308,6 +321,7 @@
             this.inputPFBirthPlace.Name = "inputPFBirthPlace";
             this.inputPFBirthPlace.Size = new System.Drawing.Size(250, 20);
             this.inputPFBirthPlace.TabIndex = 45;
+            this.inputPFBirthPlace.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputPFFullRussName_KeyPress);
             // 
             // PFBirthdayButton
             // 
@@ -318,11 +332,29 @@
             this.PFBirthdayButton.UseVisualStyleBackColor = true;
             this.PFBirthdayButton.Click += new System.EventHandler(this.PFBirthdayButton_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 405);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 47;
+            this.label1.Text = "e-mail";
+            // 
+            // inputPFMail
+            // 
+            this.inputPFMail.Location = new System.Drawing.Point(168, 402);
+            this.inputPFMail.Name = "inputPFMail";
+            this.inputPFMail.Size = new System.Drawing.Size(250, 20);
+            this.inputPFMail.TabIndex = 48;
+            // 
             // FisicalFaceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 439);
+            this.ClientSize = new System.Drawing.Size(788, 470);
+            this.Controls.Add(this.inputPFMail);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.PFBirthdayButton);
             this.Controls.Add(this.inputPFBirthPlace);
             this.Controls.Add(this.inputPFBirthday);
@@ -395,5 +427,7 @@
         private System.Windows.Forms.TextBox inputPFBirthday;
         private System.Windows.Forms.TextBox inputPFBirthPlace;
         private System.Windows.Forms.Button PFBirthdayButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox inputPFMail;
     }
 }

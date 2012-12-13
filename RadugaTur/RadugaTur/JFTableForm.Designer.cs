@@ -36,6 +36,8 @@
             this.jFFullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jFPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jFCargoCarrierDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.juridicalFaceBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this._1gb_rrrrrDataSet7 = new RadugaTur._1gb_rrrrrDataSet7();
             this.juridicalFaceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addJFButton = new System.Windows.Forms.Button();
             this.changeJFButton = new System.Windows.Forms.Button();
@@ -46,17 +48,16 @@
             this._1gb_rrrrrDataSet4 = new RadugaTur._1gb_rrrrrDataSet4();
             this.juridicalFaceBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.juridicalFaceTableAdapter2 = new RadugaTur._1gb_rrrrrDataSet4TableAdapters.JuridicalFaceTableAdapter();
-            this._1gb_rrrrrDataSet7 = new RadugaTur._1gb_rrrrrDataSet7();
-            this.juridicalFaceBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.juridicalFaceTableAdapter3 = new RadugaTur._1gb_rrrrrDataSet7TableAdapters.JuridicalFaceTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -130,10 +131,19 @@
             this.jFCargoCarrierDataGridViewTextBoxColumn.Name = "jFCargoCarrierDataGridViewTextBoxColumn";
             this.jFCargoCarrierDataGridViewTextBoxColumn.Width = 120;
             // 
+            // juridicalFaceBindingSource3
+            // 
+            this.juridicalFaceBindingSource3.DataMember = "JuridicalFace";
+            this.juridicalFaceBindingSource3.DataSource = this._1gb_rrrrrDataSet7;
+            // 
+            // _1gb_rrrrrDataSet7
+            // 
+            this._1gb_rrrrrDataSet7.DataSetName = "_1gb_rrrrrDataSet7";
+            this._1gb_rrrrrDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // juridicalFaceBindingSource
             // 
             this.juridicalFaceBindingSource.DataMember = "JuridicalFace";
-           
             // 
             // addJFButton
             // 
@@ -196,25 +206,27 @@
             // 
             this.juridicalFaceTableAdapter2.ClearBeforeFill = true;
             // 
-            // _1gb_rrrrrDataSet7
-            // 
-            this._1gb_rrrrrDataSet7.DataSetName = "_1gb_rrrrrDataSet7";
-            this._1gb_rrrrrDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // juridicalFaceBindingSource3
-            // 
-            this.juridicalFaceBindingSource3.DataMember = "JuridicalFace";
-            this.juridicalFaceBindingSource3.DataSource = this._1gb_rrrrrDataSet7;
-            // 
             // juridicalFaceTableAdapter3
             // 
             this.juridicalFaceTableAdapter3.ClearBeforeFill = true;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button1.Location = new System.Drawing.Point(782, 251);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Удалить";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // JFTableForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 280);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.cancelJFButton);
             this.Controls.Add(this.changeJFButton);
             this.Controls.Add(this.addJFButton);
@@ -224,13 +236,13 @@
             this.Text = "Юридические лица";
             this.Load += new System.EventHandler(this.JFTableForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.juridicalFaceBindingSource3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -257,5 +269,6 @@
         private _1gb_rrrrrDataSet7 _1gb_rrrrrDataSet7;
         private System.Windows.Forms.BindingSource juridicalFaceBindingSource3;
         private _1gb_rrrrrDataSet7TableAdapters.JuridicalFaceTableAdapter juridicalFaceTableAdapter3;
+        private System.Windows.Forms.Button button1;
     }
 }

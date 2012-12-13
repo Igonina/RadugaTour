@@ -125,6 +125,15 @@ namespace RadugaTur
             this.Close();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int i2 = dataGridView1.SelectedCells[0].RowIndex;
+            int JFid2 = int.Parse(dataGridView1.Rows[i2].Cells[0].Value.ToString());
+            dataGridView1.Rows[i2].DefaultCellStyle.BackColor = Color.Red;
+            string query2 = "delete from JuridicalFace where (JFId = " + JFid2 + ")";
+            Database.executeQuery(query2).Close();
+        }
+
        
     }
 }

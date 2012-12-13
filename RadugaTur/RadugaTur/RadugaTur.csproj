@@ -59,8 +59,6 @@
     <Reference Include="Microsoft.Office.Interop.Word, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
-    <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data, Version=5.2.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="Office, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -181,6 +179,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>_1gb_rrrrrDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_1gb_rrrrrDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1gb_rrrrrDataSet11.xsd</DependentUpon>
     </Compile>
     <Compile Include="_1gb_rrrrrDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -319,6 +322,17 @@
     </None>
     <None Include="_1gb_rrrrrDataSet10.xss">
       <DependentUpon>_1gb_rrrrrDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="_1gb_rrrrrDataSet11.xsc">
+      <DependentUpon>_1gb_rrrrrDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="_1gb_rrrrrDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1gb_rrrrrDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1gb_rrrrrDataSet11.xss">
+      <DependentUpon>_1gb_rrrrrDataSet11.xsd</DependentUpon>
     </None>
     <None Include="_1gb_rrrrrDataSet2.xsc">
       <DependentUpon>_1gb_rrrrrDataSet2.xsd</DependentUpon>

@@ -37,6 +37,7 @@
             this.monthCalendar2.Location = new System.Drawing.Point(11, 18);
             this.monthCalendar2.Name = "monthCalendar2";
             this.monthCalendar2.TabIndex = 0;
+            this.monthCalendar2.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar2_DateSelected);
             // 
             // MonthCalButton
             // 
@@ -56,7 +57,7 @@
             this.Controls.Add(this.MonthCalButton);
             this.Controls.Add(this.monthCalendar2);
             this.Name = "MonthCalendar1";
-            this.Text = "MonthCalendar1";
+            this.Text = "Календарь";
             this.ResumeLayout(false);
 
         }

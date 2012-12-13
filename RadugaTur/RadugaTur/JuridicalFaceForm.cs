@@ -31,20 +31,33 @@ namespace RadugaTur
             updateJFId = JFId;
            
         }
+        internal void insert2() {
+            if (updateJFId == 0)
+            {
+                string query = "insert into JuridicalFace (JFNameOrg, JFFullNameOrg, JFFullName, JFPhone, JFCargoCarrier) values (\'" + inputJFNameOrg.Text + "\', \'" + inputJFFullNameOrg.Text + "\', \'" + inputFullName.Text + "\', \'" + inputPhone.Text + "\', \'" + InputCargoCarrier.Text + "\')";
+                Database.executeQuery(query).Close();
+            }
+            else
+            {
+                string query2 = "update JuridicalFace set JFNameOrg = \'" + inputJFNameOrg.Text + "\', JFFullNameOrg = \'" + inputJFFullNameOrg.Text + "\', JFFullName = \'" + inputFullName.Text + "\', JFPhone = \'" + inputPhone.Text + "\', JFCargoCarrier= \'" + InputCargoCarrier.Text + "\' where (JFId = " + updateJFId + ")";
+                Database.executeQuery(query2).Close();
+            }
+
+            this.Close();
+        }
 
 
         private void SaveJuridicalFaceFormButton_Click(object sender, EventArgs e)
         {
-            if(updateJFId == 0) {            
-                string query = "insert into JuridicalFace (JFNameOrg, JFFullNameOrg, JFFullName, JFPhone, JFCargoCarrier) values (\'"+inputJFNameOrg.Text+"\', \'"+inputJFFullNameOrg.Text+"\', \'"+inputFullName.Text+"\', \'"+inputPhone.Text+"\', \'"+InputCargoCarrier.Text+"\')";
-                Database.executeQuery(query).Close();
+            insert2();
+        }
+
+        private void inputJFNameOrg_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '\r')
+            {
+                insert2();
             }
-            else {
-            string query2 = "update JuridicalFace set JFNameOrg = \'"+inputJFNameOrg.Text+ "\', JFFullNameOrg = \'" + inputJFFullNameOrg.Text + "\', JFFullName = \'" +inputFullName.Text + "\', JFPhone = \'" +inputPhone.Text+ "\', JFCargoCarrier= \'" + InputCargoCarrier.Text + "\' where (JFId = "+ updateJFId+")";
-            Database.executeQuery(query2).Close();
-            }
-            
-            this.Close();
         }
 
 

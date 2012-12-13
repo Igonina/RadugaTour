@@ -97,7 +97,7 @@ namespace RadugaTur
         }
 
          bool isUpdateModeEnabled2 = false;
-        internal void fillData2(int tourId, int tourNumContract, string tourDateAcc, string tourSumAcc, string tourPayAcc, string tourOrderAcc, string tourDateRec, string tourSumRec, string tourPayRec, string tourOrderRec, string tourDateDebt, string tourSumDebt, string tourPayDebt, string tourOrderDebt, string forTourJurTick, string forTourDateTick, string forTourSumTick, string forTourPayTick, string forTourOrderTick, string forTourJurWay, string forTourDateWay, string forTourSumWay, string forTourPayWay, string forTourOrderWay, string forTourJurIns, string forTourDateIns, string forTourSumIns, string forTourPayIns, string forTourOrderIns) {
+        internal void fillData2(int tourId, int tourNumContract, string tourDateAcc, string tourSumAcc, string tourPayAcc, string tourOrderAcc, string tourDateRec, string tourSumRec, string tourPayRec, string tourOrderRec, string tourDateDebt, string tourSumDebt, string tourPayDebt, string tourOrderDebt, string forTourJurTick, string forTourDateTick, string forTourSumTick, string forTourPayTick, string forTourOrderTick, string forTourJurWay, string forTourDateWay, string forTourSumWay, string forTourPayWay, string forTourOrderWay, string forTourJurIns, string forTourDateIns, string forTourSumIns, string forTourPayIns, string forTourOrderIns, string forTourDocTick, string forTourDocIns, string forTourDocWay) {
             this.dateAcc.Text = tourDateAcc.ToString();
             this.sumAcc.Text = tourSumAcc.ToString();
             this.payAcc.Text = tourPayAcc.ToString();
@@ -125,6 +125,9 @@ namespace RadugaTur
             this.sumIns.Text = forTourSumIns.ToString();
             this.payIns.Text = forTourPayIns.ToString();
             this.orderIns.Text = forTourOrderIns.ToString();
+            this.docTick.Text = forTourDocTick.ToString();
+            this.docIns.Text = forTourDocIns.ToString();
+            this.docWay.Text = forTourDocWay.ToString();
 
             
             isUpdateModeEnabled2 = true;
@@ -168,7 +171,7 @@ namespace RadugaTur
                     inputIns.Text + "\',\'" +
                     inputTipeApp.Text + "\',\'" +
                     inputAgentsProcent.Text + "\')";
-                string query2 = "insert into TouristsPayment(tourNumContract, tourDateAcc, tourSumAcc, tourPayAcc, tourOrderAcc, tourDateRec, tourSumRec, tourPayRec, tourOrderRec, tourDateDebt, tourSumDebt, tourPayDebt, tourOrderDebt, forTourJurTick, forTourDateTick, forTourSumTick, forTourPayTick, forTourOrderTick, forTourJurWay, forTourDateWay, forTourSumWay, forTourPayWay, forTourOrderWay, forTourJurIns, forTourDateIns, forTourSumIns, forTourPayIns, forTourOrderIns) values (\'" +
+                string query2 = "insert into TouristsPayment(tourNumContract, tourDateAcc, tourSumAcc, tourPayAcc, tourOrderAcc, tourDateRec, tourSumRec, tourPayRec, tourOrderRec, tourDateDebt, tourSumDebt, tourPayDebt, tourOrderDebt, forTourJurTick, forTourDateTick, forTourSumTick, forTourPayTick, forTourOrderTick, forTourJurWay, forTourDateWay, forTourSumWay, forTourPayWay, forTourOrderWay, forTourJurIns, forTourDateIns, forTourSumIns, forTourPayIns, forTourOrderIns, forTourDocTick, forTourDocIns, forTourDocWay) values (\'" +
                 inputNumContract.Text + "\', \'" +
                 dateAcc.Text + "\', \'" +
                 sumAcc.Text + "\', \'" +
@@ -196,7 +199,10 @@ namespace RadugaTur
                 dateIns.Text + "\', \'" +
                 sumIns.Text + "\', \'" +
                 payIns.Text + "\', \'" +
-                orderIns.Text + "\')";
+                orderIns.Text + "\', \'" +
+                docTick.Text + "\', \'" +
+                docIns.Text + "\', \'" +
+                docWay.Text + "\')";
                 Database.executeQuery(query).Close();
                 Database.executeQuery(query2).Close();
                 ApplicationTableForm appTableForm = new ApplicationTableForm();
@@ -206,7 +212,7 @@ namespace RadugaTur
             }
             else {
                 string query3 = "update FullApplication set AppDate  = \'" + inputAppDate.Text + "\',  AppNumContract = \'" + inputNumContract.Text + "\',  AppFullName = \'" + inputAppFullName.Text + "\',  AppNameOrgOrPF = \'" + inputAppNameOrgOrPF.Text + "\',  AppCountry = \'" + inputAppCountry.Text + "\',  AppWay = \'" + inputAppWay.Text + "\',  AppStartTour = \'" + inputAppStartTour.Text + "\',  AppNumDays = \'" + inputNumDays.Text + "\',  AppNumNights = \'" + inputNumNights.Text + "\',  AppNumPeople = \'" + inputAppNumPeople.Text + "\',   AppNumOldPeople = \'" + inputAppOldPeople.Text + "\',  AppNumChildren = \'" + inputAppNumChildren.Text + "\',  AppChildrensAge = \'" + inputAppChildAge.Text + "\',  AppCategory = \'" + inputAppNumberAndCategory.Text + "\',  AppNotes = \'" + inputAppNotes.Text + "\',  AppNumDaysHealth = \'" + inputNumDaysHealth.Text + "\',  ArFood = \'" + inputFood.Text + "\',  ArBase = \'" + inputArBase.Text + "\',  ArCost = \'" + inputAppCost.Text + "\',  ArCostWithoutProcent = \'" + inputAppCostWithoutProcent.Text + "\',  ArSumPay =   \'" + inputAppSumPay.Text + "\',  ArDateSumPay = \'" + inputAppDateSumPay.Text + "\',  ArDebt  = \'" + inputAppDebt.Text + "\',  ArOtherMoney = \'" + inputAppOtherMoney.Text + "\',   ArPhone = \'" + inputAppPhone.Text + "\',  ArRoute = \'" + inputRoute.Text + "\',  ArTransfer = \'" + inputTransfer.Text + "\',  ArTourProgram = \'" + inputTourProgram.Text + "\',  ArVise = \'" + inputVisa.Text + "\',  ArTicket = \'" + inputTick.Text + "\',  ArInsurance = \'" + inputIns.Text + "\',  AppTipe = \'" + inputTipeApp.Text + "\',  AppAgentProcent = \'" + inputAgentsProcent.Text + "\' where (AppId = " + updateAppId + ")";
-                string query4 = "update TouristsPayment set tourDateAcc = \'" + dateAcc.Text + "\', tourSumAcc = \'" + sumAcc.Text + "\', tourPayAcc = \'" + payAcc.Text + "\', tourOrderAcc = \'" + orderAcc.Text + "\', tourDateRec = \'" + dateRec.Text + "\', tourSumRec = \'" + sumRec.Text + "\', tourPayRec = \'" + payRec.Text + "\', tourOrderRec = \'" + orderRec.Text + "\', tourDateDebt = \'" + DateDeb.Text + "\', tourSumDebt = \'" + sumDeb.Text + "\', tourPayDebt = \'" + payDeb.Text + "\', tourOrderDebt = \'" + orderDeb.Text + "\', forTourJurTick = \'" + jurTick.Text + "\', forTourDateTick = \'" + dateTick.Text + "\', forTourSumTick = \'" + sumTick.Text + "\', forTourPayTick = \'" + payTick.Text + "\', forTourOrderTick = \'" + orderTick.Text + "\', forTourJurWay = \'" + jurWay.Text + "\', forTourDateWay = \'" + dateWay.Text + "\', forTourSumWay = \'" + sumWay.Text + "\', forTourPayWay = \'" + payWay.Text + "\', forTourOrderWay = \'" + orderWay.Text + "\', forTourJurIns = \'" + jurIns.Text + "\', forTourDateIns = \'" + dateIns.Text + "\', forTourSumIns = \'" + sumIns.Text + "\', forTourPayIns = \'" + payIns.Text + "\', forTourOrderIns = \'" + orderIns.Text + "\' where (tourNumContract = " + inputNumContract.Text + ")";
+                string query4 = "update TouristsPayment set tourDateAcc = \'" + dateAcc.Text + "\', tourSumAcc = \'" + sumAcc.Text + "\', tourPayAcc = \'" + payAcc.Text + "\', tourOrderAcc = \'" + orderAcc.Text + "\', tourDateRec = \'" + dateRec.Text + "\', tourSumRec = \'" + sumRec.Text + "\', tourPayRec = \'" + payRec.Text + "\', tourOrderRec = \'" + orderRec.Text + "\', tourDateDebt = \'" + DateDeb.Text + "\', tourSumDebt = \'" + sumDeb.Text + "\', tourPayDebt = \'" + payDeb.Text + "\', tourOrderDebt = \'" + orderDeb.Text + "\', forTourJurTick = \'" + jurTick.Text + "\', forTourDateTick = \'" + dateTick.Text + "\', forTourSumTick = \'" + sumTick.Text + "\', forTourPayTick = \'" + payTick.Text + "\', forTourOrderTick = \'" + orderTick.Text + "\', forTourJurWay = \'" + jurWay.Text + "\', forTourDateWay = \'" + dateWay.Text + "\', forTourSumWay = \'" + sumWay.Text + "\', forTourPayWay = \'" + payWay.Text + "\', forTourOrderWay = \'" + orderWay.Text + "\', forTourJurIns = \'" + jurIns.Text + "\', forTourDateIns = \'" + dateIns.Text + "\', forTourSumIns = \'" + sumIns.Text + "\', forTourPayIns = \'" + payIns.Text + "\', forTourOrderIns = \'" + orderIns.Text + "\', forTourDocTick = \'" + docTick.Text + "\', forTourDocIns = \'" + docIns.Text + "\', forTourDocWay = \'" + docWay.Text + "\' where (tourNumContract = " + inputNumContract.Text + ")";
                 Database.executeQuery(query3).Close();
                 Database.executeQuery(query4).Close();
                 this.Close();
@@ -303,6 +309,10 @@ namespace RadugaTur
 
         }
 
-        
+        private void dateAcc_TextChanged(object sender, EventArgs e)
+        {
+            
+            
+        }
     } 
 }

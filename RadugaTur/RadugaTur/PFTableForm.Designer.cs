@@ -43,6 +43,8 @@
             this.pFOrgGetForeignPassportDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pFBirthPlaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pFPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this._1gb_rrrrrDataSet10 = new RadugaTur._1gb_rrrrrDataSet10();
             this.phisicalFaceBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this._1gb_rrrrrDataSet5 = new RadugaTur._1gb_rrrrrDataSet5();
             this.phisicalFaceBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
@@ -53,17 +55,16 @@
             this.phisicalFaceBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.phisicalFaceTableAdapter3 = new RadugaTur._1gb_rrrrrDataSet3TableAdapters.PhisicalFaceTableAdapter();
             this.phisicalFaceTableAdapter4 = new RadugaTur._1gb_rrrrrDataSet5TableAdapters.PhisicalFaceTableAdapter();
-            this._1gb_rrrrrDataSet10 = new RadugaTur._1gb_rrrrrDataSet10();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.phisicalFaceTableAdapter = new RadugaTur._1gb_rrrrrDataSet10TableAdapters.PhisicalFaceTableAdapter();
+            this.deletePFButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PhisicalFaceView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // PhisicalFaceView
@@ -95,6 +96,7 @@
             this.PhisicalFaceView.Size = new System.Drawing.Size(1339, 231);
             this.PhisicalFaceView.TabIndex = 0;
             this.PhisicalFaceView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PhisicalFaceView_CellDoubleClick);
+            this.PhisicalFaceView.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PhisicalFaceView_KeyPress);
             // 
             // Column1
             // 
@@ -196,6 +198,16 @@
             this.pFPhoneDataGridViewTextBoxColumn.Name = "pFPhoneDataGridViewTextBoxColumn";
             this.pFPhoneDataGridViewTextBoxColumn.Width = 77;
             // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataMember = "PhisicalFace";
+            this.bindingSource1.DataSource = this._1gb_rrrrrDataSet10;
+            // 
+            // _1gb_rrrrrDataSet10
+            // 
+            this._1gb_rrrrrDataSet10.DataSetName = "_1gb_rrrrrDataSet10";
+            this._1gb_rrrrrDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // phisicalFaceBindingSource4
             // 
             this.phisicalFaceBindingSource4.DataMember = "PhisicalFace";
@@ -261,25 +273,27 @@
             // 
             this.phisicalFaceTableAdapter4.ClearBeforeFill = true;
             // 
-            // _1gb_rrrrrDataSet10
-            // 
-            this._1gb_rrrrrDataSet10.DataSetName = "_1gb_rrrrrDataSet10";
-            this._1gb_rrrrrDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataMember = "PhisicalFace";
-            this.bindingSource1.DataSource = this._1gb_rrrrrDataSet10;
-            // 
             // phisicalFaceTableAdapter
             // 
             this.phisicalFaceTableAdapter.ClearBeforeFill = true;
+            // 
+            // deletePFButton
+            // 
+            this.deletePFButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.deletePFButton.Location = new System.Drawing.Point(830, 239);
+            this.deletePFButton.Name = "deletePFButton";
+            this.deletePFButton.Size = new System.Drawing.Size(135, 23);
+            this.deletePFButton.TabIndex = 4;
+            this.deletePFButton.Text = "Удалить";
+            this.deletePFButton.UseVisualStyleBackColor = true;
+            this.deletePFButton.Click += new System.EventHandler(this.deletePFButton_Click);
             // 
             // PFTableForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1353, 268);
+            this.Controls.Add(this.deletePFButton);
             this.Controls.Add(this.cancelPFbutton);
             this.Controls.Add(this.changePFbutton);
             this.Controls.Add(this.addPFbutton);
@@ -289,13 +303,13 @@
             this.Text = "Физические лица";
             this.Load += new System.EventHandler(this.PFTableForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PhisicalFaceView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phisicalFaceBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._1gb_rrrrrDataSet10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -331,5 +345,6 @@
         private _1gb_rrrrrDataSet10 _1gb_rrrrrDataSet10;
         private System.Windows.Forms.BindingSource bindingSource1;
         private _1gb_rrrrrDataSet10TableAdapters.PhisicalFaceTableAdapter phisicalFaceTableAdapter;
+        private System.Windows.Forms.Button deletePFButton;
     }
 }

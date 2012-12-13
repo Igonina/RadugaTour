@@ -102,6 +102,7 @@
             this.inputJFNameOrg.Name = "inputJFNameOrg";
             this.inputJFNameOrg.Size = new System.Drawing.Size(409, 20);
             this.inputJFNameOrg.TabIndex = 9;
+            this.inputJFNameOrg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputJFNameOrg_KeyPress);
             // 
             // inputJFFullNameOrg
             // 
@@ -109,6 +110,7 @@
             this.inputJFFullNameOrg.Name = "inputJFFullNameOrg";
             this.inputJFFullNameOrg.Size = new System.Drawing.Size(409, 20);
             this.inputJFFullNameOrg.TabIndex = 10;
+            this.inputJFFullNameOrg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputJFNameOrg_KeyPress);
             // 
             // inputFullName
             // 
@@ -116,6 +118,7 @@
             this.inputFullName.Name = "inputFullName";
             this.inputFullName.Size = new System.Drawing.Size(409, 20);
             this.inputFullName.TabIndex = 11;
+            this.inputFullName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputJFNameOrg_KeyPress);
             // 
             // inputPhone
             // 
@@ -123,6 +126,7 @@
             this.inputPhone.Name = "inputPhone";
             this.inputPhone.Size = new System.Drawing.Size(409, 20);
             this.inputPhone.TabIndex = 12;
+            this.inputPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputJFNameOrg_KeyPress);
             // 
             // InputCargoCarrier
             // 
@@ -130,6 +134,7 @@
             this.InputCargoCarrier.Name = "InputCargoCarrier";
             this.InputCargoCarrier.Size = new System.Drawing.Size(409, 20);
             this.InputCargoCarrier.TabIndex = 13;
+            this.InputCargoCarrier.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputJFNameOrg_KeyPress);
             // 
             // JuridicalFaceForm
             // 

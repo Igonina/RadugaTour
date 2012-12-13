@@ -35,8 +35,6 @@
             this.CreateApplication = new System.Windows.Forms.Button();
             this.ShowPhisFace = new System.Windows.Forms.Button();
             this.ShowJuriFace = new System.Windows.Forms.Button();
-            this.AddPhisFace = new System.Windows.Forms.Button();
-            this.AddJuriFace = new System.Windows.Forms.Button();
             this.LookAtApplications = new System.Windows.Forms.Button();
             this.outputProfile = new System.Windows.Forms.Label();
             this.outputLogin = new System.Windows.Forms.Label();
@@ -79,7 +77,7 @@
             this.CreateApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CreateApplication.ForeColor = System.Drawing.SystemColors.MenuText;
             this.CreateApplication.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CreateApplication.Location = new System.Drawing.Point(83, 210);
+            this.CreateApplication.Location = new System.Drawing.Point(170, 208);
             this.CreateApplication.Name = "CreateApplication";
             this.CreateApplication.Size = new System.Drawing.Size(139, 36);
             this.CreateApplication.TabIndex = 7;
@@ -93,7 +91,7 @@
             this.ShowPhisFace.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ShowPhisFace.BackgroundImage")));
             this.ShowPhisFace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ShowPhisFace.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ShowPhisFace.Location = new System.Drawing.Point(518, 210);
+            this.ShowPhisFace.Location = new System.Drawing.Point(460, 210);
             this.ShowPhisFace.Name = "ShowPhisFace";
             this.ShowPhisFace.Size = new System.Drawing.Size(139, 36);
             this.ShowPhisFace.TabIndex = 8;
@@ -107,7 +105,7 @@
             this.ShowJuriFace.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ShowJuriFace.BackgroundImage")));
             this.ShowJuriFace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ShowJuriFace.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ShowJuriFace.Location = new System.Drawing.Point(808, 210);
+            this.ShowJuriFace.Location = new System.Drawing.Point(605, 210);
             this.ShowJuriFace.Name = "ShowJuriFace";
             this.ShowJuriFace.Size = new System.Drawing.Size(139, 36);
             this.ShowJuriFace.TabIndex = 9;
@@ -115,41 +113,13 @@
             this.ShowJuriFace.UseVisualStyleBackColor = false;
             this.ShowJuriFace.Click += new System.EventHandler(this.ShowJuriFace_Click);
             // 
-            // AddPhisFace
-            // 
-            this.AddPhisFace.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.AddPhisFace.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddPhisFace.BackgroundImage")));
-            this.AddPhisFace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AddPhisFace.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AddPhisFace.Location = new System.Drawing.Point(373, 210);
-            this.AddPhisFace.Name = "AddPhisFace";
-            this.AddPhisFace.Size = new System.Drawing.Size(139, 36);
-            this.AddPhisFace.TabIndex = 10;
-            this.AddPhisFace.Text = "Добавить физическое лицо";
-            this.AddPhisFace.UseVisualStyleBackColor = false;
-            this.AddPhisFace.Click += new System.EventHandler(this.AddPhisFace_Click);
-            // 
-            // AddJuriFace
-            // 
-            this.AddJuriFace.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.AddJuriFace.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddJuriFace.BackgroundImage")));
-            this.AddJuriFace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AddJuriFace.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AddJuriFace.Location = new System.Drawing.Point(663, 210);
-            this.AddJuriFace.Name = "AddJuriFace";
-            this.AddJuriFace.Size = new System.Drawing.Size(139, 36);
-            this.AddJuriFace.TabIndex = 11;
-            this.AddJuriFace.Text = "Добавить юридическое лицо";
-            this.AddJuriFace.UseVisualStyleBackColor = false;
-            this.AddJuriFace.Click += new System.EventHandler(this.AddJuriFace_Click);
-            // 
             // LookAtApplications
             // 
             this.LookAtApplications.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.LookAtApplications.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LookAtApplications.BackgroundImage")));
             this.LookAtApplications.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.LookAtApplications.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LookAtApplications.Location = new System.Drawing.Point(228, 210);
+            this.LookAtApplications.Location = new System.Drawing.Point(315, 209);
             this.LookAtApplications.MinimumSize = new System.Drawing.Size(139, 36);
             this.LookAtApplications.Name = "LookAtApplications";
             this.LookAtApplications.Size = new System.Drawing.Size(139, 36);
@@ -181,12 +151,10 @@
             this.outputLogin.TabIndex = 15;
             this.outputLogin.Text = "Svetlyachok";
             this.outputLogin.Click += new System.EventHandler(this.outputLogin_Click);
- 
             // 
             // managerTable1BindingSource
             // 
             this.managerTable1BindingSource.DataMember = "ManagerTable1";
-       
             // 
             // LookAtManagersbutton
             // 
@@ -194,7 +162,7 @@
             this.LookAtManagersbutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LookAtManagersbutton.BackgroundImage")));
             this.LookAtManagersbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.LookAtManagersbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LookAtManagersbutton.Location = new System.Drawing.Point(1098, 208);
+            this.LookAtManagersbutton.Location = new System.Drawing.Point(895, 211);
             this.LookAtManagersbutton.Name = "LookAtManagersbutton";
             this.LookAtManagersbutton.Size = new System.Drawing.Size(139, 37);
             this.LookAtManagersbutton.TabIndex = 18;
@@ -208,7 +176,7 @@
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(953, 210);
+            this.button1.Location = new System.Drawing.Point(750, 211);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(139, 35);
             this.button1.TabIndex = 19;
@@ -228,8 +196,6 @@
             this.Controls.Add(this.outputLogin);
             this.Controls.Add(this.outputProfile);
             this.Controls.Add(this.LookAtApplications);
-            this.Controls.Add(this.AddJuriFace);
-            this.Controls.Add(this.AddPhisFace);
             this.Controls.Add(this.ShowJuriFace);
             this.Controls.Add(this.ShowPhisFace);
             this.Controls.Add(this.CreateApplication);
@@ -253,8 +219,6 @@
         private System.Windows.Forms.Button CreateApplication;
         private System.Windows.Forms.Button ShowPhisFace;
         private System.Windows.Forms.Button ShowJuriFace;
-        private System.Windows.Forms.Button AddPhisFace;
-        private System.Windows.Forms.Button AddJuriFace;
         private System.Windows.Forms.Button LookAtApplications;
         private System.Windows.Forms.Label outputProfile;
         private System.Windows.Forms.Label outputLogin;

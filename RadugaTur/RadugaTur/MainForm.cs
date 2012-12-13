@@ -58,20 +58,7 @@ namespace RadugaTur
             appForm.Show();
 
         }
-
-        private void AddJuriFace_Click(object sender, EventArgs e)
-        {
-            JuridicalFaceForm juridicFaceForm = new JuridicalFaceForm();
-            juridicFaceForm.ShowDialog();
-        }
-
-        private void AddPhisFace_Click(object sender, EventArgs e)
-        {
-            FisicalFaceForm fisicFaceForm = new FisicalFaceForm();
-            fisicFaceForm.ShowDialog();
-        }
-
-        
+      
 
         private void AddManagerButton_Click(object sender, EventArgs e)
         {

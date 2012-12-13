@@ -49,7 +49,7 @@ namespace RadugaTur
 
         bool isUpdateModeEnabled = false;
         int updatePFId;
-        internal void fillData( int PFId, string PFFullRussName, string PFFullEngName, string PFBirthday, string PFNumAndSerRussPassport, string PFDateGetRussPassport, string PFOrgGetRussPassport, string PFNumAndSerForeignPassport, string PFDateGetForeignPassport, string PFDateEndForeignPassport, string PFOrgGetForeignPassport, string PFBirthPlace, string PFPhone) {
+        internal void fillData( int PFId, string PFFullRussName, string PFFullEngName, string PFBirthday, string PFNumAndSerRussPassport, string PFDateGetRussPassport, string PFOrgGetRussPassport, string PFNumAndSerForeignPassport, string PFDateGetForeignPassport, string PFDateEndForeignPassport, string PFOrgGetForeignPassport, string PFBirthPlace, string PFPhone, string PFMail) {
              inputPFFullRussName.Text = PFFullRussName.ToString();
              inputPFFullEngName.Text =  PFFullEngName.ToString();
              inputPFBirthday.Text =  PFBirthday.ToString();
@@ -62,16 +62,16 @@ namespace RadugaTur
              inputPFOrgGetEngPassport.Text = PFOrgGetForeignPassport.ToString();
              inputPFBirthPlace.Text = PFBirthPlace.ToString();
              inputPFPhone.Text = PFPhone.ToString();
+             inputPFMail.Text = PFMail.ToString();
                 
              isUpdateModeEnabled = true;
              updatePFId = PFId; 
         }
 
-        private void SaveFisicalFaceFormButton_Click(object sender, EventArgs e)
-        {
+        internal void insert() {
             if (updatePFId == 0)
             {
-                string query = "insert into PhisicalFace(PFFullRussName, PFFullEngName, PFBirthday, PFNumAndSerRussPassport, PFDateGetRussPassport,  PFOrgGetRussPassport, PFNumAndSerForeignPassport, PFDateGetForeignPassport, PFDateEndForeignPassport,PFOrgGetForeignPassport, PFBirthPlace, PFPhone ) values (\'" +
+                string query = "insert into PhisicalFace(PFFullRussName, PFFullEngName, PFBirthday, PFNumAndSerRussPassport, PFDateGetRussPassport,  PFOrgGetRussPassport, PFNumAndSerForeignPassport, PFDateGetForeignPassport, PFDateEndForeignPassport,PFOrgGetForeignPassport, PFBirthPlace, PFPhone, PFMail  ) values (\'" +
                     inputPFFullRussName.Text + "\', \'" +
                     inputPFFullEngName.Text + "\', \'" +
                     inputPFBirthday.Text + "\',\'" +
@@ -83,17 +83,35 @@ namespace RadugaTur
                     inputPHDateEndForPassport.Text + "\',\'" +
                     inputPFOrgGetEngPassport.Text + "\',\'" +
                     inputPFBirthPlace.Text + "\',\'" +
-                    inputPFPhone.Text + "\')";
+                    inputPFPhone.Text + "\',\'" +
+                    inputPFMail.Text + "\')";
                 Database.executeQuery(query).Close();
             }
-            else {
-                string query2 = "update PhisicalFace set PFFullRussName = \'" + inputPFFullRussName.Text + "\', PFFullEngName = \'" + inputPFFullEngName.Text + "\', PFBirthday = \'" + inputPFBirthday.Text + "\', PFNumAndSerRussPassport= \'" + inputPFSerialAndNumberRussPassport.Text + "\', PFDateGetRussPassport= \'" + inputPFDateGetRussPassport.Text + "\', PFOrgGetRussPassport= \'" + inputPFOrgGetRussPassport.Text + "\', PFNumAndSerForeignPassport= \'" + inputNumSerForeignPassport.Text + "\', PFDateGetForeignPassport= \'" + inputPHDateGetForPassport.Text + "\', PFDateEndForeignPassport= \'" + inputPHDateEndForPassport.Text + "\', PFOrgGetForeignPassport= \'" + inputPFOrgGetEngPassport.Text + "\', PFBirthPlace = \'" + inputPFBirthPlace.Text + "\', PFPhone= \'" + inputPFPhone.Text + "\' where (PFId = " + updatePFId + ")";
+            else
+            {
+                string query2 = "update PhisicalFace set PFFullRussName = \'" + inputPFFullRussName.Text + "\', PFFullEngName = \'" + inputPFFullEngName.Text + "\', PFBirthday = \'" + inputPFBirthday.Text + "\', PFNumAndSerRussPassport= \'" + inputPFSerialAndNumberRussPassport.Text + "\', PFDateGetRussPassport= \'" + inputPFDateGetRussPassport.Text + "\', PFOrgGetRussPassport= \'" + inputPFOrgGetRussPassport.Text + "\', PFNumAndSerForeignPassport= \'" + inputNumSerForeignPassport.Text + "\', PFDateGetForeignPassport= \'" + inputPHDateGetForPassport.Text + "\', PFDateEndForeignPassport= \'" + inputPHDateEndForPassport.Text + "\', PFOrgGetForeignPassport= \'" + inputPFOrgGetEngPassport.Text + "\', PFBirthPlace = \'" + inputPFBirthPlace.Text + "\', PFPhone= \'" + inputPFPhone.Text + "\', PFMail = \'" + inputPFMail.Text + "\'  where (PFId = " + updatePFId + ")";
                 Database.executeQuery(query2).Close();
             }
-            
+
             this.Close();
-           
         }
+
+        private void SaveFisicalFaceFormButton_Click(object sender, EventArgs e)
+        {
+            insert();
+        }
+
+       
+        private void inputPFFullRussName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Нажата клавиша Enter, перенос карретки (carriage Return), '\r' == 13
+            if (e.KeyChar == '\r')
+            {
+                insert();
+            }
+        }
+
+       
 
         
     }
